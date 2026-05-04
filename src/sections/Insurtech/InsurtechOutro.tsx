@@ -18,7 +18,7 @@ export const InsurtechOutro = () => {
         className="flex flex-col items-center text-center z-10 -mt-28"
       >
         <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 max-w-[800px] text-balance ${isEn ? 'uppercase tracking-tighter text-[20px] md:text-[30px] font-sans font-black' : 'tracking-tighter text-[24px] md:text-[30px] font-puhuiti font-black'}`}>
-          {isEn ? "Visible Design. Invisible Security." : "用看得见的设计，传递看不见的保障。"}
+          {isEn ? "Visible design · Invisible security" : "用看得见的设计传递 · 看不见的保障"}
         </h2>
         
         {/* Back Button */}

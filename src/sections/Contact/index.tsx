@@ -21,7 +21,7 @@ export const Contact = () => {
       {/* Central Block (Shifted up 130px) */}
       <div className="w-full max-w-[620px] flex flex-col items-center z-10 -translate-y-[130px]">
         <h2 
-          className={`uppercase ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-12`}
+          className={`uppercase ${isEn ? 'text-[clamp(40px,7vw,90px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(36px,6vw,84px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-12`}
         >
           {isEn ? 'CONTACT' : '联系我'}
         </h2>

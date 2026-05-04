@@ -18,7 +18,7 @@ export const SpatialOutro = () => {
         className="flex flex-col items-center text-center z-10 -mt-28"
       >
         <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 max-w-[800px] text-balance ${isEn ? 'uppercase tracking-tighter text-[20px] md:text-[30px] font-sans font-black' : 'tracking-tighter text-[24px] md:text-[30px] font-puhuiti font-black'}`}>
-          {isEn ? "Delivering resonant spatial experiences" : "交付更具共鸣的空间体验"}
+          {isEn ? "Delivering · Resonant spatial experiences" : "交付 · 更具共鸣的空间体验"}
         </h2>
         
         {/* Back Button */}

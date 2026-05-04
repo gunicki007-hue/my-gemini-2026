@@ -18,7 +18,7 @@ export const AIGCOutro = () => {
         className="flex flex-col items-center text-center z-10 -mt-28"
       >
         <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 max-w-[800px] text-balance ${isEn ? 'uppercase tracking-tighter text-[20px] md:text-[30px] font-sans font-black' : 'tracking-tighter text-[24px] md:text-[30px] font-puhuiti font-black'}`}>
-          {isEn ? "Systemic Generation. Infinite Possibility." : "用确定的系统，生成无限可能。"}
+          {isEn ? "Systemic generation · Infinite possibility" : "用确定的系统 · 生成无限可能"}
         </h2>
         
         {/* Back Button */}

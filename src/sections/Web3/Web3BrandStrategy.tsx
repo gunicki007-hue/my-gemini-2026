@@ -27,7 +27,7 @@ export const Web3BrandStrategy = () => {
          
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(40px,7vw,90px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(36px,6vw,84px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -57,7 +57,7 @@ export const Web3BrandStrategy = () => {
         className="w-full xl:w-[60%] flex-1 relative z-10 flex items-center justify-end"
       >
          {/* Container pushing all the way to the right edge */}
-         <div className="w-full h-full relative aspect-[1.8/1] sm:aspect-[2/1] xl:aspect-auto xl:h-[800px] bg-transparent overflow-hidden rounded-l-[12px] sm:rounded-l-[24px]">
+         <div className="w-full h-full relative aspect-[1.8/1] sm:aspect-[2/1] xl:aspect-[16/9] bg-transparent overflow-hidden rounded-l-[12px] sm:rounded-l-[24px]">
              {/* == 🚨 右侧大瀑布流/排版图 替换处 / REPLACE WITH RIGHT GRID IMAGE == */}
              {/* 把下方的 src="..." 替换变成您实际的带瀑布流排版的图片链接即可 */}
              <img 

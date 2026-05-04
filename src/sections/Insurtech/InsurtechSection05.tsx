@@ -74,7 +74,7 @@ export const InsurtechSection05 = () => {
 
             {/* Title */}
             <h2
-              className={`uppercase w-full ${isEn ? "text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans tracking-tighter leading-[0.95]" : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+              className={`uppercase w-full ${isEn ? "text-[50px] sm:text-[70px] md:text-[80px] xl:text-[84px] font-black font-sans tracking-tighter leading-[0.95]" : 'text-[clamp(36px,6vw,84px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
             >
               {isEn ? (
                 <>

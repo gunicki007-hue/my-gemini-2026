@@ -12,7 +12,7 @@ export const About = () => {
         {/* 1. About Header & Intro (Left Aligned Block) */}
         <div className="space-y-12 max-w-[1000px]">
            <div className="flex flex-col">
-             <h2 className="text-[94px] font-black font-sans tracking-tight leading-[1.1] uppercase mb-6">
+             <h2 className="text-[88px] font-black font-sans tracking-tight leading-[1.1] uppercase mb-6">
                NICKI
              </h2>
              <div className="flex items-center gap-4">
