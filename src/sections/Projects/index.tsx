@@ -220,7 +220,7 @@ export const Projects = () => {
         className="w-full pt-20 pb-4 pl-6 md:pl-[80px] relative z-10"
       >
         <h1 
-          className={`uppercase ${language === 'en' ? 'text-[clamp(40px,7vw,90px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(36px,6vw,84px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase ${language === 'en' ? 'text-[clamp(32px,6vw,80px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(32px,5.5vw,80px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {language === 'en' ? 'CASE STUDIES' : '作品档案'}
         </h1>

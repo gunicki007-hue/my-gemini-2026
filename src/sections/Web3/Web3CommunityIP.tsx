@@ -29,7 +29,7 @@ export const Web3CommunityIP = () => {
         {/* 主标题 / Main Title */}
         {/* == 🚨 标题文字替换处 / REPLACE TITLE HERE 🚨 == */}
         <h2
-          className={`uppercase w-full ${isEn ? 'text-[clamp(40px,7vw,90px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(36px,6vw,84px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(32px,6vw,80px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(32px,5.5vw,80px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
@@ -42,7 +42,7 @@ export const Web3CommunityIP = () => {
         </h2>
 
         {/* 副标题叙事 / Narrative Description */}
-        <p className={`mt-8 md:mt-12 mx-auto w-full max-w-[650px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+        <p className={`mt-8 md:mt-12 mx-auto w-full max-w-[650px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-center'}`}>
           {isEn 
             ? "Rejecting fintech elitism. Weaponizing Meme culture and approachable visuals to transform community sentiment into hard operational assets."
             : "拒绝金融高冷。用 Twitter 与 Meme 文化打透用户心智，以直白亲和的视觉重构沟通语境，将社区情绪精准沉淀为运营资产。"}

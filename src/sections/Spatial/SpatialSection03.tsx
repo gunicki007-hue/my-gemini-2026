@@ -81,7 +81,7 @@ export const SpatialSection03 = () => {
                  loop 
                  muted 
                  playsInline 
-                 className="w-full h-full object-cover brightness-[.85]"
+                 className="w-full h-full object-cover brightness-[.76]"
                />
                <div className="absolute inset-0 bg-gradient-to-br from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
             </div>
@@ -93,7 +93,7 @@ export const SpatialSection03 = () => {
                  <img 
                    src="https://img.nickiresume.cn/Nimage/04Event/3-02.webp" 
                    alt="Integration 1" 
-                   className="w-full h-full object-cover brightness-[.85]"
+                   className="w-full h-full object-cover brightness-[.76]"
                  />
                  <div className="absolute inset-0 bg-gradient-to-tr from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
@@ -107,7 +107,7 @@ export const SpatialSection03 = () => {
                  <img 
                    src="https://img.nickiresume.cn/Nimage/04Event/3-03.webp" 
                    alt="Integration 2" 
-                   className="w-full h-full object-cover brightness-[.85]"
+                   className="w-full h-full object-cover brightness-[.76]"
                  />
                  <div className="absolute inset-0 bg-gradient-to-bl from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
