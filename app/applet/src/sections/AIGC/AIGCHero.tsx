@@ -1,0 +1,64 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { useDictionary } from '../../hooks/useDictionary';
+
+export const AIGCHero = () => {
+  const { language } = useDictionary();
+  const isEn = language === 'en';
+
+  return (
+    <section className="relative w-full min-h-[70vh] flex flex-col lg:flex-row items-center justify-between pl-6 pr-0 md:pl-[60px] md:pr-0 lg:pl-[80px] lg:pr-0 pb-20 gap-12 lg:gap-16 overflow-hidden">
+      {/* Left Text Content - taking roughly 35% of space */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="flex flex-col z-10 relative w-full lg:w-[35%] xl:w-[35%] shrink-0 lg:pr-0 pr-6"
+      >
+        <div className="flex items-center gap-4 mb-8">
+          <div className="w-16 h-[1px] bg-white/30" />
+          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            {isEn ? 'AI DRIVEN VISUAL OS' : 'AIGC 战略与全域制作'}
+          </h4>
+        </div>
+
+        <h1
+          className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+        >
+          {isEn ? (
+            <>
+              SYSTEMIC<br />
+              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>CREATIVE</span><br />
+              ENGINE
+            </>
+          ) : (
+            <>系统级<br />创意引擎</>
+          )}
+        </h1>
+
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest leading-[2]'}`}>
+          {isEn
+            ? <>The surreal visual tone on the right is merely the tip of the iceberg of the system's output.<br /> Beyond simple pixel generation, spanning from deep business logic deduction to the ultimate cross-over of aesthetics and production capacity, we are building a 100% deterministic digital creative operating system.</>
+            : <>右侧的超现实视觉定调，只是系统输出的冰山一角。<br />跨越单纯的像素生成，从深层的业务逻辑推演，到极致的审美与产能跨界，构建 100% 确定性的数字创意操作系统。</>}
+        </p>
+      </motion.div>
+
+      {/* Right Image/Video Container - Flush to Right Edge */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        className="w-full lg:flex-1 relative z-10 rounded-l-[8px] md:rounded-l-[12px] rounded-r-none overflow-hidden bg-[#0a0a0a] border-y border-l border-white/5 border-r-0 shadow-[0_30px_80px_rgba(0,0,0,0.8)] flex items-center justify-center group aspect-[16/9]"
+      >
+        <img
+          src="https://img.nickiresume.cn/images/0418resume/04-4.webp"
+          alt="AIGC Hero"
+          className="w-full h-full object-cover z-0 block"
+        />
+      </motion.div>
+
+      {/* Subtle Parallax Background Glow */}
+      <div className="absolute top-1/2 left-2/3 -translate-y-1/2 -translate-x-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-purple-500/5 blur-[120px] rounded-full pointer-events-none mix-blend-screen animate-pulse" style={{ animationDuration: '8s' }} />
+    </section>
+  );
+};

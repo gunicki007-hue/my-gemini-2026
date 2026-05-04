@@ -1,0 +1,67 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { useDictionary } from '../../hooks/useDictionary';
+
+export const Web3Hero = () => {
+  const { language } = useDictionary();
+  const isEn = language === 'en';
+
+  return (
+    <section className="relative w-full min-h-[70vh] flex flex-col lg:flex-row items-center justify-between pl-6 pr-0 md:pl-[60px] md:pr-0 lg:pl-[80px] lg:pr-0 pb-20 gap-12 lg:gap-16 overflow-hidden">
+      {/* Left Text Content - taking roughly 35% of space */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="flex flex-col z-10 relative w-full lg:w-[35%] xl:w-[35%] shrink-0 lg:pr-0 pr-6"
+      >
+        <div className="flex items-center gap-4 mb-8">
+          <div className="w-16 h-[1px] bg-white/30" />
+          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            {isEn ? 'Web3 Financial Ecosystem' : 'Web3 金融生态'}
+          </h4>
+        </div>
+
+        <h1
+          className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+        >
+          {isEn ? (
+            <>
+              REDEFINING<br />
+              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>DIGITAL</span><br />
+              TRUST
+            </>
+          ) : (
+            <>重塑时代<br />数字金融</>
+          )}
+        </h1>
+
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest leading-[2]'}`}>
+          {isEn
+            ? "I led Crydit’s 0-to-1 launch across strategy, visual DNA, and product architecture. By applying hardcore visual noise reduction to strip away Web3 barriers, I engineered a premium, high-trust crypto management experience."
+            : "我全链路操盘了 Crydit 从 0-1 的战略推演、视觉基因、产品架构及全球公关叙事。用硬核的视觉降噪剥离行业壁垒，为全球用户重构兼具“信任底座”与“高级感”的加密资管体验。"}
+        </p>
+      </motion.div>
+
+      {/* Right Video Container - Flush to Right Edge */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        className="w-full lg:flex-1 relative z-10 rounded-l-[8px] md:rounded-l-[12px] rounded-r-none overflow-hidden bg-[#0a0a0a] shadow-[0_30px_80px_rgba(0,0,0,0.8)] flex items-center justify-center group"
+      >
+        <video
+          src="https://img.nickiresume.cn/videos/01-case1%20banner.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto z-0 block"
+        />
+      </motion.div>
+
+      {/* Subtle Parallax Background Glow for Web3 Atmosphere */}
+      <div className="absolute top-1/2 left-2/3 -translate-y-1/2 -translate-x-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none mix-blend-screen animate-pulse" style={{ animationDuration: '8s' }} />
+    </section>
+  );
+};
