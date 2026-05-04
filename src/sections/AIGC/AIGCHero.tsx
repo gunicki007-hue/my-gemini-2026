@@ -17,18 +17,18 @@ export const AIGCHero = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'AI DRIVEN VISUAL OS' : 'AIGC 战略与全域制作'}
           </h4>
         </div>
 
         <h1
-          className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
               SYSTEMIC<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>CREATIVE</span><br />
+              CREATIVE<br />
               ENGINE
             </>
           ) : (
@@ -36,7 +36,7 @@ export const AIGCHero = () => {
           )}
         </h1>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[17px] text-justify tracking-widest leading-[38.6px]'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
           {isEn
             ? <>The surreal visual tone on the right is merely the tip of the iceberg of the system's output.<br /> Beyond simple pixel generation, spanning from deep business logic deduction to the ultimate cross-over of aesthetics and production capacity, we are building a 100% deterministic digital creative operating system.</>
             : <>右侧的超现实视觉定调，只是系统输出的冰山一角。<br />跨越单纯的像素生成，从深层的业务逻辑推演，到极致的审美与产能跨界，构建 100% 确定性的数字创意操作系统。</>}

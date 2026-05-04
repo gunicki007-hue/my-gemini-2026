@@ -20,11 +20,11 @@ export const AIGCSection07 = () => {
           >
             <div className="flex items-center gap-4 mb-8 md:mb-12">
               <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-              <h4 className="text-[#D5B667] tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
                 {isEn ? 'CASE 03 · AGILITY & HIGH CONCURRENCY · TEA' : 'CASE 03 · 敏捷与高并发 · 茶颜悦色'}
               </h4>
             </div>
-            <h3 className="text-white text-[32px] md:text-[40px] xl:text-[48px] font-black leading-[1.1] mb-6 tracking-tight font-sans uppercase">
+            <h3 className="text-white text-[32px] md:text-[40px] xl:text-[48px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>BUILDING A HIGH-CONCURRENCY<br />CONTENT ENGINE</>
               ) : (
@@ -32,7 +32,7 @@ export const AIGCSection07 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/60 text-[14px] md:text-[15px] font-sans font-light tracking-wide leading-[1.8]' : 'text-white/50 text-[17px] text-justify tracking-widest leading-[38.6px]'}`}>
+            <div className={`space-y-6 ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.7] text-[16px] md:text-[15px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
               <p className="text-white font-medium">
                 {isEn ? (
                   "The essence of the FMCG industry is racing against volatile market sentiments."
@@ -41,16 +41,16 @@ export const AIGCSection07 = () => {
                 )}
               </p>
               
-              <p className="leading-[30px]">
+              <p>
                 {isEn ? (
-                  "Facing Sexy Tea's high-frequency new product seasons and regional marketing, I abandoned the extremely fragile \"human wave tactic\". By training a brand-exclusive visual foundation model (Style Lora), I completely digitized the core national trend DNA."
+                  <>Facing Sexy Tea's high-frequency new product seasons and regional marketing, I abandoned the extremely fragile \"human wave tactic\". By training a brand-exclusive visual foundation model (Style Lora), I completely digitized the core national trend DNA.</>
                 ) : (
                   <>面对茶颜悦色高频的新品季与区域化营销，我抛弃了极其脆弱的“人海战术”。通过训练品牌专属的视觉基座模型（Style Lora），我将核心国潮 DNA <span className="whitespace-nowrap">彻底数据化。</span></>
                 )}
               </p>
               
               <div className="pt-[10px]">
-                <p className="leading-[30px] font-normal">
+                <p>
                   {isEn ? (
                     "Displayed on the right is the true throughput of this computing engine. Simply by inputting flavor variables or regional tags, the system can complete an exponential explosion from a single product poster to a matrix of hundreds of SKUs within minutes. This is true equality of productivity."
                   ) : (
@@ -74,7 +74,7 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-[0.2em] text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
                 <span className="font-mono slashed-zero text-[14px]">01</span>
                 {isEn ? 'BRAND VISUAL FOUNDATION' : '品牌视觉基座'}
               </span>
@@ -82,18 +82,18 @@ export const AIGCSection07 = () => {
                 {isEn ? 'Extract and train an exclusive Style Lora, fundamentally locking the brand\'s iconic "New Chinese National Trend" style at the algorithm level.' : '提炼并训练专属 Style Lora，将品牌标志性的“新中式国潮”风格彻底锁定在算法底层。'}
               </p>
             </div>
-            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative border border-white/10 flex items-center justify-center">
+            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative flex items-center justify-center">
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Tea01-1.webp" alt="Brand DNA Enclosing" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-[#b8b8b8] text-[13px] md:text-[15px] font-medium tracking-[0.05em]">
+                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
                   {isEn ? 'Brand DNA Enclosing' : '视觉基因数据化封装'}
                 </span>
               </div>
             </div>
             
             <div className="flex flex-col gap-2 mt-2">
-              <h5 className="text-white text-[14px] md:text-[15px] font-medium tracking-wide">
+              <h5 className="text-white text-[16px] md:text-[15px] font-medium tracking-wide">
                 {isEn ? 'Training Set Tagging Example' : '训练集打标示例'}
               </h5>
               <p className="text-white/50 text-[13px] md:text-[14px] font-light leading-relaxed text-justify break-words w-full">
@@ -103,7 +103,7 @@ export const AIGCSection07 = () => {
               </p>
             </div>
 
-            <div className="w-full aspect-[16/9] rounded-[24px] overflow-hidden relative border border-white/10 flex items-center justify-center mt-2">
+            <div className="w-full aspect-[16/9] rounded-[24px] overflow-hidden relative flex items-center justify-center mt-2">
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Tea02.webp" alt="Training Set Tagging Example" className="absolute inset-0 w-full h-full object-cover" />
             </div>
           </motion.div>
@@ -117,7 +117,7 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-[0.2em] text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
                 <span className="font-mono slashed-zero text-[14px]">02</span>
                 {isEn ? 'SKU EXPONENTIAL FISSION' : 'SKU 指数裂变'}
               </span>
@@ -125,11 +125,11 @@ export const AIGCSection07 = () => {
                 {isEn ? 'Transcendent of linear diagramming bottlenecks, merely by modifying Prompt variables, instantly and concurrently generate promotional matrix images for dozens of flavors.' : '跨越线性作图瓶颈，只需修改 Prompt 变量，即刻并发生成数十种口味的宣发矩阵图。'}
               </p>
             </div>
-            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative border border-white/10 flex items-center justify-center">
+            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative flex items-center justify-center">
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/SKU.webp" alt="Matrix Generation" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-[#b8b8b8] text-[13px] md:text-[15px] font-medium tracking-[0.05em]">
+                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
                   {isEn ? 'Matrix Generation' : 'SKU 无级扩展与裂变'}
                 </span>
               </div>
@@ -145,7 +145,7 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4 mt-[30px]"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-[0.2em] text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
                 <span className="font-mono slashed-zero text-[14px]">03</span>
                 {isEn ? 'AGILE LOCALIZED MARKETING' : '区域化敏捷营销'}
               </span>
@@ -153,11 +153,11 @@ export const AIGCSection07 = () => {
                 {isEn ? 'Stripping away traditional scene building costs, rapidly combining city landmarks with product assets to achieve regional marketing blitzes within 24 hours.' : '剥离传统场景搭建成本，极速组合城市地标与产品资产，实现 24 小时内的区域营销闪电战。'}
               </p>
             </div>
-            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative border border-white/10 flex items-center justify-center">
+            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative flex items-center justify-center">
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/4city.webp" alt="Agile Localization" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-[#b8b8b8] text-[13px] md:text-[15px] font-medium tracking-[0.05em]">
+                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
                   {isEn ? 'Agile Localization' : '区域化场景敏捷响应'}
                 </span>
               </div>
@@ -173,7 +173,7 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-[0.2em] text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
                 <span className="font-mono slashed-zero text-[14px]">04</span>
                 {isEn ? 'A/B TESTING & E-COMMERCE HIGH CONCURRENCY' : 'A/B 测试与电商高并发'}
               </span>
@@ -181,14 +181,14 @@ export const AIGCSection07 = () => {
                 {isEn ? 'Generating massive marketing materials at zero marginal cost, providing ample A/B testing ammunition for e-commerce advertising, completely freeing the team\'s hands.' : '零边际成本生成海量营销物料，为电商投放提供充足的 A/B 测试弹药，彻底解放团队双手。'}
               </p>
             </div>
-            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative border border-white/10 flex items-center justify-center">
+            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative flex items-center justify-center">
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Test%20A.webp" alt="A/B Testing A" className="absolute inset-0 w-full h-full object-cover object-center" />
             </div>
-            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative border border-white/10 flex items-center justify-center">
+            <div className="w-full aspect-video rounded-[24px] overflow-hidden relative flex items-center justify-center">
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Test%20B.webp" alt="A/B Testing B" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-[#b8b8b8] text-[13px] md:text-[15px] font-medium tracking-[0.05em]">
+                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
                   {isEn ? 'High Throughput' : '极速全域并发与分发'}
                 </span>
               </div>

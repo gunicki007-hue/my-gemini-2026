@@ -77,7 +77,7 @@ export const Awards = () => {
             >
               <div className="pointer-events-none">
                 <h2 
-                  className="text-5xl md:text-[72px] font-black tracking-tighter leading-none mb-6 font-sans uppercase"
+                  className={`uppercase ${language === 'en' ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-6`}
                 >
                   {language === 'en' ? 'AWARDS' : '国际荣誉'}
                 </h2>
@@ -140,8 +140,8 @@ export const Awards = () => {
                     <div className={`flex flex-col flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${isActive ? 'translate-x-[20px]' : 'translate-x-[0px]'}`}>
                       <span className={`transition-colors duration-500 ${
                         language === 'en' 
-                          ? 'text-[15px] md:text-[20px] tracking-widest uppercase font-bold font-space-grotesk text-white' 
-                          : 'text-[16px] md:text-[22px] tracking-widest font-black font-puhuiti text-white leading-none'
+                          ? 'text-[15px] md:text-[20px] tracking-[0.15em] uppercase font-bold font-space-grotesk text-white' 
+                          : 'text-[16px] md:text-[22px] tracking-tighter font-black font-puhuiti text-white leading-none'
                       }`}>
                         {language === 'en' ? item.en.awardTitle : item.cn.awardTitle}
                       </span>
@@ -149,7 +149,7 @@ export const Awards = () => {
 
                     {/* Level Text (Right Aligned) */}
                     <span 
-                      className={`text-[10px] md:text-[12px] font-black tracking-[0.2em] shrink-0 uppercase transition-all duration-500 ${isActive ? '' : 'text-white/60'} ${metallicClass}`}
+                      className={`text-[12px] md:text-[14px] font-black tracking-tighter shrink-0 uppercase transition-all duration-500 ${isActive ? '' : 'text-white/50'} ${metallicClass}`}
                       style={isActive && item.levelType !== 'finalist' ? {
                         backgroundImage: item.levelType === 'gold' 
                           ? 'linear-gradient(90deg, #666 0%, #D4AF37 50%, #666 100%)'

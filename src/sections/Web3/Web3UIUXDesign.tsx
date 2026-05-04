@@ -19,25 +19,25 @@ export const Web3UIUXDesign = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? '04 / UI/UX DESIGN' : '04 / UI/UX 设计'}
           </h4>
         </div>
 
         <h2
-          className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
               Core Mobile<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>UI/UX</span><br />
+              UI/UX
             </>
           ) : (
             <>移动端核心 <br />UI/UX</>
           )}
         </h2>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest leading-[2]'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
           {isEn
             ? "Nailing decentralized asset experiences. Using interface noise reduction to deliver seamless user flows while satisfying strict compliance and business logic."
             : "打造去中心化资管体验。在兼顾严苛合规与业务逻辑的前提下，通过界面级降噪，兑现极致流畅的交互流转。"}

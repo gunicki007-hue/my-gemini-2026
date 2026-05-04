@@ -17,12 +17,12 @@ export const AIGCSection04 = () => {
       >
         <div className="flex items-center gap-4 mb-8 md:mb-12">
           <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-          <h4 className="text-[#D5B667] tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'CASE 02 · EXTREME' : '案例 02 · 极值'}
           </h4>
         </div>
 
-        <h2 className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'} mb-24 md:mb-40`}>
+        <h2 className={`uppercase w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans tracking-tighter leading-[0.95]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-24 md:mb-40`}>
           {isEn ? (
              <>AESTHETIC EXTREME &<br />ASSET RECONSTRUCTION</>
           ) : (
@@ -30,7 +30,7 @@ export const AIGCSection04 = () => {
           )}
         </h2>
 
-        <h3 className={`w-full max-w-[1200px] mb-16 md:mb-24 ${isEn ? 'text-[28px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[28px] font-extrabold tracking-tight font-["PingFang_SC","Microsoft_YaHei"] leading-[48px]'}`}>
+        <h3 className={`w-full max-w-[1200px] mb-16 md:mb-24 ${isEn ? 'text-[28px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[28px] font-extrabold tracking-tighter font-puhuiti leading-[48px]'}`}>
           {isEn ? (
             <>While most are still generating concept sketches<br className="hidden md:block"/>I am already delivering high-luxury production assets</>
           ) : (
@@ -38,7 +38,7 @@ export const AIGCSection04 = () => {
           )}
         </h3>
 
-        <p className={`w-full max-w-[900px] ${isEn ? 'text-white/60 text-[16px] xl:text-[18px] font-light tracking-wide leading-[2.2]' : 'text-white/50 text-[17px] text-justify tracking-widest leading-[38.6px]'}`}>
+        <p className={`w-full max-w-[900px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
           {isEn ? (
             "Abandoning traditional 3D rendering, through physical-level optical solving, completing a brutal practical proof of 'zero marginal cost production'."
           ) : (

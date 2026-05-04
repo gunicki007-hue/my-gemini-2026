@@ -19,7 +19,7 @@ export const InsurtechSection02 = () => {
       >
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
-            <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '01 /BRAND VISUAL UPGRAD' : '01 / 品牌视觉升维'}
             </h4>
             <div className="w-16 h-[1px] bg-white/30" />
@@ -27,12 +27,12 @@ export const InsurtechSection02 = () => {
          
          {/* Title */}
          <h2 
-           className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
                Unified<br />
-               <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Live Visuals</span><br />
+               Live Visuals
              </>
            ) : (
              <>统一<br />直播视觉</>
@@ -40,7 +40,7 @@ export const InsurtechSection02 = () => {
          </h2>
          
          {/* Description */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest sm:tracking-wider xl:tracking-widest leading-[2]'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
            {isEn 
              ? "Establishing brand livestream standards. Unifying program packaging to ensure highly consistent and professional dynamic presentations."
              : "统一各栏目包装设计，确保动态场景下高度一致的专业呈现。"}
@@ -63,7 +63,7 @@ export const InsurtechSection02 = () => {
              (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9' fill='%23111'%3E%3Crect width='16' height='9'/%3E%3C/svg%3E";
           }}
         />
-        <div className="absolute inset-0 border border-white/10 rounded-[20px] md:rounded-[40px] pointer-events-none" />
+        
       </motion.div>
       
     </section>

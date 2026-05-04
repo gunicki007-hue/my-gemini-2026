@@ -20,7 +20,7 @@ export const InsurtechSection01 = () => {
         >
            {/* Tag */}
            <div className="flex items-center gap-4 mb-8">
-              <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
                 {isEn ? '01 / BRAND VISUAL UPGRADE' : '01 / 品牌视觉升维'}
               </h4>
               <div className="w-16 h-[1px] bg-white/30" />
@@ -28,12 +28,12 @@ export const InsurtechSection01 = () => {
            
            {/* Title */}
            <h2 
-             className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+             className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
            >
              {isEn ? (
                <>
                  All-New VI <br />
-                 <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Redesign</span><br />
+                 Redesign
                </>
              ) : (
                <>全新 VI 视觉<br />重塑</>
@@ -41,7 +41,7 @@ export const InsurtechSection01 = () => {
            </h2>
            
            {/* Description */}
-           <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest sm:tracking-wider xl:tracking-widest leading-[2]'}`}>
+           <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
              {isEn 
                ? "Redefining the legacy VI system. Elevating professional quality while retaining visual affinity."
                : "重新规范旧版 VI 体系。让品牌在保持视觉亲和力的前提下，呈现出更高级的专业质感。"}
@@ -66,11 +66,11 @@ export const InsurtechSection01 = () => {
                (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9' fill='%23111'%3E%3Crect width='16' height='9'/%3E%3C/svg%3E";
             }}
           />
-          <div className="absolute inset-0 border border-white/10 rounded-[20px] md:rounded-[40px] pointer-events-none" />
+          
           
           {/* Legacy VI Tag */}
           <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-black/60 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full z-20 flex items-center justify-center">
-            <span className="text-white/80 text-[12px] md:text-[13px] tracking-widest font-bold uppercase">
+            <span className="text-white/80 text-[14px] md:text-[15px] tracking-widest font-bold uppercase">
               {isEn ? 'Legacy VI' : '旧版 VI'}
             </span>
           </div>
@@ -92,11 +92,11 @@ export const InsurtechSection01 = () => {
                (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9' fill='%23111'%3E%3Crect width='16' height='9'/%3E%3C/svg%3E";
             }}
           />
-          <div className="absolute inset-0 border border-white/10 rounded-[20px] md:rounded-[40px] pointer-events-none" />
+          
           
           {/* New VI Tag */}
           <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-[#4DB0FF]/80 backdrop-blur-md border border-[#4DB0FF] px-5 py-2 rounded-full z-20 flex items-center justify-center">
-            <span className="text-white text-[12px] md:text-[13px] tracking-widest font-bold uppercase">
+            <span className="text-white text-[14px] md:text-[15px] tracking-widest font-bold uppercase">
               {isEn ? 'New VI System' : '全新 VI'}
             </span>
           </div>

@@ -17,12 +17,12 @@ export const AIGCSection06 = () => {
       >
         <div className="flex items-center gap-4 mb-8 md:mb-12">
           <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-          <h4 className="text-[#D5B667] tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'CASE 03 · BREADTH' : '案例 03 · 广度'}
           </h4>
         </div>
 
-        <h2 className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'} mb-24 md:mb-40`}>
+        <h2 className={`uppercase w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans tracking-tighter leading-[0.95]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-24 md:mb-40`}>
           {isEn ? (
              <>AGILE RESPONSE &<br />EXPONENTIAL FISSION</>
           ) : (
@@ -30,7 +30,7 @@ export const AIGCSection06 = () => {
           )}
         </h2>
 
-        <h3 className={`w-full max-w-[1200px] mb-16 md:mb-24 ${isEn ? 'text-[28px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[28px] font-extrabold tracking-tight font-["PingFang_SC","Microsoft_YaHei"] leading-[48px]'}`}>
+        <h3 className={`w-full max-w-[1200px] mb-16 md:mb-24 ${isEn ? 'text-[28px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[28px] font-extrabold tracking-tighter font-puhuiti leading-[48px]'}`}>
           {isEn ? (
             <>While traditional teams are still burning the midnight oil stacking headcount for product launches,<br className="hidden md:block"/>I have deployed computing power to build a high-speed concurrent brand visual engine.</>
           ) : (
@@ -38,7 +38,7 @@ export const AIGCSection06 = () => {
           )}
         </h3>
 
-        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/60 text-[16px] xl:text-[18px] font-light tracking-wide leading-[30px]' : 'text-white/50 text-[17px] tracking-widest leading-[30px]'}`}>
+        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
           {isEn ? (
             "In the Fast-Moving Consumer Goods (FMCG) sector, speed dictates survival. Taking Sexy Tea as a benchmark, I reconstructed the traditional linear design workflow into a concurrent grid of 'underlying assets + variable control'. This is not merely a replacement of tools, but achieving stepless fission of the entire category and omni-channel SKU matrix with near-zero marginal cost."
           ) : (

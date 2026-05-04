@@ -20,19 +20,19 @@ export const Web3BrandStrategy = () => {
          {/* Tag matching Screen 1 styles */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '02 / BRAND STRATEGY' : '02 / 品牌策略'}
             </h4>
          </div>
          
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
                Strategic Positioning<br />
-               <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>& Narrative </span><br />
+               & Narrative 
             
              </>
            ) : (
@@ -41,7 +41,7 @@ export const Web3BrandStrategy = () => {
          </h2>
          
          {/* Secondary paragraph */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest leading-[2]'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
            {isEn 
              ? "Translating competitor benchmarking and core business logic into a cohesive commercial narrative, cementing a global fintech brand's distinct identity and trust."
              : "从竞品对标到底层业务推演，搭建了完整的商业叙事逻辑，确立国际化金融科技品牌的独特辨识度与信任感。"}

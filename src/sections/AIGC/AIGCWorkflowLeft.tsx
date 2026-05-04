@@ -18,11 +18,11 @@ export const AIGCWorkflowLeft = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="text-white/60 text-[12px] md:text-[14px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
+            <div className="text-white/50 text-[14px] md:text-[16px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
               {isEn ? 'ROI PERFORMANCE CLEARANCE' : 'ROI 效能清算'}
             </div>
             
-            <h2 className="text-white text-[32px] md:text-[40px] xl:text-[48px] font-black leading-[1.1] mb-10 tracking-tight font-sans uppercase">
+            <h2 className="text-white text-[32px] md:text-[40px] xl:text-[48px] font-black leading-[1.1] mb-10 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>CAPACITY STRUCTURE<br/>RADICAL RESHAPE</>
               ) : (
@@ -30,9 +30,9 @@ export const AIGCWorkflowLeft = () => {
               )}
             </h2>
 
-            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/60 text-[14px] md:text-[15px] font-sans font-light tracking-wide leading-[1.8]' : 'text-white/50 text-[17px] text-justify tracking-widest leading-[38.6px]'}`}>
+            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.7] text-[16px] md:text-[15px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
               <div className="py-2">
-                <p className={`text-white/80 ${isEn ? 'font-medium leading-[1.6]' : 'font-medium tracking-wide leading-[1.8]'}`}>
+                <p className={`text-white/50 ${isEn ? 'font-medium leading-[1.6]' : 'font-medium tracking-wide leading-[1.8]'}`}>
                   {isEn
                     ? 'The traditional "human wave tactic" can no longer cope with rapidly expanding business needs. By encapsulating brand standards and underlying logic into AI models, we have compressed the team\'s trial-and-error cycle from "weeks" to "minutes".'
                     : '传统的“人海战术”已无法应对极速扩张的业务需求。通过将品牌标准与底层逻辑封装进 AI 模型，我们将团队的试错周期从“周”级压缩到了“分钟”级。'}
@@ -67,40 +67,40 @@ export const AIGCWorkflowLeft = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className={`w-full aspect-video bg-[#0a0a0a] rounded-[24px] overflow-hidden relative group shadow-[0_20px_60px_rgba(0,0,0,0.5)] border border-white/[0.03] p-8 md:p-12 flex flex-col ${isEn ? 'font-sans' : 'font-["PingFang_SC","Microsoft_YaHei"]'}`}
+            className={`w-full aspect-video bg-[#0a0a0a] rounded-[24px] overflow-hidden relative group shadow-[0_20px_60px_rgba(0,0,0,0.5)] border border-white/[0.03] p-8 md:p-12 flex flex-col ${isEn ? 'font-sans' : 'font-puhuiti'}`}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent pointer-events-none"></div>
 
             <div className="w-full flex-1 flex flex-col relative z-10 justify-between">
 
               <div className="w-full pb-6 md:pb-8 flex items-center border-b border-white/[0.05]">
-                <div className="flex-[0.6] text-white/40 text-[12px] md:text-[13px] tracking-[0.2em]">{isEn ? 'DIMENSION' : '维度'}</div>
-                <div className="flex-1 text-white/40 text-[12px] md:text-[13px] tracking-[0.2em] pl-4">{isEn ? 'TRADITIONAL MODE' : '传统方式'}</div>
-                <div className="flex-1 text-white/40 text-[12px] md:text-[13px] tracking-[0.2em] pl-4">{isEn ? 'HYBRID ORCHESTRATION' : '混合智能体编排'}</div>
+                <div className="flex-[0.6] text-white/50 text-[14px] md:text-[15px] tracking-tighter">{isEn ? 'DIMENSION' : '维度'}</div>
+                <div className="flex-1 text-white/50 text-[14px] md:text-[15px] tracking-tighter pl-4">{isEn ? 'TRADITIONAL MODE' : '传统方式'}</div>
+                <div className="flex-1 text-white/50 text-[14px] md:text-[15px] tracking-tighter pl-4">{isEn ? 'HYBRID ORCHESTRATION' : '混合智能体编排'}</div>
               </div>
 
               <div className="w-full py-6 md:py-8 flex items-center border-b border-white/[0.05]">
-                <div className="flex-[0.6] text-white/40 text-[13px] md:text-[14px] font-light">{isEn ? 'Concept Trial Cycle' : '概念试错周期'}</div>
-                <div className="flex-1 text-white/80 text-[13px] md:text-[14px] pl-4 font-light tracking-wide">{isEn ? '~2 weeks (Manual)' : '约 2 周（人工推演与绘图）'}</div>
-                <div className="flex-1 text-[#D5B667] text-[13px] md:text-[14px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Overnight (Autonomous computing)' : '隔夜完成（算力自主演算）'}</div>
+                <div className="flex-[0.6] text-white/50 text-[13px] md:text-[14px] font-light">{isEn ? 'Concept Trial Cycle' : '概念试错周期'}</div>
+                <div className="flex-1 text-white/80 text-[15px] md:text-[16px] pl-4 font-light tracking-wide">{isEn ? '~2 weeks (Manual)' : '约 2 周（人工推演与绘图）'}</div>
+                <div className="flex-1 text-[#D5B667] text-[15px] md:text-[16px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Overnight (Autonomous computing)' : '隔夜完成（算力自主演算）'}</div>
               </div>
 
               <div className="w-full py-6 md:py-8 flex items-center border-b border-white/[0.05]">
-                <div className="flex-[0.6] text-white/40 text-[13px] md:text-[14px] font-light">{isEn ? 'Brand Guideline Exec.' : '品牌规范执行'}</div>
-                <div className="flex-1 text-white/80 text-[13px] md:text-[14px] pl-4 font-light tracking-wide">{isEn ? 'Manual check, error-prone' : '依赖人工检查，易产生视觉偏差'}</div>
-                <div className="flex-1 text-[#D5B667] text-[13px] md:text-[14px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Algorithm locked, 0 deviation' : '模型算法锁死，实现 0 偏差复用'}</div>
+                <div className="flex-[0.6] text-white/50 text-[13px] md:text-[14px] font-light">{isEn ? 'Brand Guideline Exec.' : '品牌规范执行'}</div>
+                <div className="flex-1 text-white/80 text-[15px] md:text-[16px] pl-4 font-light tracking-wide">{isEn ? 'Manual check, error-prone' : '依赖人工检查，易产生视觉偏差'}</div>
+                <div className="flex-1 text-[#D5B667] text-[15px] md:text-[16px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Algorithm locked, 0 deviation' : '模型算法锁死，实现 0 偏差复用'}</div>
               </div>
 
               <div className="w-full py-6 md:py-8 flex items-center border-b border-white/[0.05]">
-                <div className="flex-[0.6] text-white/40 text-[13px] md:text-[14px] font-light">{isEn ? 'Team Capacity Limit' : '团队产能上限'}</div>
-                <div className="flex-1 text-white/80 text-[13px] md:text-[14px] pl-4 font-light tracking-wide">{isEn ? 'Limited by team size' : '受限于团队规模与加班时长'}</div>
-                <div className="flex-1 text-[#D5B667] text-[13px] md:text-[14px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Limited by compute (Near infinite)' : '受限于算力配置（近乎无限）'}</div>
+                <div className="flex-[0.6] text-white/50 text-[13px] md:text-[14px] font-light">{isEn ? 'Team Capacity Limit' : '团队产能上限'}</div>
+                <div className="flex-1 text-white/80 text-[15px] md:text-[16px] pl-4 font-light tracking-wide">{isEn ? 'Limited by team size' : '受限于团队规模与加班时长'}</div>
+                <div className="flex-1 text-[#D5B667] text-[15px] md:text-[16px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Limited by compute (Near infinite)' : '受限于算力配置（近乎无限）'}</div>
               </div>
 
               <div className="w-full pt-6 md:pt-8 flex items-center">
-                <div className="flex-[0.6] text-white/40 text-[13px] md:text-[14px] font-light">{isEn ? 'Marginal Cost' : '单产边际成本'}</div>
-                <div className="flex-1 text-white/80 text-[13px] md:text-[14px] pl-4 font-light tracking-wide">{isEn ? 'Linear surge with business' : '随业务需求量呈线性暴增'}</div>
-                <div className="flex-1 text-[#D5B667] text-[13px] md:text-[14px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Zero Marginal Cost' : '趋近于零（Zero Marginal Cost）'}</div>
+                <div className="flex-[0.6] text-white/50 text-[13px] md:text-[14px] font-light">{isEn ? 'Marginal Cost' : '单产边际成本'}</div>
+                <div className="flex-1 text-white/80 text-[15px] md:text-[16px] pl-4 font-light tracking-wide">{isEn ? 'Linear surge with business' : '随业务需求量呈线性暴增'}</div>
+                <div className="flex-1 text-[#D5B667] text-[15px] md:text-[16px] pl-4 font-light tracking-wide opacity-90">{isEn ? 'Zero Marginal Cost' : '趋近于零（Zero Marginal Cost）'}</div>
               </div>
             </div>
 

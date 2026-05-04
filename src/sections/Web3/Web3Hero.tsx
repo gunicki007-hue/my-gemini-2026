@@ -17,18 +17,18 @@ export const Web3Hero = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'Web3 Financial Ecosystem' : 'Web3 金融生态'}
           </h4>
         </div>
 
         <h1
-          className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
               REDEFINING<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>DIGITAL</span><br />
+              DIGITAL<br />
               TRUST
             </>
           ) : (
@@ -36,7 +36,7 @@ export const Web3Hero = () => {
           )}
         </h1>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest leading-[2]'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
           {isEn
             ? "I led Crydit’s 0-to-1 launch across strategy, visual DNA, and product architecture. By applying hardcore visual noise reduction to strip away Web3 barriers, I engineered a premium, high-trust crypto management experience."
             : "我全链路操盘了 Crydit 从 0-1 的战略推演、视觉基因、产品架构及全球公关叙事。用硬核的视觉降噪剥离行业壁垒，为全球用户重构兼具“信任底座”与“高级感”的加密资管体验。"}

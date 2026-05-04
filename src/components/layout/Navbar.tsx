@@ -215,7 +215,7 @@ export const Navbar = () => {
               >
                 <polyline points="15 18 9 12 15 6"></polyline>
               </svg>
-              <span className="text-[14px] font-bold tracking-[0.2em] text-white uppercase mt-[2px]">{language === 'en' ? 'BACK' : '返回'}</span>
+              <span className="text-[16px] font-bold tracking-tighter text-white uppercase mt-[2px]">{language === 'en' ? 'BACK' : '返回'}</span>
             </button>
             
             <div className="hidden lg:flex items-center gap-4 xl:gap-8 overflow-x-auto whitespace-nowrap pl-4 border-l border-white/10 h-10 flex-1 min-w-0 hide-scrollbar">
@@ -226,7 +226,7 @@ export const Navbar = () => {
                     key={idx}
                     href={`#section-${idx}`}
                     onClick={(e) => handleSubNavClick(e, idx)}
-                    className="uppercase text-[11px] xl:text-[13px] font-bold tracking-[0.05em] xl:tracking-[0.1em] transition-all duration-500 hover:opacity-100 flex-shrink-0"
+                    className="uppercase text-[13px] xl:text-[15px] font-bold tracking-tighter xl:tracking-tighter transition-all duration-500 hover:opacity-100 flex-shrink-0"
                     style={{ color: isActive ? themeColor : 'rgba(255,255,255,0.4)' }}
                   >
                     {tab}
@@ -240,7 +240,7 @@ export const Navbar = () => {
           <div className="h-[44px] rounded-[22px] bg-[#1c1c1e]/60 backdrop-blur-2xl shadow-[0_10px_30px_rgba(0,0,0,0.6),inset_0_1px_1.5px_rgba(255,255,255,0.15)] px-6 flex items-center justify-center border border-white/5 flex-shrink-0 whitespace-nowrap">
             <button 
               onClick={toggleLanguage}
-              className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[14px] tracking-[0.2em] relative"
+              className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[16px] tracking-tighter relative"
             >
               <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>EN</span>
               <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 mt-[2px]">/</span>
@@ -271,10 +271,9 @@ export const Navbar = () => {
         onMouseEnter={() => setIsHoveringLogo(true)}
         onMouseLeave={() => setIsHoveringLogo(false)}
         className={`flex items-center tracking-[-0.02em] text-[18px] text-white cursor-pointer group flex-shrink-0 ${language === 'zh' ? 'font-["PingFang_SC","Microsoft_YaHei",sans-serif]' : 'font-sans'}`}
-        style={{ WebkitTextStroke: getLogoStroke() }}
       >
-        <span className="font-extrabold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] origin-bottom-left">NICKI</span>
-        <span className={`text-white/60 font-light tracking-normal hidden sm:inline ml-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] group-hover:text-white origin-bottom-left ${language === 'zh' ? 'text-[19px]' : 'text-[18px]'}`}>
+        <span className="font-extrabold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] group-hover:font-black origin-bottom-left">NICKI</span>
+        <span className={`text-white/60 font-light tracking-normal hidden sm:inline ml-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] group-hover:text-white group-hover:font-extrabold origin-bottom-left ${language === 'zh' ? 'text-[19px]' : 'text-[18px]'}`}>
           / {language === 'zh' ? 'AI赋能设计' : 'DESIGN × AI'}
         </span>
       </button>
@@ -285,7 +284,7 @@ export const Navbar = () => {
           const isProjects = key === 'projects';
           const isContact = key === 'contact';
           // 纯粹的 Hover 态，祛除点击后的顽固胶囊常驻
-          const textClass = `relative z-10 flex items-center uppercase transition-all duration-300 ${language === 'en' ? 'text-[15px] tracking-[0.1em]' : 'text-[16px] tracking-wider'} ${isContact ? 'text-[#E3E3E3] hover:text-[#E3E3E3] hover:text-[1.02em]' : 'text-white/60 hover:text-white hover:text-[1.02em]'}`;
+          const textClass = `relative z-10 flex items-center uppercase transition-all duration-300 ${language === 'en' ? 'text-[15px] tracking-tighter' : 'text-[16px] tracking-wider'} ${isContact ? 'text-[#E3E3E3] hover:text-[#E3E3E3] hover:text-[1.02em]' : 'text-white/60 hover:text-white hover:text-[1.02em]'}`;
 
           return (
             <div key={key} className="relative group flex items-center h-full cursor-pointer">
@@ -312,7 +311,7 @@ export const Navbar = () => {
                       <Link 
                         key={idx} 
                         to={projectLinks[idx]} 
-                        className={`block px-4 py-3 text-white/60 hover:text-white hover:bg-[#2A2A2E]/50 rounded-xl transition-colors text-center ${language === 'en' ? 'text-[12px] tracking-wide' : 'text-[13px] tracking-wider'}`}
+                        className={`block px-4 py-3 text-white/60 hover:text-white hover:bg-[#2A2A2E]/50 rounded-xl transition-colors text-center ${language === 'en' ? 'text-[14px] tracking-wide' : 'text-[15px] tracking-wider'}`}
                       >
                         {cat}
                       </Link>
@@ -328,7 +327,7 @@ export const Navbar = () => {
       {/* i18n Toggle */}
       <button 
         onClick={toggleLanguage}
-        className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[14px] tracking-[0.2em] relative flex-shrink-0 whitespace-nowrap"
+        className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[16px] tracking-tighter relative flex-shrink-0 whitespace-nowrap"
       >
         <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>EN</span>
         <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 mt-[2px]">/</span>

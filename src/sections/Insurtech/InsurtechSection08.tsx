@@ -20,7 +20,7 @@ export const InsurtechSection08 = () => {
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '04 / OMNICHANNEL MARKETING VISUALS' : '04 / 全域营销视觉'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />
@@ -28,13 +28,13 @@ export const InsurtechSection08 = () => {
          
          {/* Title */}
          <h2 
-           className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? "MARKETING ASSET" : "营销视觉资产库"}
          </h2>
          
          {/* Description */}
-         <p className={`mt-4 w-full max-w-[600px] text-white/50 text-pretty ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest sm:tracking-wider xl:tracking-widest leading-[2]'}`}>
+         <p className={`mt-4 w-full max-w-[600px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
            {isEn 
              ? "Building an omnichannel visual matrix. Producing diverse, premium KVs to break stylistic limits and comprehensively drive business conversions."
              : "构建全域营销视觉矩阵。产出多风格高质 KV，打破单一视觉局限，全面支撑大盘商业转化。"}
@@ -85,11 +85,11 @@ export const InsurtechSection08 = () => {
             <div className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-[#050505]/80 to-transparent pointer-events-none z-10" />
             
             <div className="absolute top-4 right-4 md:top-6 md:right-6 border border-white/20 bg-black/40 backdrop-blur-md px-3 py-1.5 md:px-4 md:py-2 rounded-full z-20 pointer-events-none">
-              <span className={`text-white/90 leading-none block ${isEn ? 'text-[11px] md:text-[12px] font-bold tracking-wider uppercase' : 'text-[12px] md:text-[14px] font-medium tracking-widest'}`}>
+              <span className={`text-white/50`}>
                 {isEn ? item.en : item.cn}
               </span>
             </div>
-            <div className="absolute inset-0 border border-white/10 rounded-[16px] md:rounded-[24px] pointer-events-none z-20" />
+            
           </div>
         ))}
       </motion.div>

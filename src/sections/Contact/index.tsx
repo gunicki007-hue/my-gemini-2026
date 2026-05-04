@@ -21,7 +21,7 @@ export const Contact = () => {
       {/* Central Block (Shifted up 130px) */}
       <div className="w-full max-w-[620px] flex flex-col items-center z-10 -translate-y-[130px]">
         <h2 
-          className="text-5xl md:text-[72px] font-black tracking-tighter leading-none mb-12 uppercase font-sans"
+          className={`uppercase ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-12`}
         >
           {isEn ? 'CONTACT' : '联系我'}
         </h2>
@@ -35,17 +35,17 @@ export const Contact = () => {
           {/* Left Text Detail List */}
           <ul className="flex flex-col space-y-5 text-[16px] md:text-[18px] font-normal tracking-wide w-full md:w-auto items-center md:items-start">
             <li className="flex items-center w-full justify-between md:justify-start">
-              <span className="w-20 md:w-24 text-white/40 font-light">{isEn ? 'Email' : '邮箱'}</span>
+              <span className="w-20 md:w-24 text-white/50 font-light">{isEn ? 'Email' : '邮箱'}</span>
               <a href="mailto:gunicki007@gmail.com" className="font-bold text-white hover:text-white/70 transition-colors tracking-tight">
                 gunicki007@gmail.com
               </a>
             </li>
             <li className="flex items-center w-full justify-between md:justify-start">
-              <span className="w-20 md:w-24 text-white/40 font-light">{isEn ? 'Phone' : '电话'}</span>
+              <span className="w-20 md:w-24 text-white/50 font-light">{isEn ? 'Phone' : '电话'}</span>
               <span className="font-bold text-white tracking-tight">+86 15801905482</span>
             </li>
             <li className="flex items-center w-full justify-between md:justify-start pt-1">
-              <span className="w-20 md:w-24 text-white/40 font-light">{isEn ? 'WeChat' : '微信'}</span>
+              <span className="w-20 md:w-24 text-white/50 font-light">{isEn ? 'WeChat' : '微信'}</span>
               <div className="flex flex-1 justify-between items-center md:gap-14">
                   <span className="font-bold text-white tracking-tight">
                     {isEn ? 'Scan QR to add' : '扫二维码添加'}
@@ -67,7 +67,7 @@ export const Contact = () => {
              />
              {/* Inner placeholder visual if image is missing */}
              <div className="absolute inset-[6px] flex items-center justify-center -z-10 border border-black/10 border-dashed rounded-[10px]">
-               <span className="text-[10px] text-black/30 tracking-widest uppercase">QR</span>
+               <span className="text-[12px] text-black/30 tracking-[0.15em] uppercase font-bold">QR</span>
              </div>
           </div>
 
@@ -75,7 +75,7 @@ export const Contact = () => {
       </div>
 
       {/* Copyright */}
-      <div className="absolute bottom-[150px] left-0 w-full flex justify-center text-white/40 text-[15px] md:text-[17px] tracking-widest font-normal font-sans z-10">
+      <div className="absolute bottom-[150px] left-0 w-full flex justify-center text-white/50 text-[15px] md:text-[17px] tracking-widest font-normal font-sans z-10">
         © 2026 NICKI GU
       </div>
 

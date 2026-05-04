@@ -11,9 +11,9 @@ export const Footer = () => {
         
         {/* Left Block: Logo & Experience Tag */}
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
-          <span className="text-[24px] md:text-[26px] font-black tracking-widest leading-none font-sans">NICKI</span>
+          <span className="text-[24px] md:text-[26px] font-bold tracking-tighter leading-none font-sans">NICKI</span>
           <span className="hidden md:block w-[1px] h-[18px] bg-white/20"></span>
-          <span className="text-[13px] md:text-[14px] text-white/90 font-normal tracking-wide">
+          <span className="text-[15px] md:text-[16px] text-white/90 font-normal tracking-wide">
             {isEn ? '12 Years Product & Brand System Design Experience' : '12 年产品与品牌系统设计经验'}
           </span>
         </div>
@@ -25,14 +25,14 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-10 md:gap-16 md:mr-[50px]">
             {/* Contact Label (Arrow) */}
             <div className="hidden md:flex items-center gap-8">
-              <span className="text-[14px] text-white font-bold tracking-widest uppercase">
+              <span className="text-[16px] text-white font-bold tracking-widest uppercase">
                 {isEn ? 'CONTACT' : '联系我'}
               </span>
               <span className="text-white/40 text-[12px]">▶</span>
             </div>
 
             {/* Contact Information List */}
-            <ul className="flex flex-col space-y-3.5 text-[13px] md:text-[14px] font-normal tracking-wide">
+            <ul className="flex flex-col space-y-3.5 text-[15px] md:text-[16px] font-normal tracking-wide">
               <li className="flex items-center">
                 <span className="w-16 md:w-20 text-white/50">{isEn ? 'Email' : '邮箱'}</span>
                 <a href="mailto:gunicki007@gmail.com" className="font-bold text-white hover:text-white/70 transition-colors">
@@ -62,7 +62,7 @@ export const Footer = () => {
              />
              {/* Inner placeholder visual if image is missing */}
              <div className="absolute inset-[4px] flex items-center justify-center -z-10 border border-black/10 border-dashed rounded-[8px]">
-               <span className="text-[10px] text-black/30 tracking-widest uppercase">QR</span>
+               <span className="text-[12px] text-black/30 tracking-[0.15em] uppercase font-bold">QR</span>
              </div>
           </div>
 

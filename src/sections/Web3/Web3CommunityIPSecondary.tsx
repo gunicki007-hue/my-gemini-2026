@@ -121,25 +121,25 @@ export const Web3CommunityIPSecondary = () => {
       >
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '05 / COMMUNITY & IP' : '05 / 社区生态与 IP'}
             </h4>
          </div>
          
          <h2 
-           className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
                Event Engagement<br/>
-               <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>Catalyst</span>
+               Catalyst
              </>
            ) : (
              <>运营情绪<br />催化剂</>
            )}
          </h2>
          
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest leading-[2]'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
            {isEn 
              ? "Leveraging IP visuals to amplify event emotions. Translating dry operational rules into high-stickiness interactions to aggressively boost user engagement."
              : "在运营活动时，用 IP 视觉渲染活动情绪，将枯燥的运营规则转译为高粘性互动，提升用户的参与活跃度。"}

@@ -19,7 +19,7 @@ export const Web3VisualIdentity = () => {
         {/* Tag matching Screen 1 */}
         <div className="flex items-center gap-4 mb-6">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? '01 / Visual Identity' : '01 / 视觉识别系统'}
           </h4>
           <div className="w-16 h-[1px] bg-white/30" />
@@ -27,12 +27,12 @@ export const Web3VisualIdentity = () => {
 
         {/* Large Centered Title */}
         <h2
-          className={`text-center uppercase leading-none tracking-tighter w-full max-w-[1200px] ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+          className={`text-center uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
               EASILY ADAPT<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>TO ALL BRAND</span><br />
+              TO ALL BRAND<br />
               TOUCH POINTS
             </>
           ) : (
@@ -65,7 +65,7 @@ export const Web3VisualIdentity = () => {
           >
             {/* Background Architectural Grey Box with Grid */}
             <div 
-              className="absolute inset-0 bg-[#0a0a0a] border border-white/5 shadow-2xl z-0 overflow-hidden"
+              className="absolute inset-0 bg-[#0a0a0a] shadow-2xl z-0 overflow-hidden"
               style={{
                 /* Subtle grid pattern on the grey block */
                 backgroundImage: `

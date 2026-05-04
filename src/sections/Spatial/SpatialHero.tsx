@@ -17,18 +17,18 @@ export const SpatialHero = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'BRAND SPACE & EXPERIENCE DESIGN' : '品牌空间与体验设计'}
           </h4>
         </div>
 
         <h1
-          className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[94px] font-black font-sans tracking-tight leading-[1.1]' : 'text-[90px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
               DELIVERING<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>SPACE &</span><br />
+              SPACE &
               RESONANCE
             </>
           ) : (
@@ -36,7 +36,7 @@ export const SpatialHero = () => {
           )}
         </h1>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[17px] text-justify tracking-widest leading-[38.6px]'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
           {isEn
             ? <>An outstanding offline experience is not just the physical realization of spatial design, but the three-dimensional extension of brand values.<br /><br />From the rigorous execution control of massive ceremonies to cross-border philanthropic insights, I deeply coordinate the entire delivery chain. This ensures that the design achieves a 100% hardcore landing amidst complex materials and AV effects, while dedicating to building profound humanistic warmth for the brand through authentic emotional resonance.</>
             : <>优秀的线下体验，不仅是空间设计的物理还原，更是品牌价值观的三维延伸。<br /><br />从万级盛典的严苛落地把控，到跨越国界的公益人文洞察。我深度统筹全案交付链路，不仅确保设计在声光电与复杂材质中实现 100% 的硬核着陆，更致力于用真实的情绪共鸣，为品牌构建具有厚度的人文温度。</>}

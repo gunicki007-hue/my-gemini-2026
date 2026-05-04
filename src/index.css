@@ -22,14 +22,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: var(--font-sans);
-    overflow-wrap: break-word;
-    word-break: keep-all;
-    hyphens: auto;
-  }
-  
-  h1, h2, h3, h4, h5, h6, p {
-    overflow-wrap: break-word;
-    hyphens: auto;
   }
 
   /* Language Specific Font Handling */
@@ -38,6 +30,13 @@
   }
 
   body:lang(en), .lang-en {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Exceptions that remain Space Grotesk in English */
+  body:lang(en) header, .lang-en header, 
+  body:lang(en) :where(#contact), .lang-en :where(#contact), 
+  body:lang(en) :where(.italic), .lang-en :where(.italic) {
     font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 }
@@ -66,5 +65,13 @@
 @keyframes metallic-silver {
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
+}
+
+/* Unify grey color of selected elements according to user request */
+div#root:nth-of-type(1) > div:nth-of-type(1) > main:nth-of-type(1) > div#section-0:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1),
+div#root:nth-of-type(1) > div:nth-of-type(1) > main:nth-of-type(1) > div#section-1:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(2),
+div#root:nth-of-type(1) > div:nth-of-type(1) > main:nth-of-type(1) > div#section-1:nth-of-type(2) > section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(3),
+div#root:nth-of-type(1) > div:nth-of-type(1) > main:nth-of-type(1) > div#section-2:nth-of-type(3) > section:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
