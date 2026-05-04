@@ -34,7 +34,7 @@ export const SpatialSection01 = () => {
             </h3>
 
             <div className="space-y-6">
-              <p className="text-white/50 text-[12px] leading-[1.6]">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? (
                   <>Stripped of screen protection, offline space is the ultimate defense line testing design orchestration. I treat every Campaign as a precision battle against physical variables.</>
                 ) : (
@@ -42,7 +42,7 @@ export const SpatialSection01 = () => {
                 )}
               </p>
               
-              <div className={`pt-4 ${isEn ? 'text-white/50 text-[12px] md:text-[14px] leading-[1.6]' : 'text-white/50 text-[12px] md:text-[14px] leading-[32px] md:leading-[36px] tracking-widest text-justify'}`}>
+              <div className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}` + " pt-4"}>
                 {isEn ? (
                   "From irregular mega-structures for 10,000 attendees to highly constrained international agile booths. Through strict supply chain scheduling and audio-visual control, we break the industry barrier of 'renders for reference only', ensuring 100% absolute landing of the brand visual strategy."
                 ) : (
@@ -69,7 +69,7 @@ export const SpatialSection01 = () => {
                 <span className="font-mono slashed-zero text-[12px]">01</span>
                 {isEn ? '/ VISUAL STRATEGY DEDUCTION · ESTABLISHING CAMPAIGN CORE VISUAL BASE' : '/ 视觉策略推演 · 确立CAMPAIGN 核心视觉基座'}
               </span>
-              <p className="text-white/50 text-[12px] leading-[1.6]">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? 'With minimalist color tension and super symbols, we complete the visual tone-setting of the brand strategy from digital assets to large-scale launch event screens.' : '以极简的色彩张力与超级符号，完成品牌战略从数字资产到大型发布会屏幕的视觉定调。'}
               </p>
             </div>
@@ -95,7 +95,7 @@ export const SpatialSection01 = () => {
                 <span className="font-mono slashed-zero text-[12px]">02</span>
                 {isEn ? '/ FULL-DOMAIN LANDING · MACRO COORDINATION & AGILE DEPLOYMENT' : '/ 全域落地 · 巨构统筹与敏捷部署'}
               </span>
-              <p className="text-white/50 text-[12px] leading-[1.6]">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? 'Transcending spatial scale barriers. From complex irregular structures and AV restoration for massive ceremonies to modular rapid deployment for international summits, overcoming physical constraints to achieve high-precision delivery across all scenarios.' : '跨越空间尺度的壁垒。从万人盛典的复杂异形结构与声光电还原，到国际行业峰会的模块化极速布展，无视物理制约，实现全场景的高精度交付。'}
               </p>
             </div>

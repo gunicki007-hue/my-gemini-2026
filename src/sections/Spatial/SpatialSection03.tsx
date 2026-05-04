@@ -33,8 +33,8 @@ export const SpatialSection03 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/50 text-[12px] md:text-[14px] font-sans font-light tracking-wide leading-[1.6]' : 'text-white/50 text-[12px] md:text-[14px] text-justify tracking-widest leading-[36px]'}`}>
-              <p className="text-white/50 text-[12px] leading-[1.6]">
+            <div className="space-y-6">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? (
                   <>Beyond spatial planning and physical execution lies the ultimate goal: emotional connection.<br />I ensure every spatial project reflects genuine humanistic warmth.</>
                 ) : (
@@ -42,7 +42,7 @@ export const SpatialSection03 = () => {
                 )}
               </p>
               
-              <p className="leading-[30px] md:leading-[36px]">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? (
                   "Whether through philanthropic insights or cultural integration, weaving a coherent narrative transforms a mere physical location into a living brand sanctuary."
                 ) : (
@@ -68,7 +68,7 @@ export const SpatialSection03 = () => {
                 <span className="font-mono slashed-zero text-[12px]">01</span>
                 {isEn ? '/ CULTURAL INTEGRATION & INSIGHT' : '/ 文化融合与情感洞察'}
               </span>
-              <p className="text-white/50 text-[12px] leading-[1.6]">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? 'Weaving a coherent narrative transforms a physical location into a living brand sanctuary.' : '将连贯的生命力叙事注入空间，才能将其从单纯的物理场所，升华为鲜活的品牌阵地。'}
               </p>
             </div>

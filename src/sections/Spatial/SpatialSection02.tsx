@@ -33,8 +33,8 @@ export const SpatialSection02 = () => {
               )}
             </h3>
 
-            <div className={`space-y-8 ${isEn ? 'text-white/50 font-sans font-light tracking-wide' : 'text-white/50 text-justify tracking-widest'}`}>
-              <p className="text-white/50 text-[12px] leading-[1.6]">
+            <div className="space-y-8">
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? (
                   <>Indoor spaces pursue pixel-level absolute control,<br />while the outdoor wilderness tests systemic resilience against natural variables.</>
                 ) : (
@@ -42,7 +42,7 @@ export const SpatialSection02 = () => {
                 )}
               </p>
               
-              <p className={`leading-[30px] md:leading-[36px] ${isEn ? 'text-[14px] md:text-[16px]' : 'text-[14px] md:text-[16px]'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? (
                   "In the \"Sunflowers Bloom\" Danxia Charity Run, I coordinated a multi-kilometer full-scenario visual coverage."
                 ) : (
@@ -50,7 +50,7 @@ export const SpatialSection02 = () => {
                 )}
               </p>
 
-              <p className={`leading-[30px] md:leading-[36px] ${isEn ? 'text-[14px] md:text-[16px]' : 'text-[14px] md:text-[16px]'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                 {isEn ? (
                   "Focusing on high-intensity sunlight and wind pressure environments, I deeply intervened in the weather-resistance testing and material selection of outdoor materials. Through an extremely rigorous full-track wayfinding system and emotional node design, we connected scattered natural landscapes into a complete brand narrative trajectory, ensuring thousands of runners still feel solid brand warmth in extreme environments."
                 ) : (
@@ -78,7 +78,7 @@ export const SpatialSection02 = () => {
                   <span className="font-mono slashed-zero text-[12px]">01</span>
                   {isEn ? '/ OUTDOOR REAL-WORLD COORDINATION · BUILDING FULL-LINK CSR EXPERIENCE' : '/ 户外实境统筹 · 构建全链路 CSR 体验'}
                 </span>
-                <p className="text-white/50 text-[12px] leading-[1.6]">
+                <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
                   {isEn ? 'Breaking through constraints of natural variables, deeply controlling the full-domain visual wayfinding from the main venue macro-structure and sponsor matrix to the multi-kilometer track. Transforming the brand\'s charity concept into a highly cohesive physical immersive experience.' : '突破自然变量限制，深度管控从主会场巨构、赞助商矩阵到数公里赛道的全域视觉导视。将品牌公益理念转化为高凝聚力的实体沉浸体验。'}
                 </p>
               </div>
