@@ -17,7 +17,7 @@ export const Web3Outro = () => {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="flex flex-col items-center text-center z-10 -mt-28"
       >
-        <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 ${isEn ? 'uppercase tracking-tighter text-[24px] md:text-[32px] font-sans font-black' : 'tracking-tighter text-[24px] md:text-[30px] font-puhuiti font-black'}`}>
+        <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 ${isEn ? 'uppercase tracking-tighter text-[22px] md:text-[30px] font-sans font-black' : 'tracking-tighter text-[22px] md:text-[28px] font-puhuiti font-black'}`}>
           {isEn ? "Design as Leverage for Web3 Growth" : "以设计为杠杆 · 撬动 Web3 商业增长 "}
         </h2>
         
@@ -38,7 +38,7 @@ export const Web3Outro = () => {
           >
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
-          <span className="text-[16px] md:text-[15px] font-bold tracking-tighter uppercase mt-[1px]">
+          <span className="text-[14px] md:text-[13px] font-bold tracking-tighter uppercase mt-[1px]">
             {isEn ? 'BACK' : '返回项目列表'}
           </span>
         </button>

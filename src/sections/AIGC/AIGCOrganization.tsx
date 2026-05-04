@@ -18,11 +18,11 @@ export const AIGCOrganization = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="text-white/50 text-[14px] md:text-[16px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
+            <div className="text-white/50 text-[12px] md:text-[14px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
               {isEn ? 'ORGANIZATIONAL EVOLUTION' : '组织架构进化'}
             </div>
             
-            <h2 className="text-white text-[32px] md:text-[40px] xl:text-[48px] font-black leading-[1.1] mb-10 tracking-tighter font-sans uppercase">
+            <h2 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-10 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>FROM MANUAL<br/>TO COMPUTE</>
               ) : (
@@ -30,7 +30,7 @@ export const AIGCOrganization = () => {
               )}
             </h2>
 
-            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.7] text-[16px] md:text-[15px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
               <div className="py-2">
                 <p>
                   {isEn 

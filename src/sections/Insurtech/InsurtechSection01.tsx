@@ -20,7 +20,7 @@ export const InsurtechSection01 = () => {
         >
            {/* Tag */}
            <div className="flex items-center gap-4 mb-8">
-              <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+              <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
                 {isEn ? '01 / BRAND VISUAL UPGRADE' : '01 / 品牌视觉升维'}
               </h4>
               <div className="w-16 h-[1px] bg-white/30" />
@@ -28,7 +28,7 @@ export const InsurtechSection01 = () => {
            
            {/* Title */}
            <h2 
-             className={`uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+             className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
            >
              {isEn ? (
                <>
@@ -41,7 +41,7 @@ export const InsurtechSection01 = () => {
            </h2>
            
            {/* Description */}
-           <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+           <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
              {isEn 
                ? "Redefining the legacy VI system. Elevating professional quality while retaining visual affinity."
                : "重新规范旧版 VI 体系。让品牌在保持视觉亲和力的前提下，呈现出更高级的专业质感。"}
@@ -70,7 +70,7 @@ export const InsurtechSection01 = () => {
           
           {/* Legacy VI Tag */}
           <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-black/60 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full z-20 flex items-center justify-center">
-            <span className="text-white/80 text-[14px] md:text-[15px] tracking-widest font-bold uppercase">
+            <span className="text-white/80 text-[12px] md:text-[13px] tracking-widest font-bold uppercase">
               {isEn ? 'Legacy VI' : '旧版 VI'}
             </span>
           </div>
@@ -96,7 +96,7 @@ export const InsurtechSection01 = () => {
           
           {/* New VI Tag */}
           <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-[#4DB0FF]/80 backdrop-blur-md border border-[#4DB0FF] px-5 py-2 rounded-full z-20 flex items-center justify-center">
-            <span className="text-white text-[14px] md:text-[15px] tracking-widest font-bold uppercase">
+            <span className="text-white text-[12px] md:text-[13px] tracking-widest font-bold uppercase">
               {isEn ? 'New VI System' : '全新 VI'}
             </span>
           </div>

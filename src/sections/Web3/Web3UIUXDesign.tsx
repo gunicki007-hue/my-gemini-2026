@@ -19,13 +19,13 @@ export const Web3UIUXDesign = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
             {isEn ? '04 / UI/UX DESIGN' : '04 / UI/UX 设计'}
           </h4>
         </div>
 
         <h2
-          className={`uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
@@ -37,7 +37,7 @@ export const Web3UIUXDesign = () => {
           )}
         </h2>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
           {isEn
             ? "Nailing decentralized asset experiences. Using interface noise reduction to deliver seamless user flows while satisfying strict compliance and business logic."
             : "打造去中心化资管体验。在兼顾严苛合规与业务逻辑的前提下，通过界面级降噪，兑现极致流畅的交互流转。"}

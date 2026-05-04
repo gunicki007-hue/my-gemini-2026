@@ -65,9 +65,9 @@ export const Insurtech = () => {
 
             {/* Left Box (Title & Desc) */}
             <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 z-10 w-full xl:w-auto">
-              <span className="text-4xl md:text-[40px] font-bold tracking-tighter text-white uppercase font-sans">NICKI</span>
+              <span className="text-4xl md:text-[38px] font-bold tracking-tighter text-white uppercase font-sans">NICKI</span>
               <div className="hidden md:block w-[1px] h-8 bg-white/10"></div>
-              <span className="text-[16px] md:text-[15px] text-white/50 tracking-[0.15em] font-light font-sans whitespace-nowrap">
+              <span className="text-[12px] md:text-[11px] text-white/50 tracking-[0.15em] font-light font-sans whitespace-nowrap">
                 {isEn ? '12 Years of Product & Brand System Design' : '12年产品与品牌系统设计经验'}
               </span>
             </div>
@@ -75,16 +75,16 @@ export const Insurtech = () => {
             {/* Middle Box (CTA) */}
             <div className="flex xl:flex-1 w-full xl:w-auto justify-start xl:justify-center z-10">
               <a href="mailto:gunicki007@gmail.com" className="flex items-center gap-6 cursor-pointer group/btn">
-                <span className="text-[15px] md:text-[16px] font-bold tracking-[0.15em] text-[#4DB0FF] group-hover/btn:text-white transition-colors duration-500 uppercase">
+                <span className="text-[13px] md:text-[14px] font-bold tracking-[0.15em] text-[#4DB0FF] group-hover/btn:text-white transition-colors duration-500 uppercase">
                   {isEn ? 'CONTACT ME' : '联系我'}
                 </span>
-                <span className="text-[#4DB0FF] text-[12px] transform scale-x-[1.2] group-hover/btn:translate-x-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/btn:text-white">▶</span>
+                <span className="text-[#4DB0FF] text-[10px] transform scale-x-[1.2] group-hover/btn:translate-x-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover/btn:text-white">▶</span>
               </a>
             </div>
 
             {/* Right Box (Contact Details & QR) */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-12 w-full xl:w-auto justify-start xl:justify-end z-10">
-               <div className="flex flex-col gap-3 text-[15px] md:text-[16px] tracking-wider text-white/40 font-light min-w-[260px]">
+               <div className="flex flex-col gap-3 text-[13px] md:text-[14px] tracking-wider text-white/40 font-light min-w-[260px]">
                   <div className="flex justify-between items-center w-full">
                     <span className="w-16 text-left opacity-70">{isEn ? 'Email' : '邮箱'}</span>
                     <span className="text-white font-medium text-right flex-1 select-all">gunicki007@gmail.com</span>

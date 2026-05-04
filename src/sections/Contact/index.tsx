@@ -21,7 +21,7 @@ export const Contact = () => {
       {/* Central Block (Shifted up 130px) */}
       <div className="w-full max-w-[620px] flex flex-col items-center z-10 -translate-y-[130px]">
         <h2 
-          className={`uppercase ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-12`}
+          className={`uppercase ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-12`}
         >
           {isEn ? 'CONTACT' : '联系我'}
         </h2>
@@ -33,7 +33,7 @@ export const Contact = () => {
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-0 px-2 md:px-0">
           
           {/* Left Text Detail List */}
-          <ul className="flex flex-col space-y-5 text-[16px] md:text-[18px] font-normal tracking-wide w-full md:w-auto items-center md:items-start">
+          <ul className="flex flex-col space-y-5 text-[14px] md:text-[16px] font-normal tracking-wide w-full md:w-auto items-center md:items-start">
             <li className="flex items-center w-full justify-between md:justify-start">
               <span className="w-20 md:w-24 text-white/50 font-light">{isEn ? 'Email' : '邮箱'}</span>
               <a href="mailto:gunicki007@gmail.com" className="font-bold text-white hover:text-white/70 transition-colors tracking-tight">
@@ -50,7 +50,7 @@ export const Contact = () => {
                   <span className="font-bold text-white tracking-tight">
                     {isEn ? 'Scan QR to add' : '扫二维码添加'}
                   </span>
-                  <span className="text-white/30 text-[10px] transform scale-x-[1.2]">▶</span>
+                  <span className="text-white/30 text-[8px] transform scale-x-[1.2]">▶</span>
               </div>
             </li>
           </ul>
@@ -67,7 +67,7 @@ export const Contact = () => {
              />
              {/* Inner placeholder visual if image is missing */}
              <div className="absolute inset-[6px] flex items-center justify-center -z-10 border border-black/10 border-dashed rounded-[10px]">
-               <span className="text-[12px] text-black/30 tracking-[0.15em] uppercase font-bold">QR</span>
+               <span className="text-[10px] text-black/30 tracking-[0.15em] uppercase font-bold">QR</span>
              </div>
           </div>
 
@@ -75,7 +75,7 @@ export const Contact = () => {
       </div>
 
       {/* Copyright */}
-      <div className="absolute bottom-[150px] left-0 w-full flex justify-center text-white/50 text-[15px] md:text-[17px] tracking-widest font-normal font-sans z-10">
+      <div className="absolute bottom-[150px] left-0 w-full flex justify-center text-white/50 text-[13px] md:text-[15px] tracking-widest font-normal font-sans z-10">
         © 2026 NICKI GU
       </div>
 

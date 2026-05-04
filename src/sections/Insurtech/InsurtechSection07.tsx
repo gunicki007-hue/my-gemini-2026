@@ -20,7 +20,7 @@ export const InsurtechSection07 = () => {
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '03 / AI-DRIVEN CONVERSION' : '03 / AI 驱动转化'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />
@@ -28,7 +28,7 @@ export const InsurtechSection07 = () => {
          
          {/* Title */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -40,7 +40,7 @@ export const InsurtechSection07 = () => {
          </h2>
          
          {/* Description */}
-         <p className={`mt-8 w-full max-w-[600px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-center'}`}>
+         <p className={`mt-8 w-full max-w-[600px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-center'}`}>
            {isEn 
              ? "Anniversary campaign. Integrating AI into core KV creation to empower operations and deliver high conversion."
              : "以周年庆大促为例。将 AI 深度融入核心 KV 创制，全面赋能运营执行，兑现业务高转化。"}
@@ -91,7 +91,7 @@ export const InsurtechSection07 = () => {
         >
           {/* Section Marker */}
           <div className="flex items-center gap-4 mb-6 md:mb-8">
-            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '03 / AI GENERATION' : '03 / AI 赋能生成'}
             </h4>
             <div className="flex-1 max-w-[48px] h-[1px] bg-white/30" />
@@ -99,7 +99,7 @@ export const InsurtechSection07 = () => {
 
           {/* Title */}
           <h3 
-             className={`uppercase w-full mb-6 md:mb-8 break-words hyphens-auto ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+             className={`uppercase w-full mb-6 md:mb-8 break-words hyphens-auto ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
           >
             {isEn ? (
               <>Rapid Prototyping</>
@@ -109,7 +109,7 @@ export const InsurtechSection07 = () => {
           </h3>
           
           {/* Description */}
-          <p className={`w-full text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+          <p className={`w-full text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
             {isEn 
               ? "Bridging design and technology to accelerate creative output without sacrificing quality. AI acts as a creative multiplier, transforming campaign ideas into highly polished visual assets efficiently."
               : "将 AI 算法深度融入大促的链路设计，通过智能化生成，大幅缩短核心视觉及运营物料的制图周期，释放创意产能与业务效能。"}
@@ -129,14 +129,14 @@ export const InsurtechSection07 = () => {
           {/* Section Marker */}
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '03 / AI GENERATED KV' : '03 / AI 生成 KV'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />
           </div>
 
           <h3 
-             className={`text-center uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+             className={`text-center uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
           >
             {isEn ? (
               <>Campaign KV</>

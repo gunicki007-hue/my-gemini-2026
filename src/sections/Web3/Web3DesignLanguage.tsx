@@ -37,14 +37,14 @@ export const Web3DesignLanguage = () => {
          {/* Tag matching Screen 1 & 2 styles */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '01 / Customised Font & Icon' : '01 / 视觉识别系统'}
             </h4>
          </div>
          
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -58,7 +58,7 @@ export const Web3DesignLanguage = () => {
          </h2>
          
          {/* Secondary paragraph placeholder */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.7] text-[15px] xl:text-[17px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
            {isEn 
              ? "Establishing Crydit’s foundational DNA: utilizing a standardized geometric symbol system to translate abstract financial concepts into tangible visual outcomes."
              : "确立 Crydit 底层视觉基因，通过规范的几何符号体系，将抽象的金融业务具象化落地。"}

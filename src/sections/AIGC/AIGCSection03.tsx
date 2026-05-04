@@ -18,11 +18,11 @@ export const AIGCSection03 = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="text-[#D5B667] text-[14px] md:text-[16px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
+            <div className="text-[#D5B667] text-[12px] md:text-[14px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
               {isEn ? 'CASE 01 · EASPAY' : 'CASE 01 · EASPAY'}
             </div>
             
-            <h2 className={`mb-10 xl:mb-12 text-white font-sans font-black uppercase tracking-tighter leading-[1.1] tracking-tighter ${isEn ? 'text-[32px] md:text-[40px] xl:text-[48px]' : 'text-[32px] md:text-[40px] xl:text-[48px]'}`}>
+            <h2 className={`mb-10 xl:mb-12 text-white font-sans font-black uppercase tracking-tighter leading-[1.1] tracking-tighter ${isEn ? 'text-[30px] md:text-[38px] xl:text-[46px]' : 'text-[30px] md:text-[38px] xl:text-[46px]'}`}>
               {isEn ? (
                 <>CLARIFY LOGIC<br/>BEFORE UI</>
               ) : (
@@ -30,7 +30,7 @@ export const AIGCSection03 = () => {
               )}
             </h2>
 
-            <div className={`flex flex-col gap-8 w-full max-w-[500px] ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.7] text-[16px] md:text-[15px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+            <div className={`flex flex-col gap-8 w-full max-w-[500px] ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
               <p>
                 {isEn 
                   ? 'Web3 payments are intricately complex, involving cross-chain fund flows and extremely high compliance thresholds. If designers only step in at the very end to "beautify the pages", they often become detached from the actual business, resulting in repeated teardowns and rebuilds during the development phase.' 

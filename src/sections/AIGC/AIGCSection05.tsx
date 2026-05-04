@@ -20,11 +20,11 @@ export const AIGCSection05 = () => {
           >
             <div className="flex items-center gap-4 mb-8 md:mb-12">
               <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-              <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+              <h4 className="text-[#D5B667] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
                 {isEn ? 'CASE 02 · ABSOLUTE CONTROL · TASAKI' : 'CASE 02 · 绝对控制 · TASAKI'}
               </h4>
             </div>
-            <h3 className="text-white text-[32px] md:text-[40px] xl:text-[48px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
+            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>HIGH LUXURY EXTREMES <br />PIXEL-LEVEL PARANOID CONTROL</>
               ) : (
@@ -32,7 +32,7 @@ export const AIGCSection05 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.7] text-[16px] md:text-[15px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[17px] text-justify'}`}>
+            <div className={`space-y-6 ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
               <p className="text-white/50 font-medium">
                 {isEn ? (
                   <>I no longer view AI as a tool for early inspiration brainstorming,<br />but have reshaped it into a production engine for precisely resolving high-luxury textures.</>
@@ -99,11 +99,11 @@ export const AIGCSection05 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[14px]">01</span>
+              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[12px]">01</span>
                 {isEn ? 'EXTREME LIGHT & SHADOW ATMOSPHERE' : '极致光影氛围图'}
               </span>
-              <p className="text-white text-[15px] md:text-[17px] font-normal tracking-wide">
+              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Subverting traditional material rendering bottlenecks, pushing the limit of restoring the warm iridescent feel of South Sea pearls and the physical refraction of precious metals.' : '颠覆传统材质渲染瓶颈，极限还原澳白级珍珠虹彩温润感与贵金属的物理级折射。'}
               </p>
             </div>
@@ -118,7 +118,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
+                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Optical Calculation' : '物理级光学解算'}
                 </span>
               </div>
@@ -145,11 +145,11 @@ export const AIGCSection05 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[14px]">02</span>
+              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[12px]">02</span>
                 {isEn ? 'CORE PRODUCT COMMERCIAL POSTER' : '核心单品出街海报'}
               </span>
-              <p className="text-white text-[15px] md:text-[17px] font-normal tracking-wide">
+              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Millimeter-level locking of product industrial structure, rejecting AI random hallucinations, 100% meeting the commercial standards for high jewelry.' : '毫米级锁定产品工业结构，拒绝 AI 随机幻觉，100% 达成高定珠宝商业出街标准。'}
               </p>
             </div>
@@ -161,7 +161,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
+                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Commercial Asset' : '商业级高精度资产'}
                 </span>
               </div>
@@ -185,11 +185,11 @@ export const AIGCSection05 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[14px]">03</span>
+              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[12px]">03</span>
                 {isEn ? 'VIRTUAL TALENT INTERPRETATION' : '虚拟模特演绎'}
               </span>
-              <p className="text-white text-[15px] md:text-[17px] font-normal tracking-wide">
+              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Deeply resolving real human skin textures and jewelry wearing shadows, perfectly replacing the expensive and inefficient traditional live-action shooting process.' : '深度解算真人肤质纹理与珠宝佩戴阴影，完美替代高昂且低效的传统实拍流程。'}
               </p>
             </div>
@@ -201,7 +201,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
+                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Virtual Talent' : '真实交互与场景解算'}
                 </span>
               </div>
@@ -225,11 +225,11 @@ export const AIGCSection05 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[14px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[14px]">04</span>
+              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[12px]">04</span>
                 {isEn ? 'DYNAMIC TVC SLICES' : '动态 TVC 切片'}
               </span>
-              <p className="text-white text-[15px] md:text-[17px] font-normal tracking-wide">
+              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Transcending the limitations of static assets, achieving zero marginal cost global distribution of high-quality dynamic video slices.' : '跨越静态资产局限，实现高质感动态视频切片的零边际成本全域分发'}
               </p>
             </div>
@@ -244,7 +244,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[15px] md:text-[15px] font-medium tracking-tighter">
+                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Temporal Consistency' : '连续性动态影像'}
                 </span>
               </div>

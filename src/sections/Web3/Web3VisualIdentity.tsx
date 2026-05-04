@@ -19,7 +19,7 @@ export const Web3VisualIdentity = () => {
         {/* Tag matching Screen 1 */}
         <div className="flex items-center gap-4 mb-6">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/50 tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+          <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
             {isEn ? '01 / Visual Identity' : '01 / 视觉识别系统'}
           </h4>
           <div className="w-16 h-[1px] bg-white/30" />
@@ -27,7 +27,7 @@ export const Web3VisualIdentity = () => {
 
         {/* Large Centered Title */}
         <h2
-          className={`text-center uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`text-center uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {isEn ? (
             <>
@@ -51,8 +51,8 @@ export const Web3VisualIdentity = () => {
           
           {/* Left Numbers using Space Grotesk */}
           <div className="flex gap-10 md:gap-20 z-10 bg-[#050505] px-4 -ml-4">
-            <span className="font-space-grotesk text-[16px] md:text-[20px] font-bold text-white tracking-widest uppercase">01</span>
-            <span className="font-space-grotesk text-[16px] md:text-[20px] font-bold text-white tracking-widest uppercase">02</span>
+            <span className="font-space-grotesk text-[14px] md:text-[18px] font-bold text-white tracking-widest uppercase">01</span>
+            <span className="font-space-grotesk text-[14px] md:text-[18px] font-bold text-white tracking-widest uppercase">02</span>
           </div>
 
           {/* Central Focus Area: Structural Grey Box containing grid + video */}
@@ -102,8 +102,8 @@ export const Web3VisualIdentity = () => {
 
           {/* Right Numbers using Space Grotesk */}
           <div className="flex gap-10 md:gap-20 z-10 bg-[#050505] px-4 -mr-4">
-            <span className="font-space-grotesk text-[16px] md:text-[20px] font-bold text-white tracking-widest uppercase">03</span>
-            <span className="font-space-grotesk text-[16px] md:text-[20px] font-bold text-white tracking-widest uppercase">04</span>
+            <span className="font-space-grotesk text-[14px] md:text-[18px] font-bold text-white tracking-widest uppercase">03</span>
+            <span className="font-space-grotesk text-[14px] md:text-[18px] font-bold text-white tracking-widest uppercase">04</span>
           </div>
 
         </div>

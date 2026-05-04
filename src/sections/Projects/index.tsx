@@ -220,13 +220,13 @@ export const Projects = () => {
         className="w-full pt-20 pb-4 pl-6 md:pl-[80px] relative z-10"
       >
         <h1 
-          className={`uppercase ${language === 'en' ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase ${language === 'en' ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
         >
           {language === 'en' ? 'CASE STUDIES' : '作品档案'}
         </h1>
         <div className="flex items-center gap-4 mt-5">
           <div className="w-16 h-[1px] bg-white/20"></div>
-          <p className="text-white/70 text-[16px] md:text-[20px] font-normal tracking-wide italic">
+          <p className="text-white/70 text-[14px] md:text-[18px] font-normal tracking-wide italic">
             {language === 'en' ? 'Strategy-driven. AI-powered. Output is the solution.' : '商业打底，算力操刀。出街即是解法。'}
           </p>
         </div>
@@ -291,7 +291,7 @@ export const Projects = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.1, duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-                  className={`font-extrabold tracking-tighter text-white mb-3 shadow-black drop-shadow-2xl whitespace-pre-wrap ${language === 'en' ? 'text-4xl md:text-[54px] leading-[1.1] uppercase font-sans' : 'text-4xl md:text-5xl font-puhuiti'}`}
+                  className={`font-extrabold tracking-tighter text-white mb-3 shadow-black drop-shadow-2xl whitespace-pre-wrap ${language === 'en' ? 'text-4xl md:text-[52px] leading-[1.1] uppercase font-sans' : 'text-4xl md:text-5xl font-puhuiti'}`}
                 >
                   {language === 'en' 
                     ? PROJECTS_DATA[activeIndex].en.target 
@@ -307,7 +307,7 @@ export const Projects = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-                  className={`text-white/70 tracking-tighter mb-10 ${language === 'en' ? 'font-light text-[16px]' : 'font-bold text-[15px]'}`}
+                  className={`text-white/70 tracking-tighter mb-10 ${language === 'en' ? 'font-light text-[14px]' : 'font-bold text-[13px]'}`}
                 >
                   {language === 'en' ? PROJECTS_DATA[activeIndex].en.desc : PROJECTS_DATA[activeIndex].cn.desc}
                 </motion.p>
@@ -319,10 +319,10 @@ export const Projects = () => {
                   className="pointer-events-none"
                 >
                   <div className="flex items-center gap-3 text-white/90">
-                    <span className="text-[13px] font-black tracking-tighter uppercase">
+                    <span className="text-[11px] font-black tracking-tighter uppercase">
                       {language === 'en' ? 'MORE' : '更多'}
                     </span>
-                    <span className="text-[14px] leading-none mb-[2px]">→</span>
+                    <span className="text-[12px] leading-none mb-[2px]">→</span>
                   </div>
                 </motion.div>
               </div>
@@ -352,7 +352,7 @@ export const Projects = () => {
                   onMouseEnter={() => setActiveIndex(idx)}
                   className="relative flex items-center justify-end h-[24px] cursor-pointer"
                 >
-                  <span className={`whitespace-nowrap font-black tracking-widest uppercase text-right transition-colors duration-500 ease-out ${isActive ? 'text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]' : 'text-white/30 hover:text-white/50'} ${language === 'en' ? 'text-[16px] md:text-[18px] font-sans' : 'text-[16px] md:text-[18px] font-puhuiti font-black tracking-tighter'}`}>
+                  <span className={`whitespace-nowrap font-black tracking-widest uppercase text-right transition-colors duration-500 ease-out ${isActive ? 'text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]' : 'text-white/30 hover:text-white/50'} ${language === 'en' ? 'text-[14px] md:text-[16px] font-sans' : 'text-[14px] md:text-[16px] font-puhuiti font-black tracking-tighter'}`}>
                     {uiText}
                   </span>
                 </div>
