@@ -18,7 +18,7 @@ export const AIGCWorkflow = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="text-white/50 text-[12px] md:text-[14px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
+            <div className="text-white/70 text-[12px] md:text-[14px] font-sans font-bold tracking-[0.3em] uppercase mb-4">
               {isEn ? 'HUMAN-MACHINE COLLABORATION' : '人机协作工作流'}
             </div>
             
@@ -30,9 +30,9 @@ export const AIGCWorkflow = () => {
               )}
             </h2>
 
-            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
               <div className="py-2">
-                <p className={`text-white/50 ${isEn ? 'font-medium leading-[1.6]' : 'font-medium tracking-wide leading-[1.6]'}`}>
+                <p className={`text-white/70 ${isEn ? 'font-medium leading-[1.6]' : 'font-medium tracking-wide leading-[1.6]'}`}>
                   {isEn 
                     ? "Reconstructing the \"design black box\" that highly relied on personal experience into a standardized industrial-grade assembly line." 
                     : "将过去高度依赖个人经验的“设计黑盒”，重构成标准化的工业级流水线。"}

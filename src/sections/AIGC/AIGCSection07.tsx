@@ -32,7 +32,7 @@ export const AIGCSection07 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
               <p className="text-white font-medium">
                 {isEn ? (
                   "The essence of the FMCG industry is racing against volatile market sentiments."
@@ -86,7 +86,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Tea01-1.webp" alt="Brand DNA Enclosing" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Brand DNA Enclosing' : '视觉基因数据化封装'}
                 </span>
               </div>
@@ -96,7 +96,7 @@ export const AIGCSection07 = () => {
               <h5 className="text-white text-[14px] md:text-[13px] font-medium tracking-wide">
                 {isEn ? 'Training Set Tagging Example' : '训练集打标示例'}
               </h5>
-              <p className="text-white/50 text-[9px] md:text-[10px] font-light leading-relaxed text-justify break-words w-full">
+              <p className="text-white/70 text-[9px] md:text-[10px] font-light leading-relaxed text-justify break-words w-full">
                 {isEn 
                   ? 'The prompt structure of a classic Sexy Tea style layout I trained, combined with the Danbooru tagging system: Tag combination: chyys_style, 1girl, solo, classical chinese woman, profile, closed eyes, traditional chinese clothes, hanfu, holding round fan, plum blossom, traditional chinese painting, ink wash painting, fine lineart, rice paper texture, muted color, negative space, minimalism, calligraphy background, cinnabar red accents, zen, elegant.' 
                   : '我训练的一张经典的茶颜风 layout 在结合 Danbooru 标签体系下的 prompt 结构：Tag 组合: chyys_style, 1girl, solo, classical chinese woman, profile, closed eyes, traditional chinese clothes, hanfu, holding round fan, plum blossom, traditional chinese painting, ink wash painting, fine lineart, rice paper texture, muted color, negative space, minimalism, calligraphy background, cinnabar red accents, zen, elegant.'}
@@ -129,7 +129,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/SKU.webp" alt="Matrix Generation" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Matrix Generation' : 'SKU 无级扩展与裂变'}
                 </span>
               </div>
@@ -157,7 +157,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/4city.webp" alt="Agile Localization" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Agile Localization' : '区域化场景敏捷响应'}
                 </span>
               </div>
@@ -188,7 +188,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Test%20B.webp" alt="A/B Testing B" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'High Throughput' : '极速全域并发与分发'}
                 </span>
               </div>

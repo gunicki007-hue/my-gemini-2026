@@ -38,7 +38,7 @@ export const InsurtechSection04 = () => {
       >
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
-            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '01 / BRAND VISUAL UPGRADE' : '01 / 品牌视觉升维'}
             </h4>
             <div className="w-16 h-[1px] bg-white/30" />
@@ -60,7 +60,7 @@ export const InsurtechSection04 = () => {
          </h2>
          
          {/* Description */}
-         <p className={`mt-6 md:mt-8 w-full text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-6 md:mt-8 w-full text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
            {isEn ? (
              <>
                Building global insurance visual resources. Standardizing assets for high-frequency reuse to effectively <span className="text-white font-bold">boost daily team output by 50%</span>.

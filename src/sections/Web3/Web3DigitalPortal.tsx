@@ -20,7 +20,7 @@ export const Web3DigitalPortal = () => {
          {/* Tag matching Screen 1 & 2 styles */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '02 / BRAND STRATEGY' : '02 / 品牌策略'}
             </h4>
          </div>
@@ -41,7 +41,7 @@ export const Web3DigitalPortal = () => {
          </h2>
          
          {/* Secondary paragraph */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
            {isEn 
              ? "Refusing to let users guess in an information maze. Translating obscure tech logic into intuitive visuals. Lowering cognitive barriers to deliver business trust through absolute clarity and transparency."
              : "拒绝让用户在信息迷宫中猜测。将晦涩技术逻辑转译为直白视觉。降低认知门槛，以清晰兑现商业信任。"}

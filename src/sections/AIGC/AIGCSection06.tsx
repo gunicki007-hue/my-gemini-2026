@@ -38,7 +38,7 @@ export const AIGCSection06 = () => {
           )}
         </h3>
 
-        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
           {isEn ? (
             "In the Fast-Moving Consumer Goods (FMCG) sector, speed dictates survival. Taking Sexy Tea as a benchmark, I reconstructed the traditional linear design workflow into a concurrent grid of 'underlying assets + variable control'. This is not merely a replacement of tools, but achieving stepless fission of the entire category and omni-channel SKU matrix with near-zero marginal cost."
           ) : (

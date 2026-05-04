@@ -45,7 +45,7 @@ export const AIGCSection01 = () => {
           )}
         </h3>
 
-        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
           {isEn ? (
             "While most teams still rely on manual labor for periodic market research and data organization, I have built a hybrid intelligent agent architecture. It is used to accelerate brand judgment, structure core assets, and establish a continuous information first-mover advantage, all while ensuring security and control."
           ) : (

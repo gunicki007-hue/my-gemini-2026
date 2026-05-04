@@ -97,7 +97,7 @@ export const SpatialSection03 = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-tr from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                   <p className="text-white/50 text-[12px] md:text-[14px] font-sans tracking-wider">
+                   <p className="text-white/70 text-[12px] md:text-[14px] font-sans tracking-wider">
                      {isEn ? 'Crydit · Kenya · Voyage Charity Event' : 'Crydit ·肯尼亚 · 启航公益活动'}
                    </p>
                  </div>
@@ -111,7 +111,7 @@ export const SpatialSection03 = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-bl from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                   <p className="text-white/50 text-[12px] md:text-[14px] font-sans tracking-wider">
+                   <p className="text-white/70 text-[12px] md:text-[14px] font-sans tracking-wider">
                      {isEn ? 'Crydit · Kenya · Voyage Charity Event' : 'Crydit ·肯尼亚 · 启航公益活动'}
                    </p>
                  </div>

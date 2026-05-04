@@ -37,7 +37,7 @@ export const InsurtechHero = () => {
           {/* Tag */}
           <div className="flex items-center gap-4 mb-4 md:mb-6">
             <div className="w-8 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? 'Insurtech Brand Narrative' : '数字保险品牌叙事'}
             </h4>
           </div>
@@ -61,7 +61,7 @@ export const InsurtechHero = () => {
            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
            className="flex flex-col w-full md:w-[35%] lg:w-[30%] lg:pl-10 md:border-l border-white/10 md:pb-4"
         >
-           <p className={`text-white/50 text-pretty ${isEn ? 'text-[12px] xl:text-[12px] tracking-normal leading-[1.6]' : 'text-[12px] xl:text-[12px] tracking-tighter leading-[1.6]'}`}>
+           <p className={`text-white/70 text-pretty ${isEn ? 'text-[12px] xl:text-[12px] tracking-normal leading-[1.6]' : 'text-[12px] xl:text-[12px] tracking-tighter leading-[1.6]'}`}>
              {isEn 
                ? "Leveraging the ZhongAn ecosystem to reconstruct iYunbao's tech-driven insurance platform."
                : "依托众安生态，重构 iYunbao 科技赋能保险平台。"}

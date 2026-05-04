@@ -20,7 +20,7 @@ export const InsurtechSection08 = () => {
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '04 / OMNICHANNEL MARKETING VISUALS' : '04 / 全域营销视觉'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />
@@ -34,7 +34,7 @@ export const InsurtechSection08 = () => {
          </h2>
          
          {/* Description */}
-         <p className={`mt-4 w-full max-w-[600px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-center'}`}>
+         <p className={`mt-4 w-full max-w-[600px] text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-center'}`}>
            {isEn 
              ? "Building an omnichannel visual matrix. Producing diverse, premium KVs to break stylistic limits and comprehensively drive business conversions."
              : "构建全域营销视觉矩阵。产出多风格高质 KV，打破单一视觉局限，全面支撑大盘商业转化。"}
@@ -85,7 +85,7 @@ export const InsurtechSection08 = () => {
             <div className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-[#050505]/80 to-transparent pointer-events-none z-10" />
             
             <div className="absolute top-4 right-4 md:top-6 md:right-6 border border-white/20 bg-black/40 backdrop-blur-md px-3 py-1.5 md:px-4 md:py-2 rounded-full z-20 pointer-events-none">
-              <span className={`text-white/50`}>
+              <span className={`text-white/70`}>
                 {isEn ? item.en : item.cn}
               </span>
             </div>

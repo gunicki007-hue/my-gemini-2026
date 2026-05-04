@@ -76,7 +76,7 @@ export const ParticleText: React.FC<ParticleTextProps> = ({ text, scrollYProgres
       } else {
         // Fallback: If image failed, generate raw text pixels internally! Always guaranteed to work.
         offCtx.fillStyle = 'white';
-        offCtx.font = `900 ${window.innerWidth < 768 ? '60px' : '150px'} "Inter", sans-serif`;
+        offCtx.font = `900 ${window.innerWidth < 768 ? '46px' : '46px'} "Inter", sans-serif`;
         offCtx.textAlign = 'center';
         offCtx.textBaseline = 'middle';
         offCtx.fillText(text, rect.width / 2, rect.height / 2 - 20);
@@ -209,7 +209,7 @@ export const ParticleText: React.FC<ParticleTextProps> = ({ text, scrollYProgres
              tempCtx.drawImage(img as HTMLImageElement, padding, dy, drawWidth, drawHeight);
           } else {
              tempCtx.fillStyle = 'white';
-             tempCtx.font = `900 ${window.innerWidth < 768 ? '60px' : '150px'} "Inter", sans-serif`;
+             tempCtx.font = `900 ${window.innerWidth < 768 ? '46px' : '46px'} "Inter", sans-serif`;
              tempCtx.textAlign = 'center';
              tempCtx.textBaseline = 'middle';
              tempCtx.fillText(text, rect.width / 2, rect.height / 2 - 20);

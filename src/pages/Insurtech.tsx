@@ -67,7 +67,7 @@ export const Insurtech = () => {
             <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-10 z-10 w-full xl:w-auto">
               <span className="text-4xl md:text-[38px] font-bold tracking-tighter text-white uppercase font-sans">NICKI</span>
               <div className="hidden md:block w-[1px] h-8 bg-white/10"></div>
-              <span className="text-[12px] md:text-[11px] text-white/50 tracking-[0.15em] font-light font-sans whitespace-nowrap">
+              <span className="text-[12px] md:text-[11px] text-white/70 tracking-[0.15em] font-light font-sans whitespace-nowrap">
                 {isEn ? '12 Years of Product & Brand System Design' : '12年产品与品牌系统设计经验'}
               </span>
             </div>

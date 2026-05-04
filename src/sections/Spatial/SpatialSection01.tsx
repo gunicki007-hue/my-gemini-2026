@@ -83,7 +83,7 @@ export const SpatialSection01 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
               <div className="absolute inset-x-0 bottom-0 p-5 md:p-8 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                <p className="text-white/50 text-[13px] md:text-[13px] font-sans tracking-wider">
+                <p className="text-white/70 text-[13px] md:text-[13px] font-sans tracking-wider">
                   {isEn ? 'Crydit Strategy Launch / Core Visual Setup' : 'Crydit 战略发布 / 核心视觉定调'}
                 </p>
               </div>
@@ -111,7 +111,7 @@ export const SpatialSection01 = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-tr from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                   <p className="text-white/50 text-[12px] md:text-[14px] font-sans tracking-wider">
+                   <p className="text-white/70 text-[12px] md:text-[14px] font-sans tracking-wider">
                      {isEn ? '10th Anniversary / Massive Spatial & Structural Restoration' : '十周年盛典 / 超大体量空间与结构还原'}
                    </p>
                  </div>
@@ -125,7 +125,7 @@ export const SpatialSection01 = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-bl from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                   <p className="text-white/50 text-[12px] md:text-[14px] font-sans tracking-wider">
+                   <p className="text-white/70 text-[12px] md:text-[14px] font-sans tracking-wider">
                      {isEn ? 'Token 2049 / Agile Deployment' : 'Token 2049 / 受限空间敏捷部署'}
                    </p>
                  </div>

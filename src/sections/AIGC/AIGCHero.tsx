@@ -17,7 +17,7 @@ export const AIGCHero = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
             {isEn ? 'AI DRIVEN VISUAL OS' : 'AIGC 战略与全域制作'}
           </h4>
         </div>
@@ -36,7 +36,7 @@ export const AIGCHero = () => {
           )}
         </h1>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
           {isEn
             ? <>The surreal visual tone on the right is merely the tip of the iceberg of the system's output.<br /> Beyond simple pixel generation, spanning from deep business logic deduction to the ultimate cross-over of aesthetics and production capacity, we are building a 100% deterministic digital creative operating system.</>
             : <>右侧的超现实视觉定调，只是系统输出的冰山一角。<br />跨越单纯的像素生成，从深层的业务逻辑推演，到极致的审美与产能跨界，构建 100% 确定性的数字创意操作系统。</>}

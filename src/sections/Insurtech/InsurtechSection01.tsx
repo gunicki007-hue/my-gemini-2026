@@ -20,7 +20,7 @@ export const InsurtechSection01 = () => {
         >
            {/* Tag */}
            <div className="flex items-center gap-4 mb-8">
-              <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
                 {isEn ? '01 / BRAND VISUAL UPGRADE' : '01 / 品牌视觉升维'}
               </h4>
               <div className="w-16 h-[1px] bg-white/30" />
@@ -41,7 +41,7 @@ export const InsurtechSection01 = () => {
            </h2>
            
            {/* Description */}
-           <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+           <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
              {isEn 
                ? "Redefining the legacy VI system. Elevating professional quality while retaining visual affinity."
                : "重新规范旧版 VI 体系。让品牌在保持视觉亲和力的前提下，呈现出更高级的专业质感。"}

@@ -19,7 +19,7 @@ export const Web3Section06 = () => {
       >
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
-            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '06 / PR & GLOBALIZATION' : '06 / 公关与全球化'}
             </h4>
             <div className="w-16 h-[1px] bg-white/30" />
@@ -41,7 +41,7 @@ export const Web3Section06 = () => {
          </h2>
          
          {/* Secondary paragraph */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
            {isEn 
              ? "Leading global expo and media visuals. Leveraging absolute brand consistency to build a commercial trust moat."
              : "主导海外展会与媒体视觉。用绝对一致的品牌输出，在国际市场构筑商业信任壁垒。"}

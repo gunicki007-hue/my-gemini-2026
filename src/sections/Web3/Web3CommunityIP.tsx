@@ -20,7 +20,7 @@ export const Web3CommunityIP = () => {
         {/* 顶部标签 / Top Tag */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
             {isEn ? '05 / COMMUNITY & IP' : '05 / 社区生态与 IP'}
           </h4>
           <div className="w-16 h-[1px] bg-white/30" />
@@ -42,7 +42,7 @@ export const Web3CommunityIP = () => {
         </h2>
 
         {/* 副标题叙事 / Narrative Description */}
-        <p className={`mt-8 md:mt-12 mx-auto w-full max-w-[650px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-center'}`}>
+        <p className={`mt-8 md:mt-12 mx-auto w-full max-w-[650px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-center'}`}>
           {isEn 
             ? "Rejecting fintech elitism. Weaponizing Meme culture and approachable visuals to transform community sentiment into hard operational assets."
             : "拒绝金融高冷。用 Twitter 与 Meme 文化打透用户心智，以直白亲和的视觉重构沟通语境，将社区情绪精准沉淀为运营资产。"}

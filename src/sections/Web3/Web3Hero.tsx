@@ -17,7 +17,7 @@ export const Web3Hero = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
             {isEn ? 'Web3 Financial Ecosystem' : 'Web3 金融生态'}
           </h4>
         </div>
@@ -36,7 +36,7 @@ export const Web3Hero = () => {
           )}
         </h1>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+        <p className={`mt-8 md:mt-12 w-full text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
           {isEn
             ? "I led Crydit’s 0-to-1 launch across strategy, visual DNA, and product architecture. By applying hardcore visual noise reduction to strip away Web3 barriers, I engineered a premium, high-trust crypto management experience."
             : "我全链路操盘了 Crydit 从 0-1 的战略推演、视觉基因、产品架构及全球公关叙事。用硬核的视觉降噪剥离行业壁垒，为全球用户重构兼具“信任底座”与“高级感”的加密资管体验。"}

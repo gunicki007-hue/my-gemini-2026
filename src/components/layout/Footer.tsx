@@ -34,17 +34,17 @@ export const Footer = () => {
             {/* Contact Information List */}
             <ul className="flex flex-col space-y-3.5 text-[13px] md:text-[14px] font-normal tracking-wide">
               <li className="flex items-center">
-                <span className="w-16 md:w-20 text-white/50">{isEn ? 'Email' : '邮箱'}</span>
+                <span className="w-16 md:w-20 text-white/70">{isEn ? 'Email' : '邮箱'}</span>
                 <a href="mailto:gunicki007@gmail.com" className="font-bold text-white hover:text-white/70 transition-colors">
                   gunicki007@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
-                <span className="w-16 md:w-20 text-white/50">{isEn ? 'Phone' : '电话'}</span>
+                <span className="w-16 md:w-20 text-white/70">{isEn ? 'Phone' : '电话'}</span>
                 <span className="font-bold text-white">+86 15801905482</span>
               </li>
               <li className="flex items-center">
-                <span className="w-16 md:w-20 text-white/50">{isEn ? 'WeChat' : '微信'}</span>
+                <span className="w-16 md:w-20 text-white/70">{isEn ? 'WeChat' : '微信'}</span>
                 <span className="font-bold text-white">{isEn ? 'Scan QR to add' : '扫二维码添加'}</span>
               </li>
             </ul>

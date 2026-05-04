@@ -121,7 +121,7 @@ export const Web3CommunityIPSecondary = () => {
       >
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? '05 / COMMUNITY & IP' : '05 / 社区生态与 IP'}
             </h4>
          </div>
@@ -139,7 +139,7 @@ export const Web3CommunityIPSecondary = () => {
            )}
          </h2>
          
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
            {isEn 
              ? "Leveraging IP visuals to amplify event emotions. Translating dry operational rules into high-stickiness interactions to aggressively boost user engagement."
              : "在运营活动时，用 IP 视觉渲染活动情绪，将枯燥的运营规则转译为高粘性互动，提升用户的参与活跃度。"}

@@ -32,8 +32,8 @@ export const AIGCSection05 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/50 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/50 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
-              <p className="text-white/50 font-medium">
+            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className="text-white/70 font-medium">
                 {isEn ? (
                   <>I no longer view AI as a tool for early inspiration brainstorming,<br />but have reshaped it into a production engine for precisely resolving high-luxury textures.</>
                 ) : (
@@ -51,7 +51,7 @@ export const AIGCSection05 = () => {
               
               <div className="pt-[30px] space-y-6">
                 <div>
-                  <p className="text-white/50 font-bold">{isEn ? "Technology Path" : "技术路径"}</p>
+                  <p className="text-white/70 font-bold">{isEn ? "Technology Path" : "技术路径"}</p>
                   <p>
                     {isEn ? (
                       "By encapsulating a private Lora asset library and combining it with the Seedance 2 dynamic workflow, I have tamed AI hallucinations to industrial-grade precision."
@@ -62,7 +62,7 @@ export const AIGCSection05 = () => {
                 </div>
 
                 <div>
-                  <p className="text-white/50 font-bold">{isEn ? "Generational Gap Comparison" : "代差对比"}</p>
+                  <p className="text-white/70 font-bold">{isEn ? "Generational Gap Comparison" : "代差对比"}</p>
                   <p>
                     {isEn ? (
                       "The traditional model is \"stacking pixels\", while my workflow is \"choreographing logic\". I skipped all the sketching stages and directly completed the physical material resolution and dynamic generation on the computing power side."
@@ -73,7 +73,7 @@ export const AIGCSection05 = () => {
                 </div>
 
                 <div>
-                  <p className="text-white/50 font-bold">{isEn ? "Delivery Absolute Values" : "交付极值"}</p>
+                  <p className="text-white/70 font-bold">{isEn ? "Delivery Absolute Values" : "交付极值"}</p>
                   <p>
                     {isEn ? (
                       "This model turns the production cost of high-luxury projects from linear growth to zero marginal cost. What I deliver is not just posters, but dynamic visual sovereignty that can be directly put into ad flows with pixel-level control."
@@ -118,7 +118,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Optical Calculation' : '物理级光学解算'}
                 </span>
               </div>
@@ -161,7 +161,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Commercial Asset' : '商业级高精度资产'}
                 </span>
               </div>
@@ -201,7 +201,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Virtual Talent' : '真实交互与场景解算'}
                 </span>
               </div>
@@ -244,7 +244,7 @@ export const AIGCSection05 = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/50 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
                   {isEn ? 'Temporal Consistency' : '连续性动态影像'}
                 </span>
               </div>

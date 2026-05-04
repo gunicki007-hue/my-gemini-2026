@@ -92,7 +92,7 @@ export const SpatialSection02 = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                 <div className="absolute inset-x-0 bottom-0 p-5 md:p-8 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                  <p className="text-white/50 text-[13px] md:text-[13px] font-sans tracking-wider">
+                  <p className="text-white/70 text-[13px] md:text-[13px] font-sans tracking-wider">
                     {isEn ? 'Danxia Charity · FlourishRace Scene' : '丹霞公益 · 向阳花开FlourshiRace 现场'}
                   </p>
                 </div>

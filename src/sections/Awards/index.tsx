@@ -77,23 +77,23 @@ export const Awards = () => {
             >
               <div className="pointer-events-none">
                 <h2 
-                  className={`uppercase ${language === 'en' ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-6`}
+                  className={`uppercase ${language === 'en' ? 'text-[46px] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[46px] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-6`}
                 >
                   {language === 'en' ? 'AWARDS' : '国际荣誉'}
                 </h2>
                 
                 <div className="flex items-center gap-4 mb-20">
                   <div className="h-[1px] w-12 bg-white/30" />
-                  <h4 className={`text-white/70 text-[14px] md:text-[18px] italic font-normal ${language === 'en' ? 'tracking-normal' : 'tracking-wide'}`}>
+                  <h4 className={`text-white/70 text-[12px] md:text-[16px] italic font-normal ${language === 'en' ? 'tracking-normal' : 'tracking-wide'}`}>
                     {language === 'en' ? 'Not trophies. Global business validations.' : '不是奖杯，是全球商业验证。'}
                   </h4>
                 </div>
 
                 <div className="transition-opacity duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]" style={{ opacity: activeIdx !== null ? 0.15 : 1 }}>
-                  <h3 className="text-xl md:text-[20px] font-extrabold mb-6 text-white tracking-tight">
+                  <h3 className="text-xl md:text-[18px] font-extrabold mb-6 text-white tracking-tight">
                     {language === 'en' ? 'GLOBAL Validation | Crydit (0-1)' : '包揽国际设计奖项 | Crydit（0-1阶段）'}
                   </h3>
-                  <p className="text-white/70 text-[14px] md:text-[18px] leading-[1.6] max-w-[90%] font-normal tracking-wide">
+                  <p className="text-white/70 text-[12px] md:text-[16px] leading-[1.6] max-w-[90%] font-normal tracking-wide">
                     {language === 'en' 
                       ? 'Multiple international design awards validate the maturity and viability of the project\'s strategy and execution within real-world business contexts.' 
                       : '多个国际设计奖项验证了该项目构想与其在真实商业环境中的落地执行的成熟度。'}
@@ -132,7 +132,7 @@ export const Awards = () => {
                 >
                   <div className="flex items-center w-full min-h-[48px]">
                     {/* Number using space-grotesk */}
-                    <span className="text-white/30 font-space-grotesk text-[14px] md:text-[16px] font-bold tracking-widest w-16 shrink-0 transition-colors duration-500">
+                    <span className="text-white/30 font-space-grotesk text-[12px] md:text-[14px] font-bold tracking-widest w-16 shrink-0 transition-colors duration-500">
                       {item.id}
                     </span>
                     
@@ -140,8 +140,8 @@ export const Awards = () => {
                     <div className={`flex flex-col flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${isActive ? 'translate-x-[20px]' : 'translate-x-[0px]'}`}>
                       <span className={`transition-colors duration-500 ${
                         language === 'en' 
-                          ? 'text-[13px] md:text-[18px] tracking-[0.15em] uppercase font-bold font-space-grotesk text-white' 
-                          : 'text-[14px] md:text-[20px] tracking-tighter font-black font-puhuiti text-white leading-none'
+                          ? 'text-[11px] md:text-[16px] tracking-[0.15em] uppercase font-bold font-space-grotesk text-white' 
+                          : 'text-[12px] md:text-[18px] tracking-tighter font-black font-puhuiti text-white leading-none'
                       }`}>
                         {language === 'en' ? item.en.awardTitle : item.cn.awardTitle}
                       </span>
@@ -149,7 +149,7 @@ export const Awards = () => {
 
                     {/* Level Text (Right Aligned) */}
                     <span 
-                      className={`text-[10px] md:text-[12px] font-black tracking-tighter shrink-0 uppercase transition-all duration-500 ${isActive ? '' : 'text-white/50'} ${metallicClass}`}
+                      className={`text-[10px] md:text-[10px] font-black tracking-tighter shrink-0 uppercase transition-all duration-500 ${isActive ? '' : 'text-white/70'} ${metallicClass}`}
                       style={isActive && item.levelType !== 'finalist' ? {
                         backgroundImage: item.levelType === 'gold' 
                           ? 'linear-gradient(90deg, #666 0%, #D4AF37 50%, #666 100%)'

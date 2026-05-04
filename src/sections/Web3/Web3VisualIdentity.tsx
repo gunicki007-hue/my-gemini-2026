@@ -19,7 +19,7 @@ export const Web3VisualIdentity = () => {
         {/* Tag matching Screen 1 */}
         <div className="flex items-center gap-4 mb-6">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/50 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
             {isEn ? '01 / Visual Identity' : '01 / 视觉识别系统'}
           </h4>
           <div className="w-16 h-[1px] bg-white/30" />

@@ -38,7 +38,7 @@ export const AIGCSection04 = () => {
           )}
         </h3>
 
-        <p className={`w-full max-w-[900px] text-white/50 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+        <p className={`w-full max-w-[900px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
           {isEn ? (
             "Abandoning traditional 3D rendering, through physical-level optical solving, completing a brutal practical proof of 'zero marginal cost production'."
           ) : (
