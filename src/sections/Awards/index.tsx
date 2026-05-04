@@ -77,7 +77,7 @@ export const Awards = () => {
             >
               <div className="pointer-events-none">
                 <h2 
-                  className={`uppercase ${language === 'en' ? 'text-[clamp(32px,6vw,80px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(32px,5.5vw,80px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-6`}
+                  className={`uppercase ${language === 'en' ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-6`}
                 >
                   {language === 'en' ? 'AWARDS' : '国际荣誉'}
                 </h2>

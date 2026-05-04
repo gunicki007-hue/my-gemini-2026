@@ -44,7 +44,7 @@ export const InsurtechHero = () => {
           
           {/* Main Title */}
           <h1 
-            className={`uppercase leading-none tracking-tighter ${isEn ? 'text-[clamp(30px,5vw,74px)] font-black font-sans break-words' : 'text-[clamp(36px,6vw,80px)] font-extrabold font-puhuiti break-words'}`}
+            className={`uppercase leading-none tracking-tighter ${isEn ? 'text-[clamp(26px,4.5vw,62px)] font-black font-sans break-words' : 'text-[clamp(28px,5vw,74px)] font-extrabold font-puhuiti break-words'}`}
           >
             {isEn ? (
               <>Visual<br/>Infrastructure</>

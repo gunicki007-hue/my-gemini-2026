@@ -7,7 +7,7 @@ export const Web3BrandStrategy = () => {
   const isEn = language === 'en';
 
   return (
-    <section className="relative w-full min-h-[90vh] flex flex-col xl:flex-row items-center justify-between pl-6 pr-0 md:pl-[60px] lg:pl-[80px] py-16 xl:py-24 gap-12 lg:gap-16 overflow-hidden bg-[#0a0a0a]">
+    <section className="relative w-full min-h-[90vh] flex flex-col xl:flex-row items-center justify-start px-6 md:px-[60px] lg:px-[80px] py-16 xl:py-24 gap-[60px] xl:gap-[100px] overflow-hidden bg-[#0a0a0a]">
       
       {/* Left Text Content Area */}
       <motion.div
@@ -15,7 +15,7 @@ export const Web3BrandStrategy = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="flex flex-col z-10 relative w-full lg:w-[35%] xl:w-[35%] shrink-0 lg:pr-0 pr-6"
+        className="flex flex-col z-10 relative w-full xl:w-[460px] shrink-0"
       >
          {/* Tag matching Screen 1 styles */}
          <div className="flex items-center gap-4 mb-8">
@@ -27,7 +27,7 @@ export const Web3BrandStrategy = () => {
          
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(32px,6vw,80px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(32px,5.5vw,80px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(28px,5vw,68px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(28px,5vw,74px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -54,15 +54,15 @@ export const Web3BrandStrategy = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full xl:w-[60%] flex-1 relative z-10 flex items-center justify-end"
+        className="w-full flex-1 relative z-10 flex items-center justify-center"
       >
          {/* Container pushing all the way to the right edge */}
-         <div className="w-full h-full relative aspect-[1.8/1] sm:aspect-[2/1] xl:aspect-[16/9] bg-transparent overflow-hidden rounded-l-[12px] sm:rounded-l-[24px]">
+         <div className="w-full h-full relative aspect-[1.8/1] sm:aspect-[2/1] xl:aspect-[16/9] bg-transparent overflow-hidden rounded-[12px] sm:rounded-[24px]">
              {/* == 🚨 右侧大瀑布流/排版图 替换处 / REPLACE WITH RIGHT GRID IMAGE == */}
              {/* 把下方的 src="..." 替换变成您实际的带瀑布流排版的图片链接即可 */}
              <img 
                src="https://img.nickiresume.cn/Nimage/01web3/03crydit-strategy.webp" 
-               className="absolute inset-0 w-full h-full object-cover object-left z-0" 
+               className="absolute inset-0 w-full h-full object-cover object-left z-0 scale-[1.04]" 
                alt="Brand Strategy Grid"
              />
          </div>
