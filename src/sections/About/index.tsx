@@ -41,7 +41,7 @@ export const About = () => {
             className={
               isEn 
                 ? "text-[34px] md:text-[52px] font-black tracking-tighter leading-none font-sans uppercase"
-                : "text-[34px] md:text-[46px] font-extrabold tracking-tighter font-['PingFang_SC','Microsoft_YaHei']"
+                : "text-[34px] md:text-[46px] font-bold tracking-tighter font-['PingFang_SC','Microsoft_YaHei']"
             }
           >
              {isEn ? 'CORE CAPABILITIES' : '核心战斗力'}
