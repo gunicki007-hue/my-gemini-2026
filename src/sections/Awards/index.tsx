@@ -138,7 +138,11 @@ export const Awards = () => {
                     
                     {/* Title block with X-axis translation */}
                     <div className={`flex flex-col flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${isActive ? 'translate-x-[20px]' : 'translate-x-[0px]'}`}>
-                      <span className={`transition-colors duration-500 ${language === 'en' ? 'text-[15px] md:text-[20px] tracking-widest uppercase font-bold font-space-grotesk text-white' : 'text-[16px] md:text-[22px] tracking-widest font-black font-["PingFang_SC","Microsoft_YaHei"] text-white leading-none'}`}>
+                      <span className={`transition-colors duration-500 ${
+                        language === 'en' 
+                          ? 'text-[15px] md:text-[20px] tracking-widest uppercase font-bold font-space-grotesk text-white' 
+                          : 'text-[16px] md:text-[22px] tracking-widest font-black font-puhuiti text-white leading-none'
+                      }`}>
                         {language === 'en' ? item.en.awardTitle : item.cn.awardTitle}
                       </span>
                     </div>

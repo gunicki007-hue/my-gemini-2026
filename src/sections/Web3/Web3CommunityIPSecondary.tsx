@@ -52,11 +52,11 @@ export const Web3CommunityIPSecondary = () => {
                 exit={{ opacity: 0, scale: 1.05, filter: 'blur(3px)', transition: { duration: 0.3 } }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} 
                 /* 
-                  Locked Proportions with Micro-adjustment: 
-                  Used the locked 35% but subtracted 16px precisely as requested (8px + 8px).
+                  Locked Proportions with pure percentages for flawless scaling 
+                  across all viewports.
                 */
                 style={{ 
-                  top: "calc(35% - 16px)", 
+                  top: "33.2%", 
                   right: "7.6%", 
                   width: "24%" 
                 }}

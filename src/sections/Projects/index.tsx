@@ -350,7 +350,7 @@ export const Projects = () => {
                   onMouseEnter={() => setActiveIndex(idx)}
                   className="relative flex items-center justify-end h-[24px] cursor-pointer"
                 >
-                  <span className={`font-black tracking-widest uppercase text-right transition-colors duration-500 ease-out ${isActive ? 'text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]' : 'text-white/30 hover:text-white/60'} ${language === 'en' ? 'text-[16px] md:text-[18px] font-sans' : 'text-[16px] md:text-[18px] font-["PingFang_SC","Microsoft_YaHei"]'}`}>
+                  <span className={`whitespace-nowrap font-black tracking-widest uppercase text-right transition-colors duration-500 ease-out ${isActive ? 'text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]' : 'text-white/30 hover:text-white/60'} ${language === 'en' ? 'text-[16px] md:text-[18px] font-sans' : 'text-[16px] md:text-[18px] font-["PingFang_SC","Microsoft_YaHei"]'}`}>
                     {uiText}
                   </span>
                 </div>

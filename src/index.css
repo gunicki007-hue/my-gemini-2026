@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@400;600;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@400;600;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -12,6 +12,7 @@
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif;
   --font-mono: "Space Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --font-space-grotesk: "Space Grotesk", sans-serif;
+  --font-puhuiti: "Alibaba PuHuiTi", "阿里巴巴普惠体", "PingFang SC", "Noto Sans SC", sans-serif;
 }
 
 @layer base {
@@ -20,6 +21,24 @@
     color: var(--color-text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-sans);
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: auto;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Language Specific Font Handling */
+  body:lang(zh), .lang-zh {
+    font-family: 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  }
+
+  body:lang(en), .lang-en {
+    font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 }
 

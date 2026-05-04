@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode } from 'react';
+import { createContext, useState, ReactNode, useEffect } from 'react';
 import { Locale } from '../config/siteConfig';
 
 export interface I18nContextType {
@@ -15,6 +15,11 @@ interface I18nProviderProps {
 
 export const I18nProvider = ({ children, initialBaseLang = 'en' }: I18nProviderProps) => {
   const [language, setLanguage] = useState<Locale>(initialBaseLang);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+    document.body.className = document.body.className.replace(/lang-(en|zh)/g, '').trim() + ` lang-${language}`;
+  }, [language]);
 
   const toggleLanguage = () => {
     const nextLang = language === 'en' ? 'zh' : 'en';
