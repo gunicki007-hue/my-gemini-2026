@@ -24,7 +24,7 @@ export const AIGCSection05 = () => {
                 {isEn ? 'CASE 02 · ABSOLUTE CONTROL · TASAKI' : 'CASE 02 · 绝对控制 · TASAKI'}
               </h4>
             </div>
-            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
+            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>HIGH LUXURY EXTREMES <br />PIXEL-LEVEL PARANOID CONTROL</>
               ) : (
@@ -32,7 +32,7 @@ export const AIGCSection05 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] md:text-[16px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify'}`}>
               <p className="text-white/70 font-medium">
                 {isEn ? (
                   <>I no longer view AI as a tool for early inspiration brainstorming,<br />but have reshaped it into a production engine for precisely resolving high-luxury textures.</>
@@ -103,7 +103,7 @@ export const AIGCSection05 = () => {
                 <span className="font-mono slashed-zero text-[12px]">01</span>
                 {isEn ? 'EXTREME LIGHT & SHADOW ATMOSPHERE' : '极致光影氛围图'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Subverting traditional material rendering bottlenecks, pushing the limit of restoring the warm iridescent feel of South Sea pearls and the physical refraction of precious metals.' : '颠覆传统材质渲染瓶颈，极限还原澳白级珍珠虹彩温润感与贵金属的物理级折射。'}
               </p>
             </div>
@@ -149,7 +149,7 @@ export const AIGCSection05 = () => {
                 <span className="font-mono slashed-zero text-[12px]">02</span>
                 {isEn ? 'CORE PRODUCT COMMERCIAL POSTER' : '核心单品出街海报'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Millimeter-level locking of product industrial structure, rejecting AI random hallucinations, 100% meeting the commercial standards for high jewelry.' : '毫米级锁定产品工业结构，拒绝 AI 随机幻觉，100% 达成高定珠宝商业出街标准。'}
               </p>
             </div>
@@ -189,7 +189,7 @@ export const AIGCSection05 = () => {
                 <span className="font-mono slashed-zero text-[12px]">03</span>
                 {isEn ? 'VIRTUAL TALENT INTERPRETATION' : '虚拟模特演绎'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Deeply resolving real human skin textures and jewelry wearing shadows, perfectly replacing the expensive and inefficient traditional live-action shooting process.' : '深度解算真人肤质纹理与珠宝佩戴阴影，完美替代高昂且低效的传统实拍流程。'}
               </p>
             </div>
@@ -229,7 +229,7 @@ export const AIGCSection05 = () => {
                 <span className="font-mono slashed-zero text-[12px]">04</span>
                 {isEn ? 'DYNAMIC TVC SLICES' : '动态 TVC 切片'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Transcending the limitations of static assets, achieving zero marginal cost global distribution of high-quality dynamic video slices.' : '跨越静态资产局限，实现高质感动态视频切片的零边际成本全域分发'}
               </p>
             </div>

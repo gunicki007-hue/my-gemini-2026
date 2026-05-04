@@ -25,7 +25,7 @@ export const SpatialSection02 = () => {
               </h4>
             </div>
             
-            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
+            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>OPEN-FIELD DOMAIN<br />FULL-LINK EXPERIENCE</>
               ) : (
@@ -34,7 +34,7 @@ export const SpatialSection02 = () => {
             </h3>
 
             <div className="space-y-8">
-              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                 {isEn ? (
                   <>Indoor spaces pursue pixel-level absolute control,<br />while the outdoor wilderness tests systemic resilience against natural variables.</>
                 ) : (
@@ -42,7 +42,7 @@ export const SpatialSection02 = () => {
                 )}
               </p>
               
-              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                 {isEn ? (
                   "In the \"Sunflowers Bloom\" Danxia Charity Run, I coordinated a multi-kilometer full-scenario visual coverage."
                 ) : (
@@ -50,7 +50,7 @@ export const SpatialSection02 = () => {
                 )}
               </p>
 
-              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                 {isEn ? (
                   "Focusing on high-intensity sunlight and wind pressure environments, I deeply intervened in the weather-resistance testing and material selection of outdoor materials. Through an extremely rigorous full-track wayfinding system and emotional node design, we connected scattered natural landscapes into a complete brand narrative trajectory, ensuring thousands of runners still feel solid brand warmth in extreme environments."
                 ) : (
@@ -78,7 +78,7 @@ export const SpatialSection02 = () => {
                   <span className="font-mono slashed-zero text-[12px]">01</span>
                   {isEn ? '/ OUTDOOR REAL-WORLD COORDINATION · BUILDING FULL-LINK CSR EXPERIENCE' : '/ 户外实境统筹 · 构建全链路 CSR 体验'}
                 </span>
-                <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+                <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                   {isEn ? 'Breaking through constraints of natural variables, deeply controlling the full-domain visual wayfinding from the main venue macro-structure and sponsor matrix to the multi-kilometer track. Transforming the brand\'s charity concept into a highly cohesive physical immersive experience.' : '突破自然变量限制，深度管控从主会场巨构、赞助商矩阵到数公里赛道的全域视觉导视。将品牌公益理念转化为高凝聚力的实体沉浸体验。'}
                 </p>
               </div>
@@ -92,7 +92,7 @@ export const SpatialSection02 = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                 <div className="absolute inset-x-0 bottom-0 p-5 md:p-8 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                  <p className="text-white/70 text-[13px] md:text-[13px] font-sans tracking-wider">
+                  <p className="text-white/70 text-[16px] md:text-[16px] font-sans tracking-wider">
                     {isEn ? 'Danxia Charity · FlourishRace Scene' : '丹霞公益 · 向阳花开FlourshiRace 现场'}
                   </p>
                 </div>

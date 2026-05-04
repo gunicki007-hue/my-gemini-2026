@@ -45,10 +45,10 @@ export const AIGCSection02 = () => {
             <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[12px] md:text-[14px] mb-4">
               {isEn ? '02 / AI HYBRID WORKFLOW' : '02 / AI 混合工作流'}
             </div>
-            <h2 className={`text-white leading-[1.1] ${isEn ? 'text-[30px] md:text-[38px] xl:text-[46px] font-black font-sans uppercase tracking-tighter' : 'text-[30px] md:text-[38px] xl:text-[46px] font-black font-sans tracking-tighter uppercase'}`}>
+            <h2 className={`text-white leading-[1.1] ${isEn ? 'text-[30px] md:text-[38px] xl:text-[46px] font-extrabold font-sans uppercase tracking-tighter' : 'text-[30px] md:text-[38px] xl:text-[46px] font-extrabold font-sans tracking-tighter uppercase'}`}>
               {isEn ? 'Hybrid Agent Architecture Design' : '混合智能体架构设计'}
             </h2>
-            <p className={`text-white/70 w-full max-w-[800px] ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] xl:text-[14px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[12px] xl:text-[14px] text-justify'}`}>
+            <p className={`text-white/70 w-full max-w-[800px] ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
               {isEn ? 'Dual AI engines power this workflow, aligning business logic with visual production to transform complex strategies into definitive design decisions.' : '该架构将「业务逻辑推演」与「视觉资产合成」共同驱动。通过部署双层 AI 引擎，跳出过早的视觉陷阱，让庞杂的商业逻辑转化为确定的设计决策。'}
             </p>
           </motion.div>
@@ -83,7 +83,7 @@ export const AIGCSection02 = () => {
             </div>
 
             {/* Title */}
-            <h3 className={`text-white mb-8 ${isEn ? 'text-[30px] md:text-[42px] font-black font-sans tracking-tighter uppercase group-hover:text-white transition-colors duration-500' : 'text-[34px] md:text-[46px] font-bold font-puhuiti tracking-wide group-hover:text-white transition-colors duration-500'}`}>
+            <h3 className={`text-white mb-8 ${isEn ? 'text-[30px] md:text-[42px] font-extrabold font-sans tracking-tighter uppercase group-hover:text-white transition-colors duration-500' : 'text-[34px] md:text-[46px] font-bold font-puhuiti tracking-wide group-hover:text-white transition-colors duration-500'}`}>
               {isEn ? 'Strategic Brain' : '策略脑'}
             </h3>
 
@@ -91,7 +91,7 @@ export const AIGCSection02 = () => {
             <div className="w-full h-[1px] bg-gradient-to-r from-white/[0.06] to-transparent mb-10 group-hover:from-[#D5B667]/30 transition-colors duration-500"></div>
 
             {/* Subtitle */}
-            <h4 className={`text-white/70 relative -top-[15px] -mb-[15px]`}>
+            <h4 className={`text-white/70 -mt-[15px] mb-[20px]`}>
               {isEn ? 'AURA Strategy Hub · Complex Business Logic Inference' : 'AURA 策略中枢 · 复杂业务逻辑推演'}
             </h4>
 
@@ -104,7 +104,7 @@ export const AIGCSection02 = () => {
               ].map((item, idx) => (
                 <li key={`card1-${idx}`} className="flex items-start gap-5">
                   <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500 mt-2.5 flex-shrink-0" />
-                  <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-500 leading-[1.6] ${isEn ? 'text-[11px] md:text-[12px] tracking-[0.015em]' : 'text-[11px] md:text-[12px] tracking-[0.03em]'}`}>
+                  <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-500 leading-[1.6] ${isEn ? 'text-[16px] md:text-[16px] tracking-[0.015em]' : 'text-[16px] md:text-[16px] tracking-[0.03em]'}`}>
                     {isEn ? item.en : item.cn}
                   </p>
                 </li>
@@ -148,7 +148,7 @@ export const AIGCSection02 = () => {
             </div>
 
             {/* Title */}
-            <h3 className={`text-white mb-8 ${isEn ? 'text-[30px] md:text-[42px] font-black font-sans tracking-tighter uppercase group-hover:text-white transition-colors duration-500' : 'text-[34px] md:text-[46px] font-bold font-puhuiti tracking-wide group-hover:text-white transition-colors duration-500'}`}>
+            <h3 className={`text-white mb-8 ${isEn ? 'text-[30px] md:text-[42px] font-extrabold font-sans tracking-tighter uppercase group-hover:text-white transition-colors duration-500' : 'text-[34px] md:text-[46px] font-bold font-puhuiti tracking-wide group-hover:text-white transition-colors duration-500'}`}>
               {isEn ? 'Visual Brain' : '视觉脑'}
             </h3>
 
@@ -156,7 +156,7 @@ export const AIGCSection02 = () => {
             <div className="w-full h-[1px] bg-gradient-to-r from-white/[0.06] to-transparent mb-10 group-hover:from-[#D5B667]/30 transition-colors duration-500"></div>
 
             {/* Subtitle */}
-            <h4 className={`text-white/70 relative -top-[15px] -mb-[15px]`}>
+            <h4 className={`text-white/70 -mt-[15px] mb-[20px]`}>
               {isEn ? 'SYNTHESIS Visual Workshop · Brand DNA Encapsulation' : 'SYNTHESIS 视觉工坊 · 品牌资产生成'}
             </h4>
 
@@ -169,7 +169,7 @@ export const AIGCSection02 = () => {
               ].map((item, idx) => (
                 <li key={`local-${idx}`} className="flex items-start gap-5">
                   <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500 mt-2.5 flex-shrink-0" />
-                  <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-500 leading-[1.6] ${isEn ? 'text-[11px] md:text-[12px] tracking-[0.015em]' : 'text-[11px] md:text-[12px] tracking-[0.03em]'}`}>
+                  <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-500 leading-[1.6] ${isEn ? 'text-[16px] md:text-[16px] tracking-[0.015em]' : 'text-[16px] md:text-[16px] tracking-[0.03em]'}`}>
                     {isEn ? item.en : item.cn}
                   </p>
                 </li>

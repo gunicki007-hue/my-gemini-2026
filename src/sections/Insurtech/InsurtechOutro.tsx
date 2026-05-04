@@ -17,7 +17,7 @@ export const InsurtechOutro = () => {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="flex flex-col items-center text-center z-10 -mt-28"
       >
-        <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 max-w-[800px] text-balance ${isEn ? 'uppercase tracking-tighter text-[18px] md:text-[28px] font-sans font-black' : 'tracking-tighter text-[22px] md:text-[28px] font-puhuiti font-black'}`}>
+        <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 max-w-[800px] text-balance ${isEn ? 'uppercase tracking-tighter text-[18px] md:text-[28px] font-sans font-extrabold' : 'tracking-tighter text-[22px] md:text-[28px] font-puhuiti font-extrabold'}`}>
           {isEn ? "Visible design · Invisible security" : "用看得见的设计传递 · 看不见的保障"}
         </h2>
         

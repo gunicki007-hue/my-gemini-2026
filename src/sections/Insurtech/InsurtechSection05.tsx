@@ -74,7 +74,7 @@ export const InsurtechSection05 = () => {
 
             {/* Title */}
             <h2
-              className={`uppercase w-full ${isEn ? "text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]" : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+              className={`uppercase w-full ${isEn ? "text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]" : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
             >
               {isEn ? (
                 <>
@@ -92,7 +92,7 @@ export const InsurtechSection05 = () => {
 
             {/* Description */}
             <p
-              className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? "font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]" : "font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify"}`}
+              className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? "font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] xl:text-[16px]" : "font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify"}`}
             >
               {isEn
                 ? "Targeting the MPRC Business Center. Deconstructing core logic and reshaping interaction flows to precisely support complex demands."

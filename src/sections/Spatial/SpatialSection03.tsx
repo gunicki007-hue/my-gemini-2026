@@ -25,7 +25,7 @@ export const SpatialSection03 = () => {
               </h4>
             </div>
             
-            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
+            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>HUMANISTIC<br />NARRATIVE</>
               ) : (
@@ -34,7 +34,7 @@ export const SpatialSection03 = () => {
             </h3>
 
             <div className="space-y-6">
-              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                 {isEn ? (
                   <>Beyond spatial planning and physical execution lies the ultimate goal: emotional connection.<br />I ensure every spatial project reflects genuine humanistic warmth.</>
                 ) : (
@@ -42,7 +42,7 @@ export const SpatialSection03 = () => {
                 )}
               </p>
               
-              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                 {isEn ? (
                   "Whether through philanthropic insights or cultural integration, weaving a coherent narrative transforms a mere physical location into a living brand sanctuary."
                 ) : (
@@ -68,7 +68,7 @@ export const SpatialSection03 = () => {
                 <span className="font-mono slashed-zero text-[12px]">01</span>
                 {isEn ? '/ CULTURAL INTEGRATION & INSIGHT' : '/ 文化融合与情感洞察'}
               </span>
-              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+              <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
                 {isEn ? 'Weaving a coherent narrative transforms a physical location into a living brand sanctuary.' : '将连贯的生命力叙事注入空间，才能将其从单纯的物理场所，升华为鲜活的品牌阵地。'}
               </p>
             </div>
@@ -97,7 +97,7 @@ export const SpatialSection03 = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-tr from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                   <p className="text-white/70 text-[12px] md:text-[14px] font-sans tracking-wider">
+                   <p className="text-white/70 text-[16px] md:text-[16px] font-sans tracking-wider">
                      {isEn ? 'Crydit · Kenya · Voyage Charity Event' : 'Crydit ·肯尼亚 · 启航公益活动'}
                    </p>
                  </div>
@@ -111,7 +111,7 @@ export const SpatialSection03 = () => {
                  />
                  <div className="absolute inset-0 bg-gradient-to-bl from-[#A66B4E]/10 to-transparent pointer-events-none"></div>
                  <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/60 to-transparent z-10">
-                   <p className="text-white/70 text-[12px] md:text-[14px] font-sans tracking-wider">
+                   <p className="text-white/70 text-[16px] md:text-[16px] font-sans tracking-wider">
                      {isEn ? 'Crydit · Kenya · Voyage Charity Event' : 'Crydit ·肯尼亚 · 启航公益活动'}
                    </p>
                  </div>

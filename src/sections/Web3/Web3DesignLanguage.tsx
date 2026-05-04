@@ -44,7 +44,7 @@ export const Web3DesignLanguage = () => {
          
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -58,7 +58,7 @@ export const Web3DesignLanguage = () => {
          </h2>
          
          {/* Secondary paragraph placeholder */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
            {isEn 
              ? "Establishing Crydit’s foundational DNA: utilizing a standardized geometric symbol system to translate abstract financial concepts into tangible visual outcomes."
              : "确立 Crydit 底层视觉基因，通过规范的几何符号体系，将抽象的金融业务具象化落地。"}

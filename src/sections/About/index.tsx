@@ -12,7 +12,7 @@ export const About = () => {
         {/* 1. About Header & Intro (Left Aligned Block) */}
         <div className="space-y-12 max-w-[1000px]">
            <div className="flex flex-col">
-             <h2 className="text-[46px] font-black font-sans tracking-tight leading-[1.1] uppercase mb-6">
+             <h2 className="text-[46px] font-extrabold font-sans tracking-tight leading-[1.1] uppercase mb-6">
                NICKI
              </h2>
              <div className="flex items-center gap-4">
@@ -40,8 +40,8 @@ export const About = () => {
           <h3 
             className={
               isEn 
-                ? "text-[34px] md:text-[52px] font-black tracking-tighter leading-none font-sans uppercase"
-                : "text-[34px] md:text-[46px] font-bold tracking-tighter font-['PingFang_SC','Microsoft_YaHei']"
+                ? "text-[34px] md:text-[52px] font-extrabold tracking-tighter leading-none font-sans uppercase"
+                : "text-[34px] md:text-[46px] font-medium tracking-tighter font-['PingFang_SC','Microsoft_YaHei']"
             }
           >
              {isEn ? 'CORE CAPABILITIES' : '核心战斗力'}
@@ -50,7 +50,7 @@ export const About = () => {
               {/* Item 1 */}
               <div className="flex flex-col space-y-3">
                 <h4 className="text-[14px] md:text-[18px] font-bold leading-snug">01 | {isEn ? 'Cross-Domain Visual Strategy' : '跨域视觉战略'}</h4>
-                <p className="text-[12px] md:text-[11px] text-white/70 font-normal tracking-wide leading-relaxed">
+                <p className="text-[14px] md:text-[14px] text-white/70 font-normal tracking-wide leading-relaxed">
                   {isEn 
                     ? "Refusing to be bound by a single industry. Capturing core commonalities across diverse business models with a cross-border mindset. Translating complex business logic and industry barriers into a visual language that users instantly \"get\"."
                     : "拒绝被单一行业绑架。用跨界思维捕捉不同商业形态的核心共性。懂业务才能做设计，把复杂的商业模式和行业壁垒，精准翻译成让用户“秒懂”的视觉语言。"}
@@ -59,7 +59,7 @@ export const About = () => {
               {/* Item 2 */}
               <div className="flex flex-col space-y-3">
                 <h4 className="text-[14px] md:text-[18px] font-bold leading-snug">02 | {isEn ? 'Business Conversion Oriented' : '商业转化导向'}</h4>
-                <p className="text-[12px] md:text-[11px] text-white/70 font-normal tracking-wide leading-relaxed">
+                <p className="text-[14px] md:text-[14px] text-white/70 font-normal tracking-wide leading-relaxed">
                   {isEn 
                     ? <>Never designing for design's sake, but solely serving ultimate <span className="text-white font-bold">business objectives</span>. Dynamically adapting visual strategies—from direct pain-point targeting to premium brand positioning—to hardcore boost <span className="text-white font-bold">conversion efficiency</span> across core funnels.</>
                     : <>不为了设计而设计，只为最终的<span className="text-white font-bold">商业目标服务</span>。无论是直白干脆的痛点狙击，还是克制高级的品牌占位，都能动态调整视觉策略，硬核<span className="text-white font-bold">拉升</span>核心链路的<span className="text-white font-bold">转化效率</span>。</>}
@@ -68,7 +68,7 @@ export const About = () => {
               {/* Item 3 */}
               <div className="flex flex-col space-y-3 mt-[20px]">
                 <h4 className="text-[14px] md:text-[18px] font-bold leading-snug">03 | {isEn ? 'Exclusive AI Workflow' : '独家智能工作流'}</h4>
-                <p className="text-[12px] md:text-[11px] text-white/70 font-normal tracking-wide leading-relaxed">
+                <p className="text-[14px] md:text-[14px] text-white/70 font-normal tracking-wide leading-relaxed">
                   {isEn 
                     ? <>No pandering to "AI juggling" trends, focusing solely on translating compute into real productivity. Deeply tuning <span className="text-white font-bold">proprietary models and workflows</span>, solidifying metaphysical "non-standard creativity" into high-quality "industrial pipelines." Empowering teams with tech leverage to achieve an <span className="text-white font-bold">efficiency leap</span> with less.</>
                     : <>不搞迎合风口的“AI 杂耍”，只关注算力如何转化为真实的生产力。深度调教<span className="text-white font-bold">专属模型与工作流</span>，把玄学的“非标创意”固化为高品控的“工业流水线”。用技术杠杆赋能团队，实现<span className="text-white font-bold">以少打多的效能跃升</span>。</>}
@@ -77,7 +77,7 @@ export const About = () => {
               {/* Item 4 */}
               <div className="flex flex-col space-y-3 mt-[20px]">
                 <h4 className="text-[14px] md:text-[18px] font-bold leading-snug">04 | {isEn ? 'Agile Collaborative Leadership' : '敏捷协同领导力'}</h4>
-                <p className="text-[12px] md:text-[11px] text-white/70 font-normal tracking-wide leading-relaxed">
+                <p className="text-[14px] md:text-[14px] text-white/70 font-normal tracking-wide leading-relaxed">
                   {isEn 
                     ? <>Resolutely shattering communication barriers between design and R&D. Proactively utilizing <span className="text-white font-bold">Agent</span> to align <span className="text-white font-bold">underlying code logic</span>, minimizing friction. From top-level planning to pixel-perfect <span className="text-white font-bold">restoration</span> of components, ensuring lossless execution as a true pragmatist.</>
                     : <>坚决打破设计与研发之间的沟通壁垒。前置<span className="text-white font-bold">利用 Agent</span> 辅助对<span className="text-white font-bold">齐底层代码逻辑</span>，把无效的跨部门内耗降到最低。从顶层推演到前端组件的<span className="text-white font-bold">像素级还原</span>，确保策略无损落地，做拯救开发兄弟发际线的实干派。</>}

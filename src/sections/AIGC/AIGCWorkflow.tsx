@@ -22,7 +22,7 @@ export const AIGCWorkflow = () => {
               {isEn ? 'HUMAN-MACHINE COLLABORATION' : '人机协作工作流'}
             </div>
             
-            <h2 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-10 tracking-tighter font-sans uppercase">
+            <h2 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold leading-[1.1] mb-10 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>WORKFLOW DEMO<br/>HYBRID PRODUCTION<br/>LINE</>
               ) : (
@@ -30,7 +30,7 @@ export const AIGCWorkflow = () => {
               )}
             </h2>
 
-            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+            <div className={`space-y-6 w-full max-w-[500px] ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] md:text-[16px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify'}`}>
               <div className="py-2">
                 <p className={`text-white/70 ${isEn ? 'font-medium leading-[1.6]' : 'font-medium tracking-wide leading-[1.6]'}`}>
                   {isEn 

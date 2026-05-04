@@ -24,7 +24,7 @@ export const AIGCSection07 = () => {
                 {isEn ? 'CASE 03 · AGILITY & HIGH CONCURRENCY · TEA' : 'CASE 03 · 敏捷与高并发 · 茶颜悦色'}
               </h4>
             </div>
-            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-black leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
+            <h3 className="text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold leading-[1.1] mb-6 tracking-tighter font-sans uppercase">
               {isEn ? (
                 <>BUILDING A HIGH-CONCURRENCY<br />CONTENT ENGINE</>
               ) : (
@@ -32,7 +32,7 @@ export const AIGCSection07 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[12px] md:text-[11px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] md:text-[16px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify'}`}>
               <p className="text-white font-medium">
                 {isEn ? (
                   "The essence of the FMCG industry is racing against volatile market sentiments."
@@ -78,7 +78,7 @@ export const AIGCSection07 = () => {
                 <span className="font-mono slashed-zero text-[12px]">01</span>
                 {isEn ? 'BRAND VISUAL FOUNDATION' : '品牌视觉基座'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Extract and train an exclusive Style Lora, fundamentally locking the brand\'s iconic "New Chinese National Trend" style at the algorithm level.' : '提炼并训练专属 Style Lora，将品牌标志性的“新中式国潮”风格彻底锁定在算法底层。'}
               </p>
             </div>
@@ -121,7 +121,7 @@ export const AIGCSection07 = () => {
                 <span className="font-mono slashed-zero text-[12px]">02</span>
                 {isEn ? 'SKU EXPONENTIAL FISSION' : 'SKU 指数裂变'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Transcendent of linear diagramming bottlenecks, merely by modifying Prompt variables, instantly and concurrently generate promotional matrix images for dozens of flavors.' : '跨越线性作图瓶颈，只需修改 Prompt 变量，即刻并发生成数十种口味的宣发矩阵图。'}
               </p>
             </div>
@@ -149,7 +149,7 @@ export const AIGCSection07 = () => {
                 <span className="font-mono slashed-zero text-[12px]">03</span>
                 {isEn ? 'AGILE LOCALIZED MARKETING' : '区域化敏捷营销'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Stripping away traditional scene building costs, rapidly combining city landmarks with product assets to achieve regional marketing blitzes within 24 hours.' : '剥离传统场景搭建成本，极速组合城市地标与产品资产，实现 24 小时内的区域营销闪电战。'}
               </p>
             </div>
@@ -177,7 +177,7 @@ export const AIGCSection07 = () => {
                 <span className="font-mono slashed-zero text-[12px]">04</span>
                 {isEn ? 'A/B TESTING & E-COMMERCE HIGH CONCURRENCY' : 'A/B 测试与电商高并发'}
               </span>
-              <p className="text-white text-[13px] md:text-[15px] font-normal tracking-wide">
+              <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
                 {isEn ? 'Generating massive marketing materials at zero marginal cost, providing ample A/B testing ammunition for e-commerce advertising, completely freeing the team\'s hands.' : '零边际成本生成海量营销物料，为电商投放提供充足的 A/B 测试弹药，彻底解放团队双手。'}
               </p>
             </div>

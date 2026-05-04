@@ -28,13 +28,13 @@ export const InsurtechSection08 = () => {
          
          {/* Title */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? "MARKETING ASSET" : "营销视觉资产库"}
          </h2>
          
          {/* Description */}
-         <p className={`mt-4 w-full max-w-[600px] text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-center'}`}>
+         <p className={`mt-4 w-full max-w-[600px] text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-center'}`}>
            {isEn 
              ? "Building an omnichannel visual matrix. Producing diverse, premium KVs to break stylistic limits and comprehensively drive business conversions."
              : "构建全域营销视觉矩阵。产出多风格高质 KV，打破单一视觉局限，全面支撑大盘商业转化。"}

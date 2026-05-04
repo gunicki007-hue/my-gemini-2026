@@ -22,7 +22,7 @@ export const AIGCSection04 = () => {
           </h4>
         </div>
 
-        <h2 className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-24 md:mb-40`}>
+        <h2 className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-24 md:mb-40`}>
           {isEn ? (
              <>AESTHETIC EXTREME &<br />ASSET RECONSTRUCTION</>
           ) : (
@@ -38,7 +38,7 @@ export const AIGCSection04 = () => {
           )}
         </h3>
 
-        <p className={`w-full max-w-[900px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+        <p className={`w-full max-w-[900px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
           {isEn ? (
             "Abandoning traditional 3D rendering, through physical-level optical solving, completing a brutal practical proof of 'zero marginal cost production'."
           ) : (

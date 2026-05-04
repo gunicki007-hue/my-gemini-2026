@@ -27,7 +27,7 @@ export const Web3BrandStrategy = () => {
          
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -41,7 +41,7 @@ export const Web3BrandStrategy = () => {
          </h2>
          
          {/* Secondary paragraph */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
            {isEn 
              ? "Translating competitor benchmarking and core business logic into a cohesive commercial narrative, cementing a global fintech brand's distinct identity and trust."
              : "从竞品对标到底层业务推演，搭建了完整的商业叙事逻辑，确立国际化金融科技品牌的独特辨识度与信任感。"}

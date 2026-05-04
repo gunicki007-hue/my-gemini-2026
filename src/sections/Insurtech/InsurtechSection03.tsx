@@ -27,7 +27,7 @@ export const InsurtechSection03 = () => {
          
          {/* Title */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-black font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
          >
            {isEn ? (
              <>
@@ -40,7 +40,7 @@ export const InsurtechSection03 = () => {
          </h2>
          
          {/* Description */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[11px] xl:text-[13px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[11px] xl:text-[13px] text-justify'}`}>
+         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
            {isEn 
              ? "Deconstructing core logic. Reshaping information architecture and workflows to slash cognitive load and elevate the platform experience."
              : "基于底层逻辑拆解。重塑信息架构与业务流程，大幅降低认知成本，实现平台级体验升维。"}

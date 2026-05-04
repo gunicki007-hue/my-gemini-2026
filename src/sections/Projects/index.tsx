@@ -220,7 +220,7 @@ export const Projects = () => {
         className="w-full pt-20 pb-4 pl-6 md:pl-[80px] relative z-10"
       >
         <h1 
-          className={`uppercase ${language === 'en' ? 'text-[46px] font-black font-sans tracking-tighter leading-[1.05]' : 'text-[46px] font-extrabold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
+          className={`uppercase ${language === 'en' ? 'text-[46px] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[46px] font-bold font-puhuiti tracking-tighter leading-[1.1]'}`}
         >
           {language === 'en' ? 'CASE STUDIES' : '作品档案'}
         </h1>
@@ -307,7 +307,7 @@ export const Projects = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-                  className={`text-white/70 tracking-tighter mb-10 ${language === 'en' ? 'font-light text-[12px]' : 'font-bold text-[11px]'}`}
+                  className={`text-white/70 tracking-tighter mb-10 ${language === 'en' ? 'font-light text-[14px]' : 'font-bold text-[13px]'}`}
                 >
                   {language === 'en' ? PROJECTS_DATA[activeIndex].en.desc : PROJECTS_DATA[activeIndex].cn.desc}
                 </motion.p>
