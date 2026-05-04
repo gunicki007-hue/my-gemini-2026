@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   const projectCategories = {
     en: ['Web3 Financial Ecosystem', 'InsurTech Branding', 'AI-Driven Strategy & Creation', 'Brand Space & Experience'],
-    cn: ['Web3 金融生态', '数字保险品牌', 'AI 驱动战略与创作', '品牌空间与体验设计']
+    zh: ['Web3 金融生态', '数字保险品牌', 'AI 驱动战略与创作', '品牌空间与体验设计']
   };
 
   const projectLinks = [
@@ -65,7 +65,7 @@ export const Navbar = () => {
 
   // Calculate Text Stroke for Logo based on Language and Hover state
   const getLogoStroke = () => {
-    const baseStroke = language === 'cn' ? 0.6 : 0;
+    const baseStroke = language === 'zh' ? 0.6 : 0;
     const hoverAddition = isHoveringLogo ? 0.6 : 0;
     return `${baseStroke + hoverAddition}px currentColor`;
   };
@@ -74,21 +74,21 @@ export const Navbar = () => {
   const subNavTabs = location.pathname.includes('/insurtech') 
     ? {
         en: ['01 · BRAND VISUAL UPGRADE', '02 · PRODUCT EXPERIENCE REDESIGN', '03 · AI-DRIVEN CONVERSION', '04 · OMNICHANNEL MARKETING VISUALS'],
-        cn: ['01 · 品牌视觉升维', '02 · 产品体验重构', '03 · AI 驱动转化', '04 · 全域营销视觉']
+        zh: ['01 · 品牌视觉升维', '02 · 产品体验重构', '03 · AI 驱动转化', '04 · 全域营销视觉']
       }
     : location.pathname.includes('/aigc') || location.pathname.includes('/ai-strategy')
     ? {
         en: ['01 · Depth: Logic Orchestration', '02 · Height: Aesthetic Ceiling', '03 · Breadth: Agile Scaling'],
-        cn: ['01 · 深度：逻辑中枢与决策编排', '02 · 高度：审美极值与光学解算', '03 · 广度：品牌敏捷与指数裂变']
+        zh: ['01 · 深度：逻辑中枢与决策编排', '02 · 高度：审美极值与光学解算', '03 · 广度：品牌敏捷与指数裂变']
       }
     : location.pathname.includes('/spatial-experience')
     ? {
         en: ['01 · SPATIAL COORDINATION', '02 · REAL-WORLD EXECUTION', '03 · HUMANISTIC NARRATIVE'],
-        cn: ['01 · 空间统筹', '02 · 实境执行', '03 · 人文叙事']
+        zh: ['01 · 空间统筹', '02 · 实境执行', '03 · 人文叙事']
       }
     : {
         en: ['01 · VISUAL IDENTITY', '02 · BRAND STRATEGY', '03 · DIGITAL PORTAL', '04 · UI/UX DESIGN', '05 · COMMUNITY & IP', '06 · PR & GLOBALIZATION'],
-        cn: ['01 · 视觉识别', '02 · 品牌策略', '03 · 数字门户', '04 · UI/UX 设计', '05 · 社区生态与 IP', '06 · 公关与全球化']
+        zh: ['01 · 视觉识别', '02 · 品牌策略', '03 · 数字门户', '04 · UI/UX 设计', '05 · 社区生态与 IP', '06 · 公关与全球化']
       };
 
   // Active section tracking for sub-pages. Default to -1 so nothing is active if above section 0
@@ -219,7 +219,7 @@ export const Navbar = () => {
             </button>
             
             <div className="hidden lg:flex items-center gap-4 xl:gap-8 overflow-x-auto whitespace-nowrap pl-4 border-l border-white/10 h-10 flex-1 min-w-0 hide-scrollbar">
-              {subNavTabs[language as 'en' | 'cn'].map((tab, idx) => {
+              {subNavTabs[language as 'en' | 'zh'].map((tab, idx) => {
                 const isActive = activeSection === idx;
                 return (
                   <a 
@@ -244,7 +244,7 @@ export const Navbar = () => {
             >
               <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>EN</span>
               <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 mt-[2px]">/</span>
-              <span className={`${language === 'cn' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>中文</span>
+              <span className={`${language === 'zh' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>中文</span>
             </button>
           </div>
         </div>
@@ -270,12 +270,12 @@ export const Navbar = () => {
         }}
         onMouseEnter={() => setIsHoveringLogo(true)}
         onMouseLeave={() => setIsHoveringLogo(false)}
-        className={`flex items-center tracking-[-0.02em] text-[18px] text-white cursor-pointer group flex-shrink-0 ${language === 'cn' ? 'font-["PingFang_SC","Microsoft_YaHei",sans-serif]' : 'font-sans'}`}
+        className={`flex items-center tracking-[-0.02em] text-[18px] text-white cursor-pointer group flex-shrink-0 ${language === 'zh' ? 'font-["PingFang_SC","Microsoft_YaHei",sans-serif]' : 'font-sans'}`}
         style={{ WebkitTextStroke: getLogoStroke() }}
       >
         <span className="font-extrabold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] origin-bottom-left">NICKI</span>
-        <span className={`text-white/60 font-light tracking-normal hidden sm:inline ml-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] group-hover:text-white origin-bottom-left ${language === 'cn' ? 'text-[19px]' : 'text-[18px]'}`}>
-          / {language === 'cn' ? 'AI赋能设计' : 'DESIGN × AI'}
+        <span className={`text-white/60 font-light tracking-normal hidden sm:inline ml-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] group-hover:text-white origin-bottom-left ${language === 'zh' ? 'text-[19px]' : 'text-[18px]'}`}>
+          / {language === 'zh' ? 'AI赋能设计' : 'DESIGN × AI'}
         </span>
       </button>
 
@@ -308,7 +308,7 @@ export const Navbar = () => {
               {isProjects && (
                 <div className="absolute top-10 left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                   <div className="flex flex-col w-max min-w-[240px] bg-[#0A0A0A]/80 backdrop-blur-3xl border border-white/10 rounded-2xl p-2 shadow-[0_20px_40px_rgba(0,0,0,0.7)]">
-                    {projectCategories[language as 'en' | 'cn'].map((cat, idx) => (
+                    {projectCategories[language as 'en' | 'zh'].map((cat, idx) => (
                       <Link 
                         key={idx} 
                         to={projectLinks[idx]} 
@@ -332,7 +332,7 @@ export const Navbar = () => {
       >
         <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>EN</span>
         <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 mt-[2px]">/</span>
-        <span className={`${language === 'cn' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>中文</span>
+        <span className={`${language === 'zh' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>中文</span>
       </button>
     </header>
   );

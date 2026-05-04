@@ -1,4 +1,4 @@
-export type Locale = 'en' | 'cn';
+export type Locale = 'en' | 'zh';
 
 export interface GlobalConfig {
   email: string;
@@ -74,7 +74,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'cn'],
+    locales: ['en', 'zh'],
   },
   global: {
     email: 'hello@nicki.design',
@@ -90,7 +90,7 @@ export const siteConfig: SiteConfig = {
       about: 'ABOUT',
       contact: 'CONTACT',
     },
-    cn: {
+    zh: {
       projects: '作品档案',
       awards: '国际荣誉',
       about: '关于我',
@@ -104,7 +104,7 @@ export const siteConfig: SiteConfig = {
       backgroundVideoUrl: '/assets/video-bg.mp4',
       particleImageUrl: 'https://img.nickiresume.cn/Nimage/01-1.webp',
     },
-    cn: {
+    zh: {
       title: 'PORTFOLIO',
       subtitle: '视觉与 AI 体验探索',
       backgroundVideoUrl: '/assets/video-bg.mp4',
@@ -117,7 +117,7 @@ export const siteConfig: SiteConfig = {
       description: '12 Years of Crafting Future-Forward Digital Identities. Operating at the intersection of Web3, Fintech, and AI-driven workflows.',
       tags: ['Creative Direction', 'Web3', 'Fintech', 'AI Automation', 'Interaction Design'],
     },
-    cn: {
+    zh: {
       title: 'ABOUT ME',
       description: '12 年设计管理经验。游走于 Web3、金融科技与 AI 自动化工作流的交汇处，专注构建具有前瞻性的数字体验。',
       tags: ['创意指导', 'Web3体系', '金融科技', 'AI 自动化', '交互探索'],
@@ -161,7 +161,7 @@ export const siteConfig: SiteConfig = {
         },
       ],
     },
-    cn: {
+    zh: {
       title: 'SELECTED ARCHIVES',
       items: [
         {
@@ -204,7 +204,7 @@ export const siteConfig: SiteConfig = {
       metricsLabel: 'Performance Metrics',
       performanceData: 'Delivering up to 60-80% efficiency boost in asset production.',
     },
-    cn: {
+    zh: {
       metricsLabel: '效能提升',
       performanceData: '在资产规模化产出阶段，提供了 60-80% 的效能跃升。',
     },
@@ -218,7 +218,7 @@ export const siteConfig: SiteConfig = {
         { year: '2022', name: 'Red Dot Design Award' },
       ],
     },
-    cn: {
+    zh: {
       title: 'HONORS & AWARDS',
       items: [
         { year: '2024', name: 'Awwwards 月度最佳网站' },

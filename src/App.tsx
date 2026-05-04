@@ -48,10 +48,10 @@ const RouteChangeHandler = () => {
   return null;
 };
 
-export default function App() {
+export default function App({ initialLang = 'en' }: { initialLang?: 'en' | 'zh' }) {
   console.log("App booting with 01-1.webp Static Image Particle Engine...");
   return (
-    <I18nProvider>
+    <I18nProvider initialBaseLang={initialLang}>
       <SmoothScroll>
         <RouteChangeHandler />
         <div className="min-h-screen bg-base selection:bg-accent/40 selection:text-white flex flex-col">
