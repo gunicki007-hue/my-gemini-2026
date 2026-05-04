@@ -86,6 +86,10 @@ export const ParticleText: React.FC<ParticleTextProps> = ({ text, scrollYProgres
 
       // --- Harvest Pixels ---
       try {
+        if (img !== ('fallback' as any) && img.dataset.tainted === "true") {
+           throw new Error("Canvas is tainted because image loaded without CORS");
+        }
+
         const imageData = offCtx.getImageData(0, 0, canvas.width, canvas.height);
         const data = imageData.data;
         const newParticles = [];
@@ -130,35 +134,57 @@ export const ParticleText: React.FC<ParticleTextProps> = ({ text, scrollYProgres
 
         setIsReady(true);
       } catch (e) {
-        console.error("Canvas pixel read failed. Tainted canvas?", e);
+        if (e instanceof Error && e.message.includes("is tainted")) {
+            console.warn(e.message + " - particle effect disabled.");
+        } else {
+            console.error("Canvas pixel read failed.", e);
+        }
+        // Still display the image even if we can't extract particles from it
+        ctx.save();
+        ctx.setTransform(1, 0, 0, 1, 0, 0); 
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(offCanvas, 0, 0);
+        ctx.restore();
+        setIsReady(true);
       }
     };
 
     // Load image ONLY ONCE, bypass fetch block and restore natural loading
     if (!loadedImgRef.current) {
-      // Helper: If user supplies an external image URL (HTTP/HTTPS), we wrap it in a global 
-      // Image CDN proxy (wsrv.nl) that strips oppressive headers and injects absolute CORS headers.
-      // This is the ONLY way pure frontend Canvas processing can read cross-origin pixels without Tainting.
-      const getSafeCorsUrl = (url: string) => {
-        if (url.startsWith('http')) {
-          // encodeURIComponent handles complex URLs with queries
-          return `https://wsrv.nl/?url=${encodeURIComponent(url)}&crossorigin=anon`;
+      const loadWithUrl = (urlToTry: string, allowCors: boolean, useProxy = false) => {
+        const img = new Image();
+        if (allowCors) {
+            img.crossOrigin = "anonymous";
         }
-        return url;
+
+        const finalUrl = useProxy 
+          ? `https://images.weserv.nl/?url=${encodeURIComponent(urlToTry.replace(/^https?:\/\//, ''))}` 
+          : urlToTry;
+
+        img.onload = () => {
+          if (!allowCors) {
+             img.dataset.tainted = "true";
+          }
+          loadedImgRef.current = img;
+          initParticles();
+        };
+        img.onerror = (e) => {
+          if (allowCors && !useProxy) {
+            console.warn("CORS fetch failed. Falling back to proxy...");
+            loadWithUrl(urlToTry, true, true);
+          } else if (allowCors && useProxy) {
+            console.warn("Proxy also failed. Falling back to non-CORS image load (no particles)...");
+            loadWithUrl(urlToTry, false, false);
+          } else {
+             console.warn("All image load attempts failed. Forcing internal Canvas Font synthesis bypass.", e);
+             loadedImgRef.current = 'fallback' as any;
+             initParticles();
+          }
+        };
+        img.src = finalUrl;
       };
 
-      const img = new Image();
-      img.crossOrigin = "anonymous";
-      img.onload = () => {
-        loadedImgRef.current = img;
-        initParticles();
-      };
-      img.onerror = (e) => {
-        console.warn("Image load failed even with proxy. Forcing internal Canvas Font synthesis bypass.", e);
-        loadedImgRef.current = 'fallback' as any;
-        initParticles();
-      };
-      img.src = getSafeCorsUrl(imageUrl);
+      loadWithUrl(imageUrl, true, false);
     } else {
       initParticles();
     }

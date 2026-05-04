@@ -30,6 +30,13 @@
   .animate-metallic-silver {
     animation: metallic-silver 2.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
   }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 }
 
 @keyframes metallic-gold {

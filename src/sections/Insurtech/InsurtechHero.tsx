@@ -25,17 +25,17 @@ export const InsurtechHero = () => {
       </div>
 
       {/* Content overlay */}
-      <div className="relative z-10 w-full flex flex-col md:flex-row items-end justify-between gap-12 mt-32">
+      <div className="relative z-10 w-full flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 mt-32">
         
         {/* Left Side: Title */}
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-           className="flex flex-col w-full md:w-1/2"
+           className="flex flex-col flex-1"
         >
           {/* Tag */}
-          <div className="flex items-center gap-4 mb-6">
+          <div className="flex items-center gap-4 mb-4 md:mb-6">
             <div className="w-8 h-[1px] bg-white/30" />
             <h4 className="text-white/60 tracking-[0.2em] text-[12px] md:text-[14px] uppercase font-sans font-bold">
               {isEn ? 'Insurtech Brand Narrative' : '数字保险品牌叙事'}
@@ -44,7 +44,7 @@ export const InsurtechHero = () => {
           
           {/* Main Title */}
           <h1 
-            className={`uppercase leading-none tracking-tighter w-full ${isEn ? 'text-[50px] sm:text-[70px] md:text-[90px] xl:text-[100px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[80px] xl:text-[90px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+            className={`uppercase leading-none tracking-tighter ${isEn ? 'text-[clamp(36px,6vw,90px)] font-black font-sans break-words' : 'text-[clamp(40px,6.5vw,90px)] font-extrabold font-["PingFang_SC","Microsoft_YaHei"] break-words'}`}
           >
             {isEn ? (
               <>Visual<br/>Infrastructure</>
@@ -59,9 +59,9 @@ export const InsurtechHero = () => {
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-           className="flex flex-col w-full md:w-[45%] md:pl-12 lg:pl-16 border-l border-white/10 pb-4"
+           className="flex flex-col w-full md:w-[35%] lg:w-[30%] lg:pl-10 md:border-l border-white/10 md:pb-4"
         >
-           <p className={`text-white/60 text-pretty ${isEn ? 'text-[15px] xl:text-[17px] tracking-normal leading-[1.8]' : 'text-[15px] xl:text-[17px] tracking-widest sm:tracking-wider xl:tracking-widest leading-[2]'}`}>
+           <p className={`text-white/60 text-pretty ${isEn ? 'text-[14px] xl:text-[16px] tracking-normal leading-[1.6]' : 'text-[14px] xl:text-[16px] tracking-widest sm:tracking-wider leading-[1.8]'}`}>
              {isEn 
                ? "Leveraging the ZhongAn ecosystem to reconstruct iYunbao's tech-driven insurance platform."
                : "依托众安生态，重构 iYunbao 科技赋能保险平台。"}

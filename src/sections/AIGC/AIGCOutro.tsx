@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { useDictionary } from '../../hooks/useDictionary.ts';
+import { useDictionary } from '../../hooks/useDictionary';
 import { useNavigate } from 'react-router-dom';
 
 export const AIGCOutro = () => {

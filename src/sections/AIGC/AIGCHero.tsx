@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { useDictionary } from '../../hooks/useDictionary.ts';
+import { useDictionary } from '../../hooks/useDictionary';
 
 export const AIGCHero = () => {
   const { language } = useDictionary();

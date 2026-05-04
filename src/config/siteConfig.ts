@@ -102,13 +102,13 @@ export const siteConfig: SiteConfig = {
       title: 'PORTFOLIO',
       subtitle: 'VISUAL & AI EXPERIENCE',
       backgroundVideoUrl: '/assets/video-bg.mp4',
-      particleImageUrl: 'https://img.nickiresume.cn/images/0418resume/01-1.webp',
+      particleImageUrl: 'https://img.nickiresume.cn/Nimage/01-1.webp',
     },
     cn: {
       title: 'PORTFOLIO',
       subtitle: '视觉与 AI 体验探索',
       backgroundVideoUrl: '/assets/video-bg.mp4',
-      particleImageUrl: 'https://img.nickiresume.cn/images/0418resume/01-1.webp',
+      particleImageUrl: 'https://img.nickiresume.cn/Nimage/01-1.webp',
     },
   },
   about: {

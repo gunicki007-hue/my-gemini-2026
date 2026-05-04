@@ -188,11 +188,11 @@ export const Navbar = () => {
   // Needs to be full width edge-to-edge
   if (!isHomePage) {
     return (
-      <header className="fixed top-0 left-0 right-0 h-[80px] z-50 flex justify-between items-center bg-[#0a0a0c]/80 backdrop-blur-2xl border-b border-white/5 px-6 md:px-[60px] transition-all">
-        <div className="flex items-center h-full max-w-[1800px] mx-auto w-full justify-between">
+      <header className="fixed top-0 left-0 right-0 h-[80px] z-50 flex justify-between items-center bg-[#0a0a0c]/80 backdrop-blur-2xl border-b border-white/5 px-6 md:px-[60px] lg:px-[80px] transition-all">
+        <div className="flex items-center h-full max-w-none w-full justify-between">
           
           {/* Left Area: Back Button + Nav Link Divider */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 xl:gap-8 flex-1 min-w-0 mr-4">
             {/* Glassy Back Button */}
             <button 
               onClick={() => {
@@ -207,7 +207,7 @@ export const Navbar = () => {
                 
                 navigate('/', { state: { scrollTo: 'projects', projectId: pId } });
               }} 
-              className="flex items-center justify-center gap-3 px-6 py-2.5 rounded-[20px] bg-[#1c1c1e]/60 backdrop-blur-2xl shadow-[0_10px_30px_rgba(0,0,0,0.6),inset_0_1px_1.5px_rgba(255,255,255,0.15)] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:bg-[#2c2c2e]/70 group border border-white/5"
+              className="flex items-center justify-center h-[44px] gap-3 px-6 rounded-[22px] bg-[#1c1c1e]/60 backdrop-blur-2xl shadow-[0_10px_30px_rgba(0,0,0,0.6),inset_0_1px_1.5px_rgba(255,255,255,0.15)] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:bg-[#2c2c2e]/70 group border border-white/5 flex-shrink-0"
             >
               <svg 
                 className="w-3.5 h-3.5 text-white transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-x-1.5" 
@@ -218,7 +218,7 @@ export const Navbar = () => {
               <span className="text-[14px] font-bold tracking-[0.2em] text-white uppercase mt-[2px]">{language === 'en' ? 'BACK' : '返回'}</span>
             </button>
             
-            <div className="hidden lg:flex items-center gap-8 overflow-x-auto whitespace-nowrap pl-4 border-l border-white/10 h-10">
+            <div className="hidden lg:flex items-center gap-4 xl:gap-8 overflow-x-auto whitespace-nowrap pl-4 border-l border-white/10 h-10 flex-1 min-w-0 hide-scrollbar">
               {subNavTabs[language as 'en' | 'cn'].map((tab, idx) => {
                 const isActive = activeSection === idx;
                 return (
@@ -226,7 +226,7 @@ export const Navbar = () => {
                     key={idx}
                     href={`#section-${idx}`}
                     onClick={(e) => handleSubNavClick(e, idx)}
-                    className="uppercase text-[13px] md:text-[14px] font-bold tracking-[0.1em] transition-all duration-500 hover:opacity-100"
+                    className="uppercase text-[11px] xl:text-[13px] font-bold tracking-[0.05em] xl:tracking-[0.1em] transition-all duration-500 hover:opacity-100 flex-shrink-0"
                     style={{ color: isActive ? themeColor : 'rgba(255,255,255,0.4)' }}
                   >
                     {tab}
@@ -237,14 +237,14 @@ export const Navbar = () => {
           </div>
 
           {/* Right side Lang toggle */}
-          <div className="h-[44px] rounded-[22px] bg-[#1c1c1e]/60 backdrop-blur-2xl shadow-[0_10px_30px_rgba(0,0,0,0.6),inset_0_1px_1.5px_rgba(255,255,255,0.15)] px-6 flex items-center border border-white/5">
+          <div className="h-[44px] rounded-[22px] bg-[#1c1c1e]/60 backdrop-blur-2xl shadow-[0_10px_30px_rgba(0,0,0,0.6),inset_0_1px_1.5px_rgba(255,255,255,0.15)] px-6 flex items-center justify-center border border-white/5 flex-shrink-0 whitespace-nowrap">
             <button 
               onClick={toggleLanguage}
-              className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[13px] tracking-widest relative"
+              className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[14px] tracking-[0.2em] relative"
             >
-              <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]`}>EN</span>
-              <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 group-hover:scale-[1.1]">/</span>
-              <span className={`${language === 'cn' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]`}>中文</span>
+              <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>EN</span>
+              <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 mt-[2px]">/</span>
+              <span className={`${language === 'cn' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>中文</span>
             </button>
           </div>
         </div>
@@ -270,7 +270,7 @@ export const Navbar = () => {
         }}
         onMouseEnter={() => setIsHoveringLogo(true)}
         onMouseLeave={() => setIsHoveringLogo(false)}
-        className={`flex items-center tracking-[-0.02em] text-[18px] text-white cursor-pointer group ${language === 'cn' ? 'font-["PingFang_SC","Microsoft_YaHei",sans-serif]' : 'font-sans'}`}
+        className={`flex items-center tracking-[-0.02em] text-[18px] text-white cursor-pointer group flex-shrink-0 ${language === 'cn' ? 'font-["PingFang_SC","Microsoft_YaHei",sans-serif]' : 'font-sans'}`}
         style={{ WebkitTextStroke: getLogoStroke() }}
       >
         <span className="font-extrabold transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-skew-x-[10deg] group-hover:scale-[1.02] origin-bottom-left">NICKI</span>
@@ -328,11 +328,11 @@ export const Navbar = () => {
       {/* i18n Toggle */}
       <button 
         onClick={toggleLanguage}
-        className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[13px] tracking-widest relative"
+        className="flex gap-2 font-bold uppercase items-center group cursor-pointer text-[14px] tracking-[0.2em] relative flex-shrink-0 whitespace-nowrap"
       >
-        <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]`}>EN</span>
-        <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 group-hover:scale-[1.1]">/</span>
-        <span className={`${language === 'cn' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]`}>中文</span>
+        <span className={`${language === 'en' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>EN</span>
+        <span className="text-white/30 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 mt-[2px]">/</span>
+        <span className={`${language === 'cn' ? 'text-white opacity-100' : 'text-white/40 group-hover:opacity-100'} transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] mt-[2px]`}>中文</span>
       </button>
     </header>
   );

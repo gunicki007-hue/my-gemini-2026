@@ -99,7 +99,7 @@ export const InsurtechSection07 = () => {
 
           {/* Title */}
           <h3 
-             className={`uppercase leading-none tracking-tighter w-full mb-6 md:mb-8 ${isEn ? 'text-[50px] sm:text-[70px] md:text-[80px] xl:text-[90px] font-black font-sans' : 'text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
+             className={`uppercase leading-none tracking-tighter w-full mb-6 md:mb-8 break-words hyphens-auto ${isEn ? 'text-[clamp(36px,5vw,70px)] font-black font-sans' : 'text-[clamp(36px,5vw,70px)] font-extrabold font-["PingFang_SC","Microsoft_YaHei"]'}`}
           >
             {isEn ? (
               <>Rapid Prototyping</>
