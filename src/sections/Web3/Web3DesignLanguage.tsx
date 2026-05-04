@@ -37,7 +37,7 @@ export const Web3DesignLanguage = () => {
          {/* Tag matching Screen 1 & 2 styles */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '01 / Customised Font & Icon' : '01 / 视觉识别系统'}
             </h4>
          </div>

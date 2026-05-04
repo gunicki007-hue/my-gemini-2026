@@ -20,7 +20,7 @@ export const InsurtechSection01 = () => {
         >
            {/* Tag */}
            <div className="flex items-center gap-4 mb-8">
-              <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
                 {isEn ? '01 / BRAND VISUAL UPGRADE' : '01 / 品牌视觉升维'}
               </h4>
               <div className="w-16 h-[1px] bg-white/30" />
@@ -70,7 +70,7 @@ export const InsurtechSection01 = () => {
           
           {/* Legacy VI Tag */}
           <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-black/60 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full z-20 flex items-center justify-center">
-            <span className="text-white/80 text-[12px] md:text-[13px] tracking-widest font-bold uppercase">
+            <span className="text-white/80 text-[16px] md:text-[16px] tracking-widest font-bold uppercase">
               {isEn ? 'Legacy VI' : '旧版 VI'}
             </span>
           </div>
@@ -96,7 +96,7 @@ export const InsurtechSection01 = () => {
           
           {/* New VI Tag */}
           <div className="absolute top-6 right-6 md:top-8 md:right-8 bg-[#4DB0FF]/80 backdrop-blur-md border border-[#4DB0FF] px-5 py-2 rounded-full z-20 flex items-center justify-center">
-            <span className="text-white text-[12px] md:text-[13px] tracking-widest font-bold uppercase">
+            <span className="text-white text-[16px] md:text-[16px] tracking-widest font-bold uppercase">
               {isEn ? 'New VI System' : '全新 VI'}
             </span>
           </div>

@@ -64,7 +64,7 @@ export const InsurtechSection05 = () => {
           >
             {/* Tag */}
             <div className="flex items-center gap-4 mb-8">
-              <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
                 {isEn
                   ? "02 / PRODUCT EXPERIENCE REDESIGN"
                   : "02 / 产品体验重构"}
@@ -92,7 +92,7 @@ export const InsurtechSection05 = () => {
 
             {/* Description */}
             <p
-              className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? "font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] xl:text-[16px]" : "font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify"}`}
+              className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 text-pretty ${isEn ? "font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]" : "font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify"}`}
             >
               {isEn
                 ? "Targeting the MPRC Business Center. Deconstructing core logic and reshaping interaction flows to precisely support complex demands."

@@ -17,7 +17,7 @@ export const AIGCSection06 = () => {
       >
         <div className="flex items-center gap-4 mb-8 md:mb-12">
           <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-          <h4 className="text-[#D5B667] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-[#D5B667] tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'CASE 03 · BREADTH' : '案例 03 · 广度'}
           </h4>
         </div>

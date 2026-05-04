@@ -20,7 +20,7 @@ export const AIGCSection02 = () => {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col gap-6"
           >
-            <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[12px] md:text-[14px] mb-4">
+            <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[16px] md:text-[16px] mb-4">
               {isEn ? '01 / PROBLEM SOLVING' : '01 / 核心问题解决'}
             </div>
             <h3 className={`w-full max-w-[1200px] ${isEn ? 'text-[26px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[26px] font-extrabold tracking-tighter font-puhuiti leading-[48px]'}`}>
@@ -42,7 +42,7 @@ export const AIGCSection02 = () => {
             transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col gap-6"
           >
-            <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[12px] md:text-[14px] mb-4">
+            <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[16px] md:text-[16px] mb-4">
               {isEn ? '02 / AI HYBRID WORKFLOW' : '02 / AI 混合工作流'}
             </div>
             <h2 className={`text-white leading-[1.1] ${isEn ? 'text-[30px] md:text-[38px] xl:text-[46px] font-extrabold font-sans uppercase tracking-tighter' : 'text-[30px] md:text-[38px] xl:text-[46px] font-extrabold font-sans tracking-tighter uppercase'}`}>
@@ -71,12 +71,12 @@ export const AIGCSection02 = () => {
                   <path d="M21 7v.01M16 16v.01M12 12v.01M16 8v.01M8 16v.01M8 8v.01"/>
                   <path d="M3 12h5m3-4 3-4m0 0 3 3m-3-3v5m-3 7 3 3m0 0 3-3m-3 3v-5M8 12a4 4 0 0 0 4 4"/>
                 </svg>
-                <span className="text-[13px] md:text-[15px] font-bold tracking-tighter font-sans uppercase text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">AURA</span>
+                <span className="text-[16px] md:text-[16px] font-bold tracking-tighter font-sans uppercase text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">AURA</span>
               </div>
 
               <div className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.04]">
                 <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-                <span className="text-[11px] md:text-[12px] text-white/70 uppercase font-bold tracking-wider font-sans group-hover:text-white/80 transition-colors duration-500 mt-[1px]">
+                <span className="text-[16px] md:text-[16px] text-white/70 uppercase font-bold tracking-wider font-sans group-hover:text-white/80 transition-colors duration-500 mt-[1px]">
                   {isEn ? 'LLM AGENT / Logic Solver' : 'LLM AGENT / 逻辑引擎'}
                 </span>
               </div>
@@ -114,7 +114,7 @@ export const AIGCSection02 = () => {
             {/* Bottom Pill */}
             <div className="mt-auto inline-flex self-start items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/[0.02] border border-white/[0.04]">
               <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-              <span className="text-[12px] md:text-[13px] text-white/70 group-hover:text-white/90 uppercase font-bold tracking-[0.15em] font-sans transition-colors duration-500 mt-[1px]">
+              <span className="text-[16px] md:text-[16px] text-white/70 group-hover:text-white/90 uppercase font-bold tracking-[0.15em] font-sans transition-colors duration-500 mt-[1px]">
                 {isEn ? 'STATUS: Strategy inferring...' : 'STATUS: 策略推演中'}
               </span>
             </div>
@@ -136,12 +136,12 @@ export const AIGCSection02 = () => {
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                   <line x1="12" y1="22.08" x2="12" y2="12"></line>
                 </svg>
-                <span className="text-[13px] md:text-[15px] font-bold tracking-tighter font-sans uppercase text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">SYNTHESIS</span>
+                <span className="text-[16px] md:text-[16px] font-bold tracking-tighter font-sans uppercase text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">SYNTHESIS</span>
               </div>
 
               <div className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.04]">
                 <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-                <span className="text-[11px] md:text-[12px] text-white/70 uppercase font-bold tracking-wider font-sans group-hover:text-white/80 transition-colors duration-500 mt-[1px]">
+                <span className="text-[16px] md:text-[16px] text-white/70 uppercase font-bold tracking-wider font-sans group-hover:text-white/80 transition-colors duration-500 mt-[1px]">
                   {isEn ? 'COMFYUI / Compute Deployment' : 'COMFYUI / 算力部署'}
                 </span>
               </div>
@@ -179,7 +179,7 @@ export const AIGCSection02 = () => {
             {/* Bottom Pill */}
             <div className="mt-auto inline-flex self-start items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/[0.02] border border-white/[0.04]">
               <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-              <span className="text-[12px] md:text-[13px] text-white/70 group-hover:text-white/90 uppercase font-bold tracking-[0.15em] font-sans transition-colors duration-500 mt-[1px]">
+              <span className="text-[16px] md:text-[16px] text-white/70 group-hover:text-white/90 uppercase font-bold tracking-[0.15em] font-sans transition-colors duration-500 mt-[1px]">
                 {isEn ? 'STATUS: Assets generating...' : 'STATUS: 视觉资产生成中'}
               </span>
             </div>

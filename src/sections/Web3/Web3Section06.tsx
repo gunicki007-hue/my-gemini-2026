@@ -19,7 +19,7 @@ export const Web3Section06 = () => {
       >
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '06 / PR & GLOBALIZATION' : '06 / 公关与全球化'}
             </h4>
             <div className="w-16 h-[1px] bg-white/30" />

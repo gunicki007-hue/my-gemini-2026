@@ -38,7 +38,7 @@ export const Web3Outro = () => {
           >
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
-          <span className="text-[14px] md:text-[13px] font-bold tracking-tighter uppercase mt-[1px]">
+          <span className="text-[16px] md:text-[16px] font-bold tracking-tighter uppercase mt-[1px]">
             {isEn ? 'BACK' : '返回项目列表'}
           </span>
         </button>

@@ -20,7 +20,7 @@ export const SpatialSection02 = () => {
           >
             <div className="flex items-center gap-4 mb-8 md:mb-12">
               <div className="w-16 h-[1px] bg-[#A66B4E]/50" />
-              <h4 className="text-[#A66B4E] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-[#A66B4E] tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
                 {isEn ? 'CASE 02 · OUTDOOR EXPERIENCE · BRAND CHARITY' : 'CASE 02 · 户外体验 · 品牌公益'}
               </h4>
             </div>
@@ -74,8 +74,8 @@ export const SpatialSection02 = () => {
             <div className="flex flex-col gap-3 md:gap-4 lg:mt-[72px]">
               {/* Title / Label from Image 1 */}
               <div className="flex flex-col gap-2 mb-2 lg:mb-4">
-                <span className="text-[#A66B4E] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                  <span className="font-mono slashed-zero text-[12px]">01</span>
+                <span className="text-[#A66B4E] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                  <span className="font-mono slashed-zero text-[16px]">01</span>
                   {isEn ? '/ OUTDOOR REAL-WORLD COORDINATION · BUILDING FULL-LINK CSR EXPERIENCE' : '/ 户外实境统筹 · 构建全链路 CSR 体验'}
                 </span>
                 <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>

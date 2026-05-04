@@ -20,7 +20,7 @@ export const Web3PortalUI = () => {
         {/* 顶部标签 / Top Tag */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? '03 / DIGITAL PORTAL' : '03 / 数字门户'}
           </h4>
           <div className="w-16 h-[1px] bg-white/30" />

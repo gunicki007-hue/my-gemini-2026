@@ -121,7 +121,7 @@ export const Web3CommunityIPSecondary = () => {
       >
          <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '05 / COMMUNITY & IP' : '05 / 社区生态与 IP'}
             </h4>
          </div>

@@ -20,7 +20,7 @@ export const InsurtechSection07 = () => {
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '03 / AI-DRIVEN CONVERSION' : '03 / AI 驱动转化'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />
@@ -91,7 +91,7 @@ export const InsurtechSection07 = () => {
         >
           {/* Section Marker */}
           <div className="flex items-center gap-4 mb-6 md:mb-8">
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '03 / AI GENERATION' : '03 / AI 赋能生成'}
             </h4>
             <div className="flex-1 max-w-[48px] h-[1px] bg-white/30" />
@@ -129,7 +129,7 @@ export const InsurtechSection07 = () => {
           {/* Section Marker */}
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '03 / AI GENERATED KV' : '03 / AI 生成 KV'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />

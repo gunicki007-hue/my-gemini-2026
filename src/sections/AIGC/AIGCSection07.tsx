@@ -20,7 +20,7 @@ export const AIGCSection07 = () => {
           >
             <div className="flex items-center gap-4 mb-8 md:mb-12">
               <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-              <h4 className="text-[#D5B667] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+              <h4 className="text-[#D5B667] tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
                 {isEn ? 'CASE 03 · AGILITY & HIGH CONCURRENCY · TEA' : 'CASE 03 · 敏捷与高并发 · 茶颜悦色'}
               </h4>
             </div>
@@ -32,7 +32,7 @@ export const AIGCSection07 = () => {
               )}
             </h3>
 
-            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] md:text-[16px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify'}`}>
+            <div className={`space-y-6 ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] md:text-[16px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
               <p className="text-white font-medium">
                 {isEn ? (
                   "The essence of the FMCG industry is racing against volatile market sentiments."
@@ -74,8 +74,8 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[12px]">01</span>
+              <span className="text-[#D5B667] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[16px]">01</span>
                 {isEn ? 'BRAND VISUAL FOUNDATION' : '品牌视觉基座'}
               </span>
               <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
@@ -86,14 +86,14 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Tea01-1.webp" alt="Brand DNA Enclosing" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[16px] md:text-[16px] font-medium tracking-tighter">
                   {isEn ? 'Brand DNA Enclosing' : '视觉基因数据化封装'}
                 </span>
               </div>
             </div>
             
             <div className="flex flex-col gap-2 mt-2">
-              <h5 className="text-white text-[14px] md:text-[13px] font-medium tracking-wide">
+              <h5 className="text-white text-[16px] md:text-[16px] font-medium tracking-wide">
                 {isEn ? 'Training Set Tagging Example' : '训练集打标示例'}
               </h5>
               <p className="text-white/70 text-[9px] md:text-[10px] font-light leading-relaxed text-justify break-words w-full">
@@ -117,8 +117,8 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[12px]">02</span>
+              <span className="text-[#D5B667] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[16px]">02</span>
                 {isEn ? 'SKU EXPONENTIAL FISSION' : 'SKU 指数裂变'}
               </span>
               <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
@@ -129,7 +129,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/SKU.webp" alt="Matrix Generation" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[16px] md:text-[16px] font-medium tracking-tighter">
                   {isEn ? 'Matrix Generation' : 'SKU 无级扩展与裂变'}
                 </span>
               </div>
@@ -145,8 +145,8 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4 mt-[30px]"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[12px]">03</span>
+              <span className="text-[#D5B667] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[16px]">03</span>
                 {isEn ? 'AGILE LOCALIZED MARKETING' : '区域化敏捷营销'}
               </span>
               <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
@@ -157,7 +157,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/4city.webp" alt="Agile Localization" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[16px] md:text-[16px] font-medium tracking-tighter">
                   {isEn ? 'Agile Localization' : '区域化场景敏捷响应'}
                 </span>
               </div>
@@ -173,8 +173,8 @@ export const AIGCSection07 = () => {
             className="flex flex-col gap-4"
           >
             <div className="flex flex-col gap-2 mb-2">
-              <span className="text-[#D5B667] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[12px]">04</span>
+              <span className="text-[#D5B667] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[16px]">04</span>
                 {isEn ? 'A/B TESTING & E-COMMERCE HIGH CONCURRENCY' : 'A/B 测试与电商高并发'}
               </span>
               <p className="text-white text-[16px] md:text-[15px] font-normal tracking-wide">
@@ -188,7 +188,7 @@ export const AIGCSection07 = () => {
               <img src="https://img.nickiresume.cn/Nimage/03AIGC/Test%20B.webp" alt="A/B Testing B" className="absolute inset-0 w-full h-full object-cover object-center" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-6 left-8 z-10">
-                <span className="text-white/70 text-[13px] md:text-[13px] font-medium tracking-tighter">
+                <span className="text-white/70 text-[16px] md:text-[16px] font-medium tracking-tighter">
                   {isEn ? 'High Throughput' : '极速全域并发与分发'}
                 </span>
               </div>

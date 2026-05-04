@@ -19,7 +19,7 @@ export const Web3UIUXDesign = () => {
       >
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? '04 / UI/UX DESIGN' : '04 / UI/UX 设计'}
           </h4>
         </div>

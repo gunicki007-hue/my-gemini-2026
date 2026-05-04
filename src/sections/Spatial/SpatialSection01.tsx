@@ -20,7 +20,7 @@ export const SpatialSection01 = () => {
           >
             <div className="flex items-center gap-4 mb-8 md:mb-12">
               <div className="w-16 h-[1px] bg-[#A66B4E]/50" />
-              <h4 className="text-[#A66B4E] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold whitespace-nowrap">
+              <h4 className="text-[#A66B4E] tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold whitespace-nowrap">
                 {isEn ? 'CASE 01 · PHYSICAL LANDING · SPATIAL PROJECT' : 'CASE 01 · 物理着陆 · 空间全案'}
               </h4>
             </div>
@@ -42,7 +42,7 @@ export const SpatialSection01 = () => {
                 )}
               </p>
               
-              <div className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[14px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[14px] xl:text-[16px] text-justify'}` + " pt-4"}>
+              <div className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}` + " pt-4"}>
                 {isEn ? (
                   "From irregular mega-structures for 10,000 attendees to highly constrained international agile booths. Through strict supply chain scheduling and audio-visual control, we break the industry barrier of 'renders for reference only', ensuring 100% absolute landing of the brand visual strategy."
                 ) : (
@@ -65,8 +65,8 @@ export const SpatialSection01 = () => {
           >
             {/* Title / Label from Image 1 */}
             <div className="flex flex-col gap-2 mb-2 lg:mb-4">
-              <span className="text-[#A66B4E] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[12px]">01</span>
+              <span className="text-[#A66B4E] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[16px]">01</span>
                 {isEn ? '/ VISUAL STRATEGY DEDUCTION · ESTABLISHING CAMPAIGN CORE VISUAL BASE' : '/ 视觉策略推演 · 确立CAMPAIGN 核心视觉基座'}
               </span>
               <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
@@ -91,8 +91,8 @@ export const SpatialSection01 = () => {
             
             {/* Title / Label from Image 2 */}
             <div className="flex flex-col gap-2 mt-8 md:mt-12 mb-2 lg:mb-4">
-              <span className="text-[#A66B4E] tracking-tighter text-[12px] font-sans font-bold uppercase flex items-center gap-2">
-                <span className="font-mono slashed-zero text-[12px]">02</span>
+              <span className="text-[#A66B4E] tracking-tighter text-[16px] font-sans font-bold uppercase flex items-center gap-2">
+                <span className="font-mono slashed-zero text-[16px]">02</span>
                 {isEn ? '/ FULL-DOMAIN LANDING · MACRO COORDINATION & AGILE DEPLOYMENT' : '/ 全域落地 · 巨构统筹与敏捷部署'}
               </span>
               <p className={`w-full ${isEn ? 'text-white/90 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/90 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>

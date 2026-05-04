@@ -17,7 +17,7 @@ export const AIGCSection01 = () => {
       >
         <div className="flex items-center gap-4 mb-8 md:mb-12">
           <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-          <h4 className="text-[#D5B667] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+          <h4 className="text-[#D5B667] tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
             {isEn ? 'CASE 01 · DEPTH' : '案例 01 · 深度'}
           </h4>
         </div>
@@ -32,7 +32,7 @@ export const AIGCSection01 = () => {
 
         <div className="flex items-center gap-4 mb-24 md:mb-40">
           <div className="w-16 h-[1px] bg-white/30" />
-          <span className={`text-white/70 text-[14px] md:text-[18px] italic font-normal ${isEn ? 'tracking-normal uppercase' : 'tracking-wide'}`}>
+          <span className={`text-white/70 text-[16px] md:text-[18px] italic font-normal ${isEn ? 'tracking-normal uppercase' : 'tracking-wide'}`}>
             {isEn ? 'A hybrid intelligent workflow expanding decision boundaries' : '扩展决策边界的混合智能工作流'}
           </span>
         </div>

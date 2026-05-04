@@ -84,7 +84,7 @@ export const Awards = () => {
                 
                 <div className="flex items-center gap-4 mb-20">
                   <div className="h-[1px] w-12 bg-white/30" />
-                  <h4 className={`text-white/70 text-[12px] md:text-[16px] italic font-normal ${language === 'en' ? 'tracking-normal' : 'tracking-wide'}`}>
+                  <h4 className={`text-white/70 text-[16px] md:text-[16px] italic font-normal ${language === 'en' ? 'tracking-normal' : 'tracking-wide'}`}>
                     {language === 'en' ? 'Not trophies. Global business validations.' : '不是奖杯，是全球商业验证。'}
                   </h4>
                 </div>
@@ -93,7 +93,7 @@ export const Awards = () => {
                   <h3 className="text-xl md:text-[18px] font-extrabold mb-6 text-white tracking-tight">
                     {language === 'en' ? 'GLOBAL Validation | Crydit (0-1)' : '包揽国际设计奖项 | Crydit（0-1阶段）'}
                   </h3>
-                  <p className="text-white/70 text-[12px] md:text-[16px] leading-[1.6] max-w-[90%] font-normal tracking-wide">
+                  <p className="text-white/70 text-[16px] md:text-[16px] leading-[1.6] max-w-[90%] font-normal tracking-wide">
                     {language === 'en' 
                       ? 'Multiple international design awards validate the maturity and viability of the project\'s strategy and execution within real-world business contexts.' 
                       : '多个国际设计奖项验证了该项目构想与其在真实商业环境中的落地执行的成熟度。'}
@@ -132,7 +132,7 @@ export const Awards = () => {
                 >
                   <div className="flex items-center w-full min-h-[48px]">
                     {/* Number using space-grotesk */}
-                    <span className="text-white/30 font-space-grotesk text-[12px] md:text-[14px] font-bold tracking-widest w-16 shrink-0 transition-colors duration-500">
+                    <span className="text-white/30 font-space-grotesk text-[16px] md:text-[16px] font-bold tracking-widest w-16 shrink-0 transition-colors duration-500">
                       {item.id}
                     </span>
                     
@@ -140,8 +140,8 @@ export const Awards = () => {
                     <div className={`flex flex-col flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${isActive ? 'translate-x-[20px]' : 'translate-x-[0px]'}`}>
                       <span className={`transition-colors duration-500 ${
                         language === 'en' 
-                          ? 'text-[11px] md:text-[16px] tracking-[0.15em] uppercase font-bold font-space-grotesk text-white' 
-                          : 'text-[12px] md:text-[18px] tracking-tighter font-black font-puhuiti text-white leading-none'
+                          ? 'text-[16px] md:text-[16px] tracking-[0.15em] uppercase font-bold font-space-grotesk text-white' 
+                          : 'text-[16px] md:text-[18px] tracking-tighter font-black font-puhuiti text-white leading-none'
                       }`}>
                         {language === 'en' ? item.en.awardTitle : item.cn.awardTitle}
                       </span>

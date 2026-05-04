@@ -33,7 +33,7 @@ export const Contact = () => {
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-0 px-2 md:px-0">
           
           {/* Left Text Detail List */}
-          <ul className="flex flex-col space-y-5 text-[12px] md:text-[14px] font-normal tracking-wide w-full md:w-auto items-center md:items-start">
+          <ul className="flex flex-col space-y-5 text-[16px] md:text-[16px] font-normal tracking-wide w-full md:w-auto items-center md:items-start">
             <li className="flex items-center w-full justify-between md:justify-start">
               <span className="w-20 md:w-24 text-white/70 font-light">{isEn ? 'Email' : '邮箱'}</span>
               <a href="mailto:gunicki007@gmail.com" className="font-bold text-white hover:text-white/70 transition-colors tracking-tight">
@@ -75,7 +75,7 @@ export const Contact = () => {
       </div>
 
       {/* Copyright */}
-      <div className="absolute bottom-[150px] left-0 w-full flex justify-center text-white/70 text-[11px] md:text-[13px] tracking-widest font-normal font-sans z-10">
+      <div className="absolute bottom-[150px] left-0 w-full flex justify-center text-white/70 text-[16px] md:text-[16px] tracking-widest font-normal font-sans z-10">
         © 2026 NICKI GU
       </div>
 

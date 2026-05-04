@@ -226,7 +226,7 @@ export const Projects = () => {
         </h1>
         <div className="flex items-center gap-4 mt-5">
           <div className="w-16 h-[1px] bg-white/20"></div>
-          <p className="text-white/70 text-[12px] md:text-[16px] font-normal tracking-wide italic">
+          <p className="text-white/70 text-[16px] md:text-[16px] font-normal tracking-wide italic">
             {language === 'en' ? 'Strategy-driven. AI-powered. Output is the solution.' : '商业打底，算力操刀。出街即是解法。'}
           </p>
         </div>
@@ -307,7 +307,7 @@ export const Projects = () => {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
-                  className={`text-white/70 tracking-tighter mb-10 ${language === 'en' ? 'font-light text-[14px]' : 'font-bold text-[13px]'}`}
+                  className={`text-white/70 tracking-tighter mb-10 ${language === 'en' ? 'font-light text-[16px]' : 'font-bold text-[16px]'}`}
                 >
                   {language === 'en' ? PROJECTS_DATA[activeIndex].en.desc : PROJECTS_DATA[activeIndex].cn.desc}
                 </motion.p>
@@ -352,7 +352,7 @@ export const Projects = () => {
                   onMouseEnter={() => setActiveIndex(idx)}
                   className="relative flex items-center justify-end h-[24px] cursor-pointer"
                 >
-                  <span className={`whitespace-nowrap font-black tracking-widest uppercase text-right transition-colors duration-500 ease-out ${isActive ? 'text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]' : 'text-white/30 hover:text-white/70'} ${language === 'en' ? 'text-[12px] md:text-[14px] font-sans' : 'text-[12px] md:text-[14px] font-puhuiti font-black tracking-tighter'}`}>
+                  <span className={`whitespace-nowrap font-black tracking-widest uppercase text-right transition-colors duration-500 ease-out ${isActive ? 'text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]' : 'text-white/30 hover:text-white/70'} ${language === 'en' ? 'text-[16px] md:text-[16px] font-sans' : 'text-[16px] md:text-[16px] font-puhuiti font-black tracking-tighter'}`}>
                     {uiText}
                   </span>
                 </div>

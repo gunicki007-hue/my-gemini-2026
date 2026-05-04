@@ -20,7 +20,7 @@ export const InsurtechSection08 = () => {
          {/* Tag */}
          <div className="flex items-center gap-4 mb-8">
             <div className="w-12 h-[1px] bg-white/30" />
-            <h4 className="text-white/70 tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
+            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
               {isEn ? '04 / OMNICHANNEL MARKETING VISUALS' : '04 / 全域营销视觉'}
             </h4>
             <div className="w-12 h-[1px] bg-white/30" />
