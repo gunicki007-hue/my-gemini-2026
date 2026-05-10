@@ -43,7 +43,7 @@ export const AIGCSection03 = () => {
             </motion.div>
             <motion.h2 
               variants={itemVariants}
-              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[28px] md:text-[36px] xl:text-[44px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
+              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[40px] md:text-[48px] xl:text-[56px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
             >
               {isEn ? (
                 <>AI Full-Link<br />Design Execution</>
@@ -61,7 +61,7 @@ export const AIGCSection03 = () => {
                 )}
               </p>
               
-              <ol className="space-y-4 list-decimal list-inside pl-1">
+              <ol className="space-y-4 list-decimal list-outside ml-5">
                 <li className="pl-1">
                   {isEn ? 'First, I sorted out the pain points of the original product, finalized the AI upgrade direction and interaction logic;' : '我先梳理原有产品痛点、敲定 AI 升级方向与交互逻辑；'}
                 </li>
@@ -84,16 +84,16 @@ export const AIGCSection03 = () => {
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true, margin: "-100px" }}
              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-             className="w-full bg-[#111111] rounded-xl overflow-hidden border border-white/5"
+             className="w-full flex flex-col gap-6"
           >
-            <div className="w-full flex flex-col p-6 md:p-8 lg:p-10 text-[10px]">
-              {/* Header */}
-              <div className="text-center mb-8 md:mb-10">
-                <h3 className="text-white text-[8px] md:text-[8px] font-bold tracking-widest">{isEn ? '5-Step SOP Workflow' : '5步跑通SOP 工作流'}</h3>
-              </div>
+            <div className="w-full text-center text-white/40 text-[11px] md:text-[12px] tracking-widest font-sans font-medium uppercase">
+              {isEn ? '5-Step SOP · AI Workflow' : '5步跑通SOP · AI 工作流'}
+            </div>
+            
+            <div className="w-full bg-[#111111] rounded-xl overflow-hidden border border-white/5 flex flex-col p-6 md:p-8 lg:p-10 text-[10px] justify-center">
               
               {/* Table Header */}
-              <div className="hidden md:grid grid-cols-4 gap-4 mb-4 text-white/50 text-[8px] font-medium tracking-wide">
+              <div className="hidden md:grid grid-cols-4 gap-4 mb-4 text-white/50 text-[12px] font-medium tracking-wide">
                 <div></div>
                 <div>SKILLS/MODEL</div>
                 <div>{isEn ? 'OUTPUT' : '产出'}</div>
@@ -161,24 +161,24 @@ export const AIGCSection03 = () => {
                 ].map((row, index) => (
                   <div key={index} className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-4 items-center border-b border-white/5 pb-6 md:pb-4 last:border-0 last:pb-0">
                     <div className="flex flex-row md:flex-col gap-4 md:gap-1 items-baseline md:items-start">
-                      <div className="text-[10px] md:text-[8px] font-black text-white/20 italic font-sans">{row.step}</div>
-                      <div className="text-white font-medium text-[11px] md:text-[10px]">{isEn ? row.enTitle : row.title}</div>
+                      <div className="text-[28px] md:text-[32px] font-black text-white/20 italic font-sans">{row.step}</div>
+                      <div className="text-white font-medium text-[13px] md:text-[14px]">{isEn ? row.enTitle : row.title}</div>
                     </div>
                     
                     <div className="flex flex-col gap-1">
-                      <div className="md:hidden text-white/50 text-[8px] mb-1">SKILLS/MODEL</div>
-                      <div className="text-[#D5B667] text-[11px] font-semibold">{row.skillType}</div>
-                      {row.skills.map(s => <div key={s} className="text-white/80 text-[11px]">{s}</div>)}
+                      <div className="md:hidden text-white/50 text-[10px] mb-1">SKILLS/MODEL</div>
+                      <div className="text-[#D5B667] text-[13px] font-semibold">{row.skillType}</div>
+                      {row.skills.map(s => <div key={s} className="text-white/80 text-[13px]">{s}</div>)}
                     </div>
                     
                     <div className="flex flex-col gap-1">
-                      <div className="md:hidden text-white/50 text-[8px] mb-1">{isEn ? 'OUTPUT' : '产出'}</div>
-                      {row.output.map((o, i) => <div key={i} className="text-white/80 text-[11px]">{isEn ? row.enOutput[i] : o}</div>)}
+                      <div className="md:hidden text-white/50 text-[10px] mb-1">{isEn ? 'OUTPUT' : '产出'}</div>
+                      {row.output.map((o, i) => <div key={i} className="text-white/80 text-[13px]">{isEn ? row.enOutput[i] : o}</div>)}
                     </div>
                     
                     <div className="flex flex-col gap-1">
-                      <div className="md:hidden text-white/50 text-[8px] mb-1">{isEn ? 'PURPOSE' : '目的'}</div>
-                      {row.purpose.map((p, i) => <div key={i} className="text-white/80 text-[11px]">{isEn ? row.enPurpose[i] : p}</div>)}
+                      <div className="md:hidden text-white/50 text-[10px] mb-1">{isEn ? 'PURPOSE' : '目的'}</div>
+                      {row.purpose.map((p, i) => <div key={i} className="text-white/80 text-[13px]">{isEn ? row.enPurpose[i] : p}</div>)}
                     </div>
                   </div>
                 ))}
@@ -354,8 +354,8 @@ export const AIGCSection03 = () => {
               <div className="w-12 md:w-16 h-[1px] bg-[#D5B667]/50" />
             </div>
 
-            <div className="text-center mb-[30px]">
-              <h2 className="text-white text-[8px] md:text-[10px] lg:text-[8px] font-bold tracking-widest font-sans">
+            <div className="text-center mb-[30px] w-full">
+              <h2 className={`uppercase text-white text-[40px] md:text-[48px] xl:text-[56px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}>
                 {isEn ? 'Traditional Payment VS AI Native Payment Comparison' : '传统支付项目 VS AI Native 支付项目对比'}
               </h2>
             </div>
@@ -475,7 +475,7 @@ export const AIGCSection03 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className={`w-full mb-6 lg:mb-8 text-white text-[28px] md:text-[36px] xl:text-[44px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
+              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[40px] md:text-[48px] xl:text-[56px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
             >
               {isEn ? 'Traditional Workflow vs Code Agent Workflow' : '传统工作流 vs Code Agent 工作流'}
             </motion.h2>

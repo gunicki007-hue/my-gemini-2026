@@ -22,7 +22,7 @@ export const AIGCSection01 = () => {
   };
 
   return (
-    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-10 mb-[100px]">
+    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-10 mb-[400px]">
       <div className="w-full h-full flex items-center justify-center px-6 md:px-[60px] lg:px-[80px]">
         <motion.div 
           variants={containerVariants}
