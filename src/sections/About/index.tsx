@@ -23,7 +23,7 @@ export const About = () => {
              <div className="flex items-center gap-4">
                 <div className="w-16 h-[1px] bg-white/30" />
                 <h4 className={`text-white/70 text-[16px] md:text-[18px] font-normal ${isEn ? 'tracking-normal' : 'tracking-wide'}`}>
-                  {isEn ? "Let's skip the fluff and look at the final launched visual conversion and interactive experience:" : "设计不聊虚的，咱们看最终上线的视觉转化和交互体验："}
+                  {isEn ? "Let's skip the fluff and look at the final launched visual conversion and interactive experience" : "设计不聊虚的，咱们看最终上线的视觉转化和交互体验"}
                 </h4>
              </div>
            </div>

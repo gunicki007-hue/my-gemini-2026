@@ -52,7 +52,7 @@ export const AIGCSection02 = () => {
   ];
 
   return (
-    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-20">
+    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-20 mb-[100px]">
       <div className="w-full h-full flex items-center justify-center px-6 md:px-[60px] lg:px-[80px]">
         <motion.div 
           variants={containerVariants}
@@ -65,13 +65,13 @@ export const AIGCSection02 = () => {
           <div className="col-span-1 lg:col-span-4 flex flex-col z-10 w-full shrink-0">
             <motion.div variants={itemVariants} className="flex items-center gap-4 mb-6 lg:mb-8 self-start">
               <div className="w-12 md:w-16 h-[1px] bg-[#D5B667]/50" />
-              <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+              <h4 className="text-[#D5B667] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
                 {isEn ? 'CASE 01 · DESIGN THINKING' : '案例 01 · 设计思考'}
               </h4>
             </motion.div>
             <motion.h2 
               variants={itemVariants}
-              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
+              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[28px] md:text-[36px] xl:text-[44px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
             >
               {isEn ? (
                 <>Design Definition<br />& Thinking</>
@@ -80,7 +80,7 @@ export const AIGCSection02 = () => {
               )}
             </motion.h2>
 
-            <motion.div variants={itemVariants} className={`space-y-6 text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[16px]'}`}>
+            <motion.div variants={itemVariants} className={`space-y-6 text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[14px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[13px] xl:text-[14px]'}`}>
               <p>
                 {isEn ? (
                   <>For this upgrade, I chose not to overhaul the original product framework, <strong className="text-white font-bold">adhering strictly to the design bottom line: Safety first for financial products:</strong></>
@@ -112,130 +112,12 @@ export const AIGCSection02 = () => {
              className="col-span-1 lg:col-span-6 w-full flex flex-col items-center gap-6"
           >
             {/* Title above diagram */}
-            <div className="w-full text-center text-white/40 text-[11px] md:text-[12px] tracking-widest font-sans font-medium uppercase">
+            <div className="w-full text-center text-white/40 text-[9px] md:text-[10px] tracking-widest font-sans font-medium uppercase">
               {isEn ? 'Business Full-Chain Flow & AI Optimization Nodes' : '商业全链路流程图与 AI 优化节点'}
             </div>
             
-            <div className="w-full bg-[#111] rounded-2xl border border-white/5 p-6 xl:p-8 flex flex-col items-center overflow-x-auto shadow-2xl relative">
-              {/* Diagram Container */}
-              <div className="min-w-[800px] w-full flex flex-col z-10 px-6 relative">
-    
-                {/* ==== TOP SECTION ==== */}
-                <div className="w-full relative">
-                  {/* Top Right Connecting Curve */}
-                  <div className="absolute top-[49.5px] bottom-0 right-[-24px] w-[24px] border-t border-r border-[#E5B979]/30 rounded-tr-[16px] z-0" />
-                  
-                  {/* TOP NODES */}
-                  <div className="grid grid-cols-7 gap-4 w-full relative z-10 h-[100px]">
-                    {nodesTop.map((node, i) => (
-                       <div key={node.id} className="flex relative items-center justify-center w-full h-full">
-                          <div className="bg-[#1C1C1C] border border-white/5 rounded-xl p-2 w-full h-[100px] flex flex-col items-center justify-center gap-1 relative z-10 hover:bg-white/[0.03] transition-colors">
-                             <span className="text-[10px] text-white/30 font-mono">{node.id}</span>
-                             <node.icon size={20} className="text-[#E5B979]" strokeWidth={1.5} />
-                             <span className="text-[9px] text-white/80 text-center leading-tight mt-1">{node.title}</span>
-                             
-                             {/* Internal Right Arrow */}
-                             {i < 6 && (
-                                <div className="absolute top-[49.5px] -right-[16px] w-[16px] flex items-center z-0">
-                                   <div className="h-[1px] bg-[#E5B979]/30 flex-1" />
-                                   <div className="w-0 h-0 border-y-[3.5px] border-y-transparent border-l-[5px] border-l-[#E5B979]/30" />
-                                </div>
-                             )}
-                          </div>
-                       </div>
-                    ))}
-                  </div>
-
-                  {/* TOP AI BOXES */}
-                  <div className="grid grid-cols-7 gap-4 w-full mt-4 relative z-10">
-                    {nodesTop.map((node) => (
-                       <div key={`ai-${node.id}`} className="flex flex-col items-center">
-                          {node.ai ? (
-                             <>
-                               <div className="w-[1px] h-6 border-l border-dashed border-[#E5B979]/30 relative shrink-0">
-                                 <div className="absolute -bottom-[2px] left-[-3px] w-0 h-0 border-x-[2.5px] border-x-transparent border-t-[4px] border-t-[#E5B979]/50" />
-                               </div>
-                               <div className="bg-[#1C1C1C] border border-[#E5B979]/20 rounded-md p-2 w-[110px] shadow-lg text-left relative z-10 flex flex-col gap-1 mt-1">
-                                  <div className="bg-[#E5B979]/20 rounded px-1 py-0.5 w-fit flex items-center justify-center">
-                                    <span className="text-[#E5B979] text-[7px] font-bold">AI</span>
-                                  </div>
-                                  <ul className="flex flex-col gap-0.5 text-[9px] text-white/70 leading-tight">
-                                    {node.ai.map((text, idx) => <li key={idx} className="whitespace-normal">• {text}</li>)}
-                                  </ul>
-                               </div>
-                             </>
-                          ) : (
-                             <div className="w-full h-full" />
-                          )}
-                       </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* ==== MIDDLE SPACER ==== */}
-                <div className="w-full relative h-[40px] my-[16px]">
-                   <div className="absolute top-0 right-[-24px] h-[20.5px] w-[calc(50%+25px)] border-r border-b border-[#E5B979]/30 rounded-br-[16px] z-0" />
-                   <div className="absolute top-[19.5px] left-[-24px] h-[20.5px] w-[calc(50%+25px)] border-l border-t border-[#E5B979]/30 rounded-tl-[16px] z-0" />
-                </div>
-
-                {/* ==== BOTTOM SECTION ==== */}
-                <div className="w-full relative">
-                   {/* Bottom Left Connecting Curve */}
-                   <div className="absolute top-0 left-[-24px] h-[50px] w-[24px] border-l border-b border-[#E5B979]/30 rounded-bl-[16px] z-0" />
-
-                   {/* BOTTOM NODES */}
-                   <div className="grid grid-cols-7 gap-4 w-full relative z-10 h-[100px]">
-                    {nodesBottom.map((node, i) => (
-                       <div key={node.id} className="flex relative items-center justify-center w-full h-full">
-                          <div className="bg-[#1C1C1C] border border-white/5 rounded-xl p-2 w-full h-[100px] flex flex-col items-center justify-center gap-1 relative z-10 hover:bg-white/[0.03] transition-colors">
-                             <span className="text-[10px] text-white/30 font-mono">{node.id}</span>
-                             <node.icon size={20} className="text-[#E5B979]" strokeWidth={1.5} />
-                             <span className="text-[9px] text-white/80 text-center leading-tight mt-1">{node.title}</span>
-                             
-                             {/* Left incoming Arrow for Node 08 */}
-                             {i === 0 && (
-                                <div className="absolute top-[46.5px] left-[-5px] w-0 h-0 border-y-[3.5px] border-y-transparent border-l-[5px] border-l-[#E5B979]/50 z-0" />
-                             )}
-
-                             {/* Internal Right Arrow */}
-                             {i < 6 && (
-                                <div className="absolute top-[49.5px] -right-[16px] w-[16px] flex items-center z-0">
-                                   <div className="h-[1px] bg-[#E5B979]/30 flex-1" />
-                                   <div className="w-0 h-0 border-y-[3.5px] border-y-transparent border-l-[5px] border-l-[#E5B979]/30" />
-                                </div>
-                             )}
-                          </div>
-                       </div>
-                    ))}
-                   </div>
-
-                   {/* BOTTOM AI BOXES */}
-                   <div className="grid grid-cols-7 gap-4 w-full mt-4 relative z-10">
-                    {nodesBottom.map((node) => (
-                       <div key={`ai-${node.id}`} className="flex flex-col items-center">
-                          {node.ai ? (
-                             <>
-                               <div className="w-[1px] h-6 border-l border-dashed border-[#E5B979]/30 relative shrink-0">
-                                 <div className="absolute -bottom-[2px] left-[-3px] w-0 h-0 border-x-[2.5px] border-x-transparent border-t-[4px] border-t-[#E5B979]/50" />
-                               </div>
-                               <div className="bg-[#1C1C1C] border border-[#E5B979]/20 rounded-md p-2 w-[110px] shadow-lg text-left relative z-10 flex flex-col gap-1 mt-1">
-                                  <div className="bg-[#E5B979]/20 rounded px-1 py-0.5 w-fit flex items-center justify-center">
-                                    <span className="text-[#E5B979] text-[7px] font-bold">AI</span>
-                                  </div>
-                                  <ul className="flex flex-col gap-0.5 text-[9px] text-white/70 leading-tight">
-                                    {node.ai.map((text, idx) => <li key={idx} className="whitespace-normal">• {text}</li>)}
-                                  </ul>
-                               </div>
-                             </>
-                          ) : (
-                             <div className="w-full h-full" />
-                          )}
-                       </div>
-                    ))}
-                   </div>
-                </div>
-
-              </div>
+            <div className="w-full aspect-video bg-[#111] rounded-2xl border border-white/5 flex items-center justify-center overflow-hidden shadow-2xl relative">
+               <img src="https://img.nickiresume.cn/0507/workflow.webp" alt="Business Workflow" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </motion.div>

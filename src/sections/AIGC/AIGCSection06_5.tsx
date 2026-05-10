@@ -21,7 +21,7 @@ const chartData = [
 const CustomTooltip = ({ active, payload, label, isEn }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-[#111111] border border-white/10 rounded-lg p-3 text-xs shadow-xl backdrop-blur-md">
+      <div className="bg-[#111111] border border-white/10 rounded-lg p-3 text-[8px] shadow-xl backdrop-blur-md">
         <p className="text-white/70 mb-2">{isEn ? 'Output:' : '产出数量:'} {label} {isEn ? 'Sets' : '组'}</p>
         <div className="flex flex-col gap-1.5">
           {payload.map((entry: any, index: number) => (
@@ -54,14 +54,14 @@ export const AIGCSection06_5 = () => {
         className="w-full flex flex-col items-center mx-auto"
       >
         <div className="flex flex-col items-center text-center mb-16 md:mb-24">
-          <h2 className={`text-white text-[28px] md:text-[36px] xl:text-[44px] font-extrabold tracking-tighter leading-[1.2] mb-6 ${isEn ? 'font-sans' : 'font-puhuiti'}`}>
+          <h2 className={`text-white text-[26px] md:text-[34px] xl:text-[42px] font-extrabold tracking-tighter leading-[1.2] mb-6 ${isEn ? 'font-sans' : 'font-puhuiti'}`}>
             {isEn ? (
               <>AI Visual Workflow<br/>Traditional vs Intelligent Production Efficiency Summary</>
             ) : (
               <>AI视觉工作流<br/>传统制作与智能化产出效率总结</>
             )}
           </h2>
-          <p className={`w-full max-w-[800px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[16px]'}`}>
+          <p className={`w-full max-w-[800px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[14px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[13px] xl:text-[14px]'}`}>
             {isEn 
               ? 'We achieved the implementation of AI workflows from two major visual directions: extracting visual tone through brand-specific Lora training, paired with standardized ComfyUI processes, to achieve full-funnel visual consistency from brand posters to TVCs, shortening long-term production cycles. Simultaneously, relying on mature AI processes, we realized rapid response and batch production of e-commerce matrix materials, solving the traditional model\'s issues of high time consumption and limited production capacity.' 
               : '本次从两大视觉方向完成AI工作流落地：通过品牌专属Lora训练萃取视觉调性，搭配ComfyUI标准化流程，实现从品牌海报到TVC的全链路视觉统一，压缩长线制作周期；同时依托成熟AI流程，实现电商矩阵物料极速响应与批量产出，解决传统模式耗时久、产能受限的问题。'}
@@ -72,10 +72,10 @@ export const AIGCSection06_5 = () => {
           {/* Image 1 (2 Columns) */}
           <div className="w-full lg:col-span-2 h-full min-h-[400px] bg-[#111111] rounded-[24px] overflow-hidden relative border border-white/[0.05] p-6 flex flex-col justify-between">
             <div className="mb-6">
-              <h3 className="text-white text-[16px] md:text-[18px] font-bold tracking-tight mb-2">
+              <h3 className="text-white text-[14px] md:text-[16px] font-bold tracking-tight mb-2">
                 {isEn ? 'Visual Production Time Cost Comparison' : '视觉生产投入 时长对比'}
               </h3>
-              <div className="flex flex-col gap-2 mt-4 text-[11px] md:text-[12px]">
+              <div className="flex flex-col gap-2 mt-4 text-[9px] md:text-[10px]">
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-px bg-white/40 border-t border-dashed border-white/40" />
                   <span className="text-white/50">{isEn ? 'Traditional Workflow' : '传统视觉制作工作流'}</span>
@@ -89,7 +89,7 @@ export const AIGCSection06_5 = () => {
 
             <div className="flex-1 w-full relative min-h-[250px] mt-6">
               {/* Overlay Annotations */}
-              <div className="absolute top-[28%] md:top-[38%] left-[12%] text-[9px] md:text-[10px] text-[#E5B979] pointer-events-none z-10 flex flex-col items-center">
+              <div className="absolute top-[28%] md:top-[38%] left-[12%] text-[7px] md:text-[8px] text-[#E5B979] pointer-events-none z-10 flex flex-col items-center">
                 <div className="whitespace-nowrap text-center mb-1">
                   {isEn ? <>High initial input,<br/>for model training</> : <>前期投入较高，<br/>用于模型训练与流程搭建</>}
                 </div>
@@ -98,12 +98,12 @@ export const AIGCSection06_5 = () => {
                 </div>
               </div>
 
-              <div className="absolute top-2 bottom-8 right-0 w-[115px] flex flex-col justify-between pointer-events-none z-10">
-                <div className="text-[9px] md:text-[10px] text-white/50 text-left leading-snug">
+              <div className="absolute top-2 bottom-8 -right-[15px] w-[115px] flex flex-col justify-between pointer-events-none z-10">
+                <div className="text-[7px] md:text-[8px] text-white/50 text-left leading-snug">
                   {isEn ? <>Traditional:<br/>More output = more time<br/>Time cost stacks up continuously</> : <>传统模式：<br/>产出越多，耗时越久<br/>时间成本持续叠加</>}
                 </div>
 
-                <div className="flex flex-col items-center justify-center flex-1 py-3 text-[9px] md:text-[10px] text-[#E5B979]/80">
+                <div className="flex flex-col items-center justify-center flex-1 py-3 text-[7px] md:text-[8px] text-[#E5B979]/80">
                   <div className="h-full min-h-[20px] max-h-[40px] w-px border-l border-dashed border-[#E5B979]/40 relative mb-1">
                     <div className="absolute -top-[3px] left-[-3px] w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[4px] border-b-[#E5B979]/40" />
                     <div className="absolute -bottom-[3px] left-[-3px] w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-t-[4px] border-t-[#E5B979]/40" />
@@ -111,12 +111,12 @@ export const AIGCSection06_5 = () => {
                   <span className="text-left w-full leading-tight">{isEn ? 'Long-term reuse, time saved' : '长期复用，时间成本大幅节约'}</span>
                 </div>
 
-                <div className="text-[9px] md:text-[10px] text-[#E5B979]/80 text-left leading-snug">
+                <div className="text-[7px] md:text-[8px] text-[#E5B979]/80 text-left leading-snug">
                   {isEn ? <>AI Mode:<br/>Setup once, reuse forever<br/>Mass production barely adds time</> : <>AI模式：<br/>前期沉淀，后期复用<br/>量产后时间几乎不增加</>}
                 </div>
               </div>
 
-              <div className="absolute top-0 left-0 text-white/30 text-[9px] md:text-[10px] transform -translate-y-4">
+              <div className="absolute top-0 left-0 text-white/30 text-[7px] md:text-[8px] transform -translate-y-4">
                 {isEn ? 'Time (Days)' : '整体工作时长投入 (天)'}
               </div>
               <ResponsiveContainer width="100%" height="100%">
@@ -169,7 +169,7 @@ export const AIGCSection06_5 = () => {
                   />
                 </LineChart>
               </ResponsiveContainer>
-              <div className="absolute bottom-0 right-0 text-white/30 text-[10px] transform translate-y-6">
+              <div className="absolute -right-[15px] w-[115px] bottom-1 text-left text-white/30 text-[8px]">
                 {isEn ? 'Output Quantity' : '视觉物料产出数量 (组)'}
               </div>
             </div>
@@ -180,16 +180,16 @@ export const AIGCSection06_5 = () => {
              <table className="w-full text-left border-collapse min-w-[600px] md:min-w-0">
                <thead>
                  <tr className="border-b border-white/[0.05]">
-                    <th className="pb-4 font-sans font-medium text-white/50 w-[20%] text-[13px] md:text-[14px]">
+                    <th className="pb-4 font-sans font-medium text-white/50 w-[20%] text-[11px] md:text-[12px]">
                       {isEn ? 'Dimension' : '对比维度'}
                     </th>
-                    <th className="pb-4 font-sans font-medium text-white/50 w-[40%] pl-2 md:pl-4 text-[13px] md:text-[14px]">
+                    <th className="pb-4 font-sans font-medium text-white/50 w-[40%] pl-2 md:pl-4 text-[11px] md:text-[12px]">
                       <div className="flex items-center gap-2">
                         <XCircle className="w-4 h-4 md:w-5 md:h-5 text-white/30 shrink-0" />
                         {isEn ? 'Traditional Workflow' : '传统视觉工作流'}
                       </div>
                     </th>
-                    <th className="pb-4 font-sans font-medium text-[#E5B979] w-[40%] pl-2 md:pl-4 text-[13px] md:text-[14px]">
+                    <th className="pb-4 font-sans font-medium text-[#E5B979] w-[40%] pl-2 md:pl-4 text-[11px] md:text-[12px]">
                       <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-[#E5B979] shrink-0" />
                         {isEn ? 'AI Lora+ComfyUI' : 'AI Lora+ComfyUI 工作流'}
@@ -197,7 +197,7 @@ export const AIGCSection06_5 = () => {
                     </th>
                  </tr>
                </thead>
-               <tbody className="divide-y divide-white/[0.05] text-[12px] md:text-[13px] font-light">
+               <tbody className="divide-y divide-white/[0.05] text-[10px] md:text-[11px] font-light">
                  {/* Row 1 */}
                  <tr>
                    <td className="py-4 md:py-6 pr-2 md:pr-4 text-white/80">
@@ -222,7 +222,7 @@ export const AIGCSection06_5 = () => {
                    <td className="py-4 md:py-6 pr-2 md:pr-4 text-white/80">
                      <div className="flex flex-col xl:flex-row xl:items-center gap-2 md:gap-3">
                        <span className="flex items-center gap-2 md:gap-3 shrink-0"><ImageIcon className="w-4 h-4 md:w-5 md:h-5 text-white/30" />{isEn ? 'Brand Proj.' : '品牌项目'}</span>
-                       <span className="whitespace-nowrap xl:ml-0 text-white/50 text-[11px] md:text-[12px]">{isEn ? 'Poster→TVC' : '海报→TVC'}</span>
+                       <span className="whitespace-nowrap xl:ml-0 text-white/50 text-[9px] md:text-[10px]">{isEn ? 'Poster→TVC' : '海报→TVC'}</span>
                      </div>
                    </td>
                    <td className="py-4 md:py-6 px-2 md:px-4 text-white/50 border-l border-white/[0.05]">

@@ -22,7 +22,7 @@ export const AIGCSection01 = () => {
   };
 
   return (
-    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-10">
+    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-10 mb-[100px]">
       <div className="w-full h-full flex items-center justify-center px-6 md:px-[60px] lg:px-[80px]">
         <motion.div 
           variants={containerVariants}
@@ -35,13 +35,13 @@ export const AIGCSection01 = () => {
           <div className="col-span-1 lg:col-span-4 flex flex-col z-10 w-full shrink-0">
             <motion.div variants={itemVariants} className="flex items-center gap-4 mb-6 lg:mb-8 self-start">
               <div className="w-12 md:w-16 h-[1px] bg-[#D5B667]/50" />
-              <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+              <h4 className="text-[#D5B667] tracking-tighter text-[12px] md:text-[14px] uppercase font-sans font-bold">
                 {isEn ? 'CASE 01 · AI NATIVE' : '案例 01 · AI Native'}
               </h4>
             </motion.div>
             <motion.h2 
               variants={itemVariants}
-              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
+              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[28px] md:text-[36px] xl:text-[44px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
             >
               {isEn ? (
                 <>On-chain Payment<br />AI Native Upgrade</>
@@ -50,8 +50,8 @@ export const AIGCSection01 = () => {
               )}
             </motion.h2>
 
-            <motion.div variants={itemVariants} className={`space-y-6 text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[16px]'}`}>
-              <p className="font-bold text-white text-[16px] xl:text-[18px]">
+            <motion.div variants={itemVariants} className={`space-y-6 text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[14px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[13px] xl:text-[14px]'}`}>
+              <p className="font-bold text-white text-[14px] xl:text-[16px]">
                 {isEn ? (
                   "This is an independent AI Native upgrade for a launched PC-based on-chain crypto-to-fiat card payment product."
                 ) : (
@@ -108,7 +108,7 @@ export const AIGCSection01 = () => {
              variants={itemVariants}
              className="col-span-1 lg:col-span-6 w-full flex flex-col gap-3 md:gap-4"
           >
-              <div className="w-full text-white/60 text-xs md:text-sm font-medium tracking-widest text-center">
+              <div className="w-full text-white/60 text-[8px] md:text-[10px] font-medium tracking-widest text-center">
                 {isEn ? 'Original Flow → AI Assisted Ops → AI Optimized Trade' : '「原流程页」→「AI辅助操作页」→「AI优化交易页」'}
               </div>
               <div className="w-full aspect-video bg-[#1a1a1a] rounded-xl overflow-hidden">

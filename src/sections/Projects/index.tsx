@@ -25,8 +25,8 @@ const PROJECTS_DATA = [
   },
   {
     id: "aigc",
-    en: { title: "AIGC", target: "AI DRIVEN VISUAL OS", desc: "AI Visuals / Content Production / Model" },
-    cn: { title: "AIGC", target: "AIGC  战略与全域制作", desc: "AI视觉 / 内容生产 / 创意策略" },
+    en: { title: "AIGC", target: "AIGC FULL-DOMAIN WORKFLOW", desc: "AI Project Experience / Creative Visual Design / AIGC Workflow" },
+    cn: { title: "AIGC", target: "AIGC全域工作流", desc: "AI项目体验 / 创意视觉设计 / AIGC工作流" },
     image: "https://img.nickiresume.cn/images/0418resume/04-4.webp"
   },
   {
