@@ -13,33 +13,38 @@ export const Web3Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="flex flex-col z-10 relative w-full lg:w-[35%] xl:w-[35%] shrink-0 lg:pr-0 pr-6"
+        className="flex flex-col z-10 relative w-full lg:w-[40%] xl:w-[40%] shrink-0 lg:pr-0 pr-6"
       >
-        <div className="flex items-center gap-4 mb-8">
-          <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
-            {isEn ? 'Web3 Financial Ecosystem' : 'Web3 金融生态'}
-          </h4>
-        </div>
-
         <h1
-          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-extrabold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,56px)] font-bold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,64px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
         >
           {isEn ? (
             <>
-              REDEFINING<br />
-              DIGITAL<br />
-              TRUST
+              Crydit<br />
+              Redefining Web3<br />
+              Global Payment Trust
             </>
           ) : (
-            <>重塑时代<br />数字金融</>
+            <>Crydit<br />重构 Web3 全球支付的信任底座</>
           )}
         </h1>
 
-        <p className={`mt-8 md:mt-12 w-full text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
-          {isEn
-            ? "I led Crydit’s 0-to-1 launch across strategy, visual DNA, and product architecture. By applying hardcore visual noise reduction to strip away Web3 barriers, I engineered a premium, high-trust crypto management experience."
-            : "我全链路操盘了 Crydit 从 0-1 的战略推演、视觉基因、产品架构及全球公关叙事。用硬核的视觉降噪剥离行业壁垒，为全球用户重构兼具“信任底座”与“高级感”的加密资管体验。"}
+        <h3 className={`mt-8 w-full text-white font-bold ${isEn ? 'text-[16px] xl:text-[18px] tracking-tight uppercase' : 'text-[16px] xl:text-[18px] tracking-widest'}`}>
+          {isEn 
+            ? '0-to-1 Crypto-to-Fiat Ecosystem Architecture & Brand Visual Strategy'
+            : '0-1 U转法币生态架构与品牌视觉全案'}
+        </h3>
+
+        <p className={`mt-4 w-full text-white/70 text-left md:text-justify ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.7] text-[16px] xl:text-[16px]'}`}>
+          {isEn ? (
+            <>
+              Addressing the extremely high business barriers of cross-border crypto asset payments (Crypto-to-Fiat), I led the full-stack design remodeling. By using <span className="font-bold text-white">"Visual Ice-Breaking" to dissolve trust anxiety</span> and <span className="font-bold text-white">"UX Noise Reduction" to eliminate interaction barriers</span>, I transformed complex on-chain settlements into an intuitive payment experience.
+            </>
+          ) : (
+            <>
+              针对跨国加密资产支付（U转法币）极高的业务壁垒，我主导了全链路的设计重塑。通过<span className="font-bold text-white">“视觉破冰”解决信任焦虑</span>，利用<span className="font-bold text-white">“UX降噪”消解交互门槛</span>，将复杂的链上清算转化为直觉化的支付体验。
+            </>
+          )}
         </p>
       </motion.div>
 
@@ -48,7 +53,7 @@ export const Web3Hero = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full lg:flex-1 relative z-10 rounded-l-[8px] md:rounded-l-[12px] rounded-r-none overflow-hidden bg-[#0a0a0a] shadow-[0_30px_80px_rgba(0,0,0,0.8)] flex items-center justify-center group"
+        className="w-full lg:flex-1 relative z-10 rounded-l-[16px] sm:rounded-l-[24px] rounded-r-none overflow-hidden bg-[#0a0a0a] shadow-[0_30px_80px_rgba(0,0,0,0.8)] flex items-center justify-center group"
       >
         <video
           src="https://img.nickiresume.cn/videos/01-case1%20banner.mp4"

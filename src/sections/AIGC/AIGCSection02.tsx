@@ -1,190 +1,244 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useDictionary } from '../../hooks/useDictionary';
+import { 
+  User, UserPlus, BadgeCheck, ShieldCheck, LockKeyhole, Home, PieChart, 
+  Network, CreditCard, Wallet, ClipboardList, ArrowRightLeft, Receipt, BarChart3,
+  Bot
+} from 'lucide-react';
 
 export const AIGCSection02 = () => {
   const { language } = useDictionary();
   const isEn = language === 'en';
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } },
+  };
+
+  const nodesTop = [
+    { id: '01', icon: User, title: isEn ? 'User Entry' : '用户入口' },
+    { id: '02', icon: UserPlus, title: isEn ? 'Acc. Reg.' : '账号注册' },
+    { id: '03', icon: BadgeCheck, title: isEn ? 'KYC' : 'KYC 实名认证',
+      ai: [isEn ? 'AI Portrait Verification' : 'AI智能人像核验', isEn ? 'Data Risk Screening (AI Opt)' : '资料风险筛查（AI优化）'] },
+    { id: '04', icon: ShieldCheck, title: isEn ? 'Sec. Audit' : '账号安全审核' },
+    { id: '05', icon: LockKeyhole, title: isEn ? 'Acc. Login' : '账号登录',
+      ai: [isEn ? 'AI Risk Monitoring' : 'AI风控监测', isEn ? 'Anomaly Recognition (AI Opt)' : '异常登录识别（AI优化）'] },
+    { id: '06', icon: Home, title: isEn ? 'Personal Home' : '个人中心主页' },
+    { id: '07', icon: PieChart, title: isEn ? 'Credit Limit' : '授信额度开通' },
+  ];
+
+  const nodesBottom = [
+    { id: '08', icon: Network, title: isEn ? 'Fund Access' : '资金通道接入',
+      ai: [isEn ? 'AI Fund Routing' : 'AI智能资金调用', isEn ? 'Link Throttle Opt (AI Opt)' : '链路节流优化（AI优化）'] },
+    { id: '09', icon: CreditCard, title: isEn ? 'Card Binding' : '银行卡绑定',
+      ai: [isEn ? 'AI Anti-Fraud Alert' : 'AI反诈预警', isEn ? 'Info Security Check (AI Opt)' : '信息安全校验（AI优化）'] },
+    { id: '10', icon: Wallet, title: isEn ? 'Asset Mgt' : '个人账户资产管理' },
+    { id: '11', icon: ClipboardList, title: isEn ? 'Gen. Order' : '生成消费订单' },
+    { id: '12', icon: ArrowRightLeft, title: isEn ? 'Tx. Payment' : '交易支付',
+      ai: [isEn ? 'AI Tx Matching' : 'AI智能交易匹配', isEn ? 'Tx Risk Control (AI Opt)' : '交易风险管控（AI优化）'] },
+    { id: '13', icon: Receipt, title: isEn ? 'Bill Settlement' : '账单结算' },
+    { id: '14', icon: BarChart3, title: isEn ? 'Data Review' : '数据回流复盘' },
+  ];
+
   return (
-    <section className="relative w-full py-24 md:py-32 px-6 md:px-[80px] bg-[#050505] overflow-hidden flex flex-col items-center border-t border-white/[0.02]">
-      <div className="w-full flex flex-col max-w-[1920px]">
-        {/* Top Text Blocks */}
-        <div className="flex flex-col gap-20 md:gap-32 mb-16 md:mb-24">
-          
-          {/* Problem Solving block */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-6"
-          >
-            <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[16px] md:text-[16px] mb-4">
-              {isEn ? '01 / PROBLEM SOLVING' : '01 / 核心问题解决'}
-            </div>
-            <h3 className={`w-full max-w-[1200px] ${isEn ? 'text-[26px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[26px] font-extrabold tracking-tighter font-puhuiti leading-[48px]'}`}>
+    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-20">
+      <div className="w-full h-full flex items-center justify-center px-6 md:px-[60px] lg:px-[80px]">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="w-full grid grid-cols-1 lg:grid-cols-10 gap-12 lg:gap-20 items-center"
+        >
+          {/* Left Content */}
+          <div className="col-span-1 lg:col-span-4 flex flex-col z-10 w-full shrink-0">
+            <motion.div variants={itemVariants} className="flex items-center gap-4 mb-6 lg:mb-8 self-start">
+              <div className="w-12 md:w-16 h-[1px] bg-[#D5B667]/50" />
+              <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+                {isEn ? 'CASE 01 · DESIGN THINKING' : '案例 01 · 设计思考'}
+              </h4>
+            </motion.div>
+            <motion.h2 
+              variants={itemVariants}
+              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
+            >
               {isEn ? (
-                <>
-                  Within this system, by restructuring the design pipeline, I am dedicated to solving the core pain points in complex business environments: <br className="hidden md:block"/><span className="text-[#D5B667] font-normal italic tracking-normal">How to escape premature visual traps and translate complex business logic into deterministic decisions.</span>
-                </>
+                <>Design Definition<br />& Thinking</>
               ) : (
-                <>在该体系中，我通过重构设计管线，致力于解决复杂业务环境下的核心痛点：<br className="hidden md:block"/><span className="text-[#D5B667] font-bold">如何跳出过早的视觉陷阱，将庞杂的商业逻辑转化为确定的决策。</span></>
+                <>设计定义与思考</>
               )}
-            </h3>
-          </motion.div>
+            </motion.h2>
 
-          {/* System Structure block */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-6"
-          >
-            <div className="text-white/70 font-sans font-bold tracking-[0.3em] uppercase text-[16px] md:text-[16px] mb-4">
-              {isEn ? '02 / AI HYBRID WORKFLOW' : '02 / AI 混合工作流'}
-            </div>
-            <h2 className={`text-white leading-[1.1] ${isEn ? 'text-[30px] md:text-[38px] xl:text-[46px] font-extrabold font-sans uppercase tracking-tighter' : 'text-[30px] md:text-[38px] xl:text-[46px] font-extrabold font-sans tracking-tighter uppercase'}`}>
-              {isEn ? 'Hybrid Agent Architecture Design' : '混合智能体架构设计'}
-            </h2>
-            <p className={`text-white/70 w-full max-w-[800px] ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
-              {isEn ? 'Dual AI engines power this workflow, aligning business logic with visual production to transform complex strategies into definitive design decisions.' : '该架构将「业务逻辑推演」与「视觉资产合成」共同驱动。通过部署双层 AI 引擎，跳出过早的视觉陷阱，让庞杂的商业逻辑转化为确定的设计决策。'}
-            </p>
-          </motion.div>
-        </div>
-
-        {/* The Cards */}
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 md:gap-8 lg:gap-12 w-full">
-          {/* Card 1: Cloud Auditor */}
-          <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col w-full bg-[#111111] border border-white/[0.03] rounded-[32px] md:rounded-[40px] p-10 md:p-12 xl:p-16 relative overflow-hidden group hover:border-[#D5B667]/20 transition-all duration-700 shadow-[0_20px_60px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_80px_rgba(213,182,103,0.05)]"
-          >
-            {/* Header row */}
-            <div className="flex items-center justify-between mb-12 w-full">
-              <div className="flex items-center gap-3 text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">
-                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 7v.01M16 16v.01M12 12v.01M16 8v.01M8 16v.01M8 8v.01"/>
-                  <path d="M3 12h5m3-4 3-4m0 0 3 3m-3-3v5m-3 7 3 3m0 0 3-3m-3 3v-5M8 12a4 4 0 0 0 4 4"/>
-                </svg>
-                <span className="text-[16px] md:text-[16px] font-bold tracking-tighter font-sans uppercase text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">AURA</span>
-              </div>
-
-              <div className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.04]">
-                <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-                <span className="text-[16px] md:text-[16px] text-white/70 uppercase font-bold tracking-wider font-sans group-hover:text-white/80 transition-colors duration-500 mt-[1px]">
-                  {isEn ? 'LLM AGENT / Logic Solver' : 'LLM AGENT / 逻辑引擎'}
-                </span>
-              </div>
-            </div>
-
-            {/* Title */}
-            <h3 className={`text-white mb-8 ${isEn ? 'text-[30px] md:text-[42px] font-extrabold font-sans tracking-tighter uppercase group-hover:text-white transition-colors duration-500' : 'text-[34px] md:text-[46px] font-bold font-puhuiti tracking-wide group-hover:text-white transition-colors duration-500'}`}>
-              {isEn ? 'Strategic Brain' : '策略脑'}
-            </h3>
-
-            {/* Line */}
-            <div className="w-full h-[1px] bg-gradient-to-r from-white/[0.06] to-transparent mb-10 group-hover:from-[#D5B667]/30 transition-colors duration-500"></div>
-
-            {/* Subtitle */}
-            <h4 className={`text-white/70 -mt-[15px] mb-[20px]`}>
-              {isEn ? 'AURA Strategy Hub · Complex Business Logic Inference' : 'AURA 策略中枢 · 复杂业务逻辑推演'}
-            </h4>
-
-            {/* Bullets */}
-            <ul className="flex flex-col gap-6 flex-1 mb-16">
-              {[
-                { en: 'Formulate logic before interface', cn: '先理清业务，再动手画图。避免团队一上来就陷入“界面好不好看”的无效讨论。' },
-                { en: 'Conversational whiteboard inference', cn: '用大模型做外脑。提前梳理复杂的资金流和产品逻辑，把隐患解决在设计之前。' },
-                { en: 'Business experience direction establishment', cn: '降低试错成本。让复杂项目在冷启动阶段少走弯路，大幅节省前期的人力和时间。' },
-              ].map((item, idx) => (
-                <li key={`card1-${idx}`} className="flex items-start gap-5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500 mt-2.5 flex-shrink-0" />
-                  <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-500 leading-[1.6] ${isEn ? 'text-[16px] md:text-[16px] tracking-[0.015em]' : 'text-[16px] md:text-[16px] tracking-[0.03em]'}`}>
-                    {isEn ? item.en : item.cn}
-                  </p>
+            <motion.div variants={itemVariants} className={`space-y-6 text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[16px]'}`}>
+              <p>
+                {isEn ? (
+                  <>For this upgrade, I chose not to overhaul the original product framework, <strong className="text-white font-bold">adhering strictly to the design bottom line: Safety first for financial products:</strong></>
+                ) : (
+                  <>本次升级我选择不推翻原有产品框架，<strong className="text-white font-bold">坚守资金类产品安全第一的设计底线：</strong></>
+                )}
+              </p>
+              
+              <ul className="space-y-4">
+                <li>
+                  {isEn ? '• All operations involving fund transfers and top-ups are entirely left to users\' independent decision-making. AI NEVER substitutes users in executing any fund-related operations.' : '• 所有涉及资金划转充值的操作，全权交由用户自主决策，AI 绝不替代用户执行任何资金相关操作'}
                 </li>
-              ))}
-            </ul>
-
-            {/* Bottom Pill */}
-            <div className="mt-auto inline-flex self-start items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/[0.02] border border-white/[0.04]">
-              <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-              <span className="text-[16px] md:text-[16px] text-white/70 group-hover:text-white/90 uppercase font-bold tracking-[0.15em] font-sans transition-colors duration-500 mt-[1px]">
-                {isEn ? 'STATUS: Strategy inferring...' : 'STATUS: 策略推演中'}
-              </span>
-            </div>
-          </motion.div>
-
-          {/* Card 2: Local Architect */}
-          <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col w-full bg-[#111111] border border-white/[0.03] rounded-[32px] md:rounded-[40px] p-10 md:p-12 xl:p-16 relative overflow-hidden group hover:border-[#D5B667]/20 transition-all duration-700 shadow-[0_20px_60px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_80px_rgba(213,182,103,0.05)]"
-          >
-            {/* Header row */}
-            <div className="flex items-center justify-between mb-12 w-full">
-              <div className="flex items-center gap-3 text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">
-                <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                </svg>
-                <span className="text-[16px] md:text-[16px] font-bold tracking-tighter font-sans uppercase text-white/70 group-hover:text-[#D5B667] transition-colors duration-500">SYNTHESIS</span>
-              </div>
-
-              <div className="flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.04]">
-                <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-                <span className="text-[16px] md:text-[16px] text-white/70 uppercase font-bold tracking-wider font-sans group-hover:text-white/80 transition-colors duration-500 mt-[1px]">
-                  {isEn ? 'COMFYUI / Compute Deployment' : 'COMFYUI / 算力部署'}
-                </span>
-              </div>
-            </div>
-
-            {/* Title */}
-            <h3 className={`text-white mb-8 ${isEn ? 'text-[30px] md:text-[42px] font-extrabold font-sans tracking-tighter uppercase group-hover:text-white transition-colors duration-500' : 'text-[34px] md:text-[46px] font-bold font-puhuiti tracking-wide group-hover:text-white transition-colors duration-500'}`}>
-              {isEn ? 'Visual Brain' : '视觉脑'}
-            </h3>
-
-            {/* Line */}
-            <div className="w-full h-[1px] bg-gradient-to-r from-white/[0.06] to-transparent mb-10 group-hover:from-[#D5B667]/30 transition-colors duration-500"></div>
-
-            {/* Subtitle */}
-            <h4 className={`text-white/70 -mt-[15px] mb-[20px]`}>
-              {isEn ? 'SYNTHESIS Visual Workshop · Brand DNA Encapsulation' : 'SYNTHESIS 视觉工坊 · 品牌资产生成'}
-            </h4>
-
-            {/* Bullets */}
-            <ul className="flex flex-col gap-6 flex-1 mb-16">
-              {[
-                { en: 'Omnichannel proliferation from a single idea', cn: '锁定品牌风格。把设计规范变成专属 AI 模型，保证团队每次生成的图都不跑偏。' },
-                { en: '0.1% optical detail control', cn: '死磕画面质感。精准控制光影和材质细节，直接输出能满足高奢标准的商用视觉。' },
-                { en: 'FMCG agile proliferation factory', cn: '一键批量延展。只要敲定一张主图，就能让 AI 瞬间生成适配所有渠道的海报矩阵。' },
-              ].map((item, idx) => (
-                <li key={`local-${idx}`} className="flex items-start gap-5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500 mt-2.5 flex-shrink-0" />
-                  <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-500 leading-[1.6] ${isEn ? 'text-[16px] md:text-[16px] tracking-[0.015em]' : 'text-[16px] md:text-[16px] tracking-[0.03em]'}`}>
-                    {isEn ? item.en : item.cn}
-                  </p>
+                <li>
+                  {isEn ? '• For large transactions, strong reminders + secondary verification are reinforced to comprehensively guarantee users\' sense of fund security.' : '• 大额交易时强化强提醒+二次验证，全方位保障用户资金安全感'}
                 </li>
-              ))}
-            </ul>
+                <li>
+                  {isEn ? '• AI only does 3 things: simplifies & assists with repetitive operations, provides tiered risk warnings, and popularizes data interpretation.' : '• AI仅做3件事：简化辅助重复操作、分级风险提示、通俗化数据解读'}
+                </li>
+                <li>
+                  {isEn ? '• Extend and upgrade based on original visual guidelines to ensure the continuity and consistency of product experience.' : '• 基于原有视觉规范延展升级，保证产品体验的连贯性与一致性。'}
+                </li>
+              </ul>
+            </motion.div>
+          </div>
 
-            {/* Bottom Pill */}
-            <div className="mt-auto inline-flex self-start items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/[0.02] border border-white/[0.04]">
-              <div className="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#D5B667] transition-colors duration-500"></div>
-              <span className="text-[16px] md:text-[16px] text-white/70 group-hover:text-white/90 uppercase font-bold tracking-[0.15em] font-sans transition-colors duration-500 mt-[1px]">
-                {isEn ? 'STATUS: Assets generating...' : 'STATUS: 视觉资产生成中'}
-              </span>
+          {/* Right Content - Diagram */}
+          <motion.div
+             variants={itemVariants}
+             className="col-span-1 lg:col-span-6 w-full flex flex-col items-center gap-6"
+          >
+            {/* Title above diagram */}
+            <div className="w-full text-center text-white/40 text-[11px] md:text-[12px] tracking-widest font-sans font-medium uppercase">
+              {isEn ? 'Business Full-Chain Flow & AI Optimization Nodes' : '商业全链路流程图与 AI 优化节点'}
+            </div>
+            
+            <div className="w-full bg-[#111] rounded-2xl border border-white/5 p-6 xl:p-8 flex flex-col items-center overflow-x-auto shadow-2xl relative">
+              {/* Diagram Container */}
+              <div className="min-w-[800px] w-full flex flex-col z-10 px-6 relative">
+    
+                {/* ==== TOP SECTION ==== */}
+                <div className="w-full relative">
+                  {/* Top Right Connecting Curve */}
+                  <div className="absolute top-[49.5px] bottom-0 right-[-24px] w-[24px] border-t border-r border-[#E5B979]/30 rounded-tr-[16px] z-0" />
+                  
+                  {/* TOP NODES */}
+                  <div className="grid grid-cols-7 gap-4 w-full relative z-10 h-[100px]">
+                    {nodesTop.map((node, i) => (
+                       <div key={node.id} className="flex relative items-center justify-center w-full h-full">
+                          <div className="bg-[#1C1C1C] border border-white/5 rounded-xl p-2 w-full h-[100px] flex flex-col items-center justify-center gap-1 relative z-10 hover:bg-white/[0.03] transition-colors">
+                             <span className="text-[10px] text-white/30 font-mono">{node.id}</span>
+                             <node.icon size={20} className="text-[#E5B979]" strokeWidth={1.5} />
+                             <span className="text-[9px] text-white/80 text-center leading-tight mt-1">{node.title}</span>
+                             
+                             {/* Internal Right Arrow */}
+                             {i < 6 && (
+                                <div className="absolute top-[49.5px] -right-[16px] w-[16px] flex items-center z-0">
+                                   <div className="h-[1px] bg-[#E5B979]/30 flex-1" />
+                                   <div className="w-0 h-0 border-y-[3.5px] border-y-transparent border-l-[5px] border-l-[#E5B979]/30" />
+                                </div>
+                             )}
+                          </div>
+                       </div>
+                    ))}
+                  </div>
+
+                  {/* TOP AI BOXES */}
+                  <div className="grid grid-cols-7 gap-4 w-full mt-4 relative z-10">
+                    {nodesTop.map((node) => (
+                       <div key={`ai-${node.id}`} className="flex flex-col items-center">
+                          {node.ai ? (
+                             <>
+                               <div className="w-[1px] h-6 border-l border-dashed border-[#E5B979]/30 relative shrink-0">
+                                 <div className="absolute -bottom-[2px] left-[-3px] w-0 h-0 border-x-[2.5px] border-x-transparent border-t-[4px] border-t-[#E5B979]/50" />
+                               </div>
+                               <div className="bg-[#1C1C1C] border border-[#E5B979]/20 rounded-md p-2 w-[110px] shadow-lg text-left relative z-10 flex flex-col gap-1 mt-1">
+                                  <div className="bg-[#E5B979]/20 rounded px-1 py-0.5 w-fit flex items-center justify-center">
+                                    <span className="text-[#E5B979] text-[7px] font-bold">AI</span>
+                                  </div>
+                                  <ul className="flex flex-col gap-0.5 text-[9px] text-white/70 leading-tight">
+                                    {node.ai.map((text, idx) => <li key={idx} className="whitespace-normal">• {text}</li>)}
+                                  </ul>
+                               </div>
+                             </>
+                          ) : (
+                             <div className="w-full h-full" />
+                          )}
+                       </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* ==== MIDDLE SPACER ==== */}
+                <div className="w-full relative h-[40px] my-[16px]">
+                   <div className="absolute top-0 right-[-24px] h-[20.5px] w-[calc(50%+25px)] border-r border-b border-[#E5B979]/30 rounded-br-[16px] z-0" />
+                   <div className="absolute top-[19.5px] left-[-24px] h-[20.5px] w-[calc(50%+25px)] border-l border-t border-[#E5B979]/30 rounded-tl-[16px] z-0" />
+                </div>
+
+                {/* ==== BOTTOM SECTION ==== */}
+                <div className="w-full relative">
+                   {/* Bottom Left Connecting Curve */}
+                   <div className="absolute top-0 left-[-24px] h-[50px] w-[24px] border-l border-b border-[#E5B979]/30 rounded-bl-[16px] z-0" />
+
+                   {/* BOTTOM NODES */}
+                   <div className="grid grid-cols-7 gap-4 w-full relative z-10 h-[100px]">
+                    {nodesBottom.map((node, i) => (
+                       <div key={node.id} className="flex relative items-center justify-center w-full h-full">
+                          <div className="bg-[#1C1C1C] border border-white/5 rounded-xl p-2 w-full h-[100px] flex flex-col items-center justify-center gap-1 relative z-10 hover:bg-white/[0.03] transition-colors">
+                             <span className="text-[10px] text-white/30 font-mono">{node.id}</span>
+                             <node.icon size={20} className="text-[#E5B979]" strokeWidth={1.5} />
+                             <span className="text-[9px] text-white/80 text-center leading-tight mt-1">{node.title}</span>
+                             
+                             {/* Left incoming Arrow for Node 08 */}
+                             {i === 0 && (
+                                <div className="absolute top-[46.5px] left-[-5px] w-0 h-0 border-y-[3.5px] border-y-transparent border-l-[5px] border-l-[#E5B979]/50 z-0" />
+                             )}
+
+                             {/* Internal Right Arrow */}
+                             {i < 6 && (
+                                <div className="absolute top-[49.5px] -right-[16px] w-[16px] flex items-center z-0">
+                                   <div className="h-[1px] bg-[#E5B979]/30 flex-1" />
+                                   <div className="w-0 h-0 border-y-[3.5px] border-y-transparent border-l-[5px] border-l-[#E5B979]/30" />
+                                </div>
+                             )}
+                          </div>
+                       </div>
+                    ))}
+                   </div>
+
+                   {/* BOTTOM AI BOXES */}
+                   <div className="grid grid-cols-7 gap-4 w-full mt-4 relative z-10">
+                    {nodesBottom.map((node) => (
+                       <div key={`ai-${node.id}`} className="flex flex-col items-center">
+                          {node.ai ? (
+                             <>
+                               <div className="w-[1px] h-6 border-l border-dashed border-[#E5B979]/30 relative shrink-0">
+                                 <div className="absolute -bottom-[2px] left-[-3px] w-0 h-0 border-x-[2.5px] border-x-transparent border-t-[4px] border-t-[#E5B979]/50" />
+                               </div>
+                               <div className="bg-[#1C1C1C] border border-[#E5B979]/20 rounded-md p-2 w-[110px] shadow-lg text-left relative z-10 flex flex-col gap-1 mt-1">
+                                  <div className="bg-[#E5B979]/20 rounded px-1 py-0.5 w-fit flex items-center justify-center">
+                                    <span className="text-[#E5B979] text-[7px] font-bold">AI</span>
+                                  </div>
+                                  <ul className="flex flex-col gap-0.5 text-[9px] text-white/70 leading-tight">
+                                    {node.ai.map((text, idx) => <li key={idx} className="whitespace-normal">• {text}</li>)}
+                                  </ul>
+                               </div>
+                             </>
+                          ) : (
+                             <div className="w-full h-full" />
+                          )}
+                       </div>
+                    ))}
+                   </div>
+                </div>
+
+              </div>
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

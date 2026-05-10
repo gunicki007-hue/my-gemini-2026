@@ -5,11 +5,8 @@ import { Web3DesignLanguage } from '../sections/Web3/Web3DesignLanguage';
 import { Web3BrandStrategy } from '../sections/Web3/Web3BrandStrategy';
 import { Web3DigitalPortal } from '../sections/Web3/Web3DigitalPortal';
 import { Web3PortalUI } from '../sections/Web3/Web3PortalUI';
-import { Web3DigitalPortalSecondary } from '../sections/Web3/Web3DigitalPortalSecondary';
 import { Web3UIUXDesign } from '../sections/Web3/Web3UIUXDesign';
-import { Web3CommunityIP } from '../sections/Web3/Web3CommunityIP';
-import { Web3CommunityIPSecondary } from '../sections/Web3/Web3CommunityIPSecondary';
-import { Web3Section06 } from '../sections/Web3/Web3Section06';
+import { Web3BusinessEcho } from '../sections/Web3/Web3BusinessEcho';
 import { Web3Outro } from '../sections/Web3/Web3Outro';
 import { useDictionary } from '../hooks/useDictionary';
 
@@ -25,40 +22,36 @@ export const Web3Financial = () => {
   return (
     <main className="flex-1 bg-[#050505] min-h-screen text-white pt-[140px]">
        
-       <Web3Hero />
-
-       {/* SECTION 0: VISUAL IDENTITY */}
        <div id="section-0">
+         <Web3Hero />
+       </div>
+
+       <div id="section-1">
          <Web3VisualIdentity />
+       </div>
+
+       <div id="section-2">
          <Web3DesignLanguage />
        </div>
 
-       {/* SECTION 1: BRAND STRATEGY */}
-       <div id="section-1">
+       <div id="section-3">
          <Web3BrandStrategy />
+       </div>
+
+       <div id="section-4">
          <Web3DigitalPortal />
        </div>
 
-       {/* SECTION 2: DIGITAL PORTAL UI */}
-       <div id="section-2">
+       <div id="section-5">
          <Web3PortalUI />
-         <Web3DigitalPortalSecondary />
        </div>
 
-       {/* SECTION 3: UI/UX DESIGN */}
-       <div id="section-3">
+       <div id="section-6">
          <Web3UIUXDesign />
        </div>
 
-       {/* SECTION 4: COMMUNITY & IP */}
-       <div id="section-4">
-         <Web3CommunityIP />
-         <Web3CommunityIPSecondary />
-       </div>
-
-       {/* SECTION 5: MARKETING (OR OTHER 06) */}
-       <div id="section-5">
-         <Web3Section06 />
+       <div id="section-7">
+         <Web3BusinessEcho />
        </div>
 
        {/* Outro (Half screen text + back button), outside section-5 to disable nav highlight */}

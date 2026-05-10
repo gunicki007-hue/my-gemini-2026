@@ -15,31 +15,23 @@ export const AIGCHero = () => {
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="flex flex-col z-10 relative w-full lg:w-[35%] xl:w-[35%] shrink-0 lg:pr-0 pr-6"
       >
-        <div className="flex items-center gap-4 mb-8">
-          <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
-            {isEn ? 'AI DRIVEN VISUAL OS' : 'AIGC 战略与全域制作'}
-          </h4>
-        </div>
-
         <h1
-          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-extrabold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-bold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
         >
           {isEn ? (
             <>
-              SYSTEMIC<br />
-              CREATIVE<br />
-              ENGINE
+              RESHAPING BOUNDARIES<br />
+              FROM EXECUTOR TO AI ARCHITECT
             </>
           ) : (
-            <>系统级<br />创意引擎</>
+            <>重塑边界<br />从执行者到智能架构师</>
           )}
         </h1>
 
         <p className={`mt-8 md:mt-12 w-full text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
           {isEn
-            ? <>The surreal visual tone on the right is merely the tip of the iceberg of the system's output.<br /> Beyond simple pixel generation, spanning from deep business logic deduction to the ultimate cross-over of aesthetics and production capacity, we are building a 100% deterministic digital creative operating system.</>
-            : <>右侧的超现实视觉定调，只是系统输出的冰山一角。<br />跨越单纯的像素生成，从深层的业务逻辑推演，到极致的审美与产能跨界，构建 100% 确定性的数字创意操作系统。</>}
+            ? <>In the wave of AIGC, the core value of design is shifting from "moving pixels" to "orchestrating logic". I focus not only on the visual explosive power brought by AI, but also on exploring the AI-Native interaction paradigm.<br />This collection records how I reconstruct complex business using AI workflows, establish brand DNA fingerprints, and hand over tedious repetitive work to "digital twin assistants", thereby freeing up more energy for business decisions and data penetration.</>
+            : <>在 AIGC 浪潮中，设计的核心价值正在从“像素的搬运”转向“逻辑的编排”。我不只关注 AI 带来的视觉爆发力，更致力于探索 AI Native（AI 原生） 的交互范式。<br />本专题记录了我如何通过 AI 工作流重构复杂业务、建立品牌 DNA 指纹，并将繁琐的复用性劳动交给“数字孪生助手”，从而释放更多精力用于商业决策与数据穿透。</>}
         </p>
       </motion.div>
 

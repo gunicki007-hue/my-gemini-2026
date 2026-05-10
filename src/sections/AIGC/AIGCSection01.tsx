@@ -6,54 +6,122 @@ export const AIGCSection01 = () => {
   const { language } = useDictionary();
   const isEn = language === 'en';
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } },
+  };
+
   return (
-    <section className="relative w-full py-24 md:py-32 px-6 md:px-[80px] bg-[#050505] overflow-hidden flex flex-col">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full"
-      >
-        <div className="flex items-center gap-4 mb-8 md:mb-12">
-          <div className="w-16 h-[1px] bg-[#D5B667]/50" />
-          <h4 className="text-[#D5B667] tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
-            {isEn ? 'CASE 01 · DEPTH' : '案例 01 · 深度'}
-          </h4>
-        </div>
+    <section className="sticky top-0 w-full h-screen bg-[#050505] overflow-hidden z-10">
+      <div className="w-full h-full flex items-center justify-center px-6 md:px-[60px] lg:px-[80px]">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="w-full grid grid-cols-1 lg:grid-cols-10 gap-12 lg:gap-20 items-center"
+        >
+          {/* Left Content */}
+          <div className="col-span-1 lg:col-span-4 flex flex-col z-10 w-full shrink-0">
+            <motion.div variants={itemVariants} className="flex items-center gap-4 mb-6 lg:mb-8 self-start">
+              <div className="w-12 md:w-16 h-[1px] bg-[#D5B667]/50" />
+              <h4 className="text-[#D5B667] tracking-tighter text-[14px] md:text-[16px] uppercase font-sans font-bold">
+                {isEn ? 'CASE 01 · AI NATIVE' : '案例 01 · AI Native'}
+              </h4>
+            </motion.div>
+            <motion.h2 
+              variants={itemVariants}
+              className={`uppercase w-full mb-6 lg:mb-8 text-white text-[30px] md:text-[38px] xl:text-[46px] font-extrabold tracking-tighter leading-[1.1] ${isEn ? 'font-sans' : 'font-puhuiti'}`}
+            >
+              {isEn ? (
+                <>On-chain Payment<br />AI Native Upgrade</>
+              ) : (
+                <>链上支付卡产品<br />AI Native体验升级</>
+              )}
+            </motion.h2>
 
-        <h2 className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-6`}>
-          {isEn ? (
-            <>LOGIC HUB &<br />ARCHITECTURE RECONSTRUCTION</>
-          ) : (
-            '逻辑中枢与架构重构'
-          )}
-        </h2>
+            <motion.div variants={itemVariants} className={`space-y-6 text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[15px] xl:text-[16px]'}`}>
+              <p className="font-bold text-white text-[16px] xl:text-[18px]">
+                {isEn ? (
+                  "This is an independent AI Native upgrade for a launched PC-based on-chain crypto-to-fiat card payment product."
+                ) : (
+                  "这是我对已落地的PC端链上U转卡支付产品做的AI Native独立升级。"
+                )}
+              </p>
+              <p>
+                {isEn ? (
+                  <>Previously, I completed visual noise reduction, streamlined the information hierarchy, and optimized the overall interaction flow. The basic experience was solid, but during long-term user observation, I found these <span className="text-white font-bold">hidden experience pain points</span>:</>
+                ) : (
+                  <>此前我已完成产品视觉降噪、信息层级梳理和全流程交互优化，基础体验无硬伤，但在长期用户观察中，我发现了这些<span className="text-white font-bold">隐性体验痛点</span>：</>
+                )}
+              </p>
+              
+              <ul className="space-y-4">
+                <li>
+                  <strong className="font-bold">
+                    {isEn ? '• Tedious & Repetitive Operations' : '• 操作重复繁琐'}
+                  </strong><br />
+                  {isEn ? 'Users had to manually input amounts and select paths for every crypto-to-card transfer, making high-frequency operations time-consuming.' : '用户每次U转卡都要手动输入金额、选择路径，高频操作耗时久'}
+                </li>
+                <li>
+                  <strong className="font-bold">
+                    {isEn ? '• High Decision-making Costs' : '• 决策成本高'}
+                  </strong><br />
+                  {isEn ? 'Professional data such as on-chain gas fees and network status made it difficult for ordinary users to quickly judge the optimal timing.' : '链上手续费、网络状态等专业数据，普通用户难以快速判断最优操作时机'}
+                </li>
+                <li>
+                  <strong className="font-bold">
+                    {isEn ? '• Weak Risk Perception' : '• 风险感知弱'}
+                  </strong><br />
+                  {isEn ? "Large/abnormal transactions relied only on standard prompts, making users' perception of fund risks untimely." : '大额/异常交易仅靠普通提示，用户对资金风险的感知不及时'}
+                </li>
+                <li>
+                  <strong className="font-bold">
+                    {isEn ? '• Difficult Information Comprehension' : '• 信息理解难'}
+                  </strong><br />
+                  {isEn ? 'Asset flows and consumption bills were presented purely as data, resulting in high interpretation costs for users.' : '资产流水、消费账单以纯数据呈现，用户解读成本高'}
+                </li>
+              </ul>
 
-        <div className="flex items-center gap-4 mb-24 md:mb-40">
-          <div className="w-16 h-[1px] bg-white/30" />
-          <span className={`text-white/70 text-[16px] md:text-[18px] italic font-normal ${isEn ? 'tracking-normal uppercase' : 'tracking-wide'}`}>
-            {isEn ? 'A hybrid intelligent workflow expanding decision boundaries' : '扩展决策边界的混合智能工作流'}
-          </span>
-        </div>
+              <p>
+                {isEn ? (
+                  "Coinciding with the maturity of AIGC tools, I proposed a hypothesis: Using AI as an experience assistant, solving these pain points without changing the core product framework, and verifying the feasibility of designers using AI to independently complete full-link design."
+                ) : (
+                  "恰逢AIGC工具成熟，我提出假设：用AI做体验辅助，在不改变产品核心框架的前提下，解决这些痛点，同时验证设计师用AI独立完成全链路设计的可行性。"
+                )}
+              </p>
+            </motion.div>
+          </div>
 
-        <h3 className={`w-full max-w-[1200px] mb-8 md:mb-12 ${isEn ? 'text-[26px] font-light tracking-wide leading-[48px] font-sans text-white/90' : 'text-[26px] font-extrabold tracking-tighter font-puhuiti leading-[48px]'}`}>
-          {isEn ? (
-            <>I am no longer confined to the stacking of pixels,<br className="hidden md:block"/>but rather designing a system where business logic precipitates visual form.</>
-          ) : (
-            <>我不再局限于像素的堆砌，<br/>而是在设计一套系统，让业务逻辑先于视觉成形。</>
-          )}
-        </h3>
-
-        <p className={`w-full max-w-[900px] text-left ${isEn ? 'text-white/70 font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'text-white/70 font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
-          {isEn ? (
-            "While most teams still rely on manual labor for periodic market research and data organization, I have built a hybrid intelligent agent architecture. It is used to accelerate brand judgment, structure core assets, and establish a continuous information first-mover advantage, all while ensuring security and control."
-          ) : (
-            "当多数团队仍依赖人工进行周期性的市场调研与资料整理时，我构建了一套混合智能体架构，用于加速品牌判断、结构化核心资产，并在确保安全与控制权的前提下，建立持续的信息先发优势。"
-          )}
-        </p>
-
-      </motion.div>
+          {/* Right Content - Image */}
+          <motion.div
+             variants={itemVariants}
+             className="col-span-1 lg:col-span-6 w-full flex flex-col gap-3 md:gap-4"
+          >
+              <div className="w-full text-white/60 text-xs md:text-sm font-medium tracking-widest text-center">
+                {isEn ? 'Original Flow → AI Assisted Ops → AI Optimized Trade' : '「原流程页」→「AI辅助操作页」→「AI优化交易页」'}
+              </div>
+              <div className="w-full aspect-video bg-[#1a1a1a] rounded-xl overflow-hidden">
+                <img 
+                  src="https://img.nickiresume.cn/0507/AI Native01.webp" 
+                  alt="AI Native Upgrade" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+          </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 };

@@ -7,7 +7,7 @@ export const Web3PortalUI = () => {
   const isEn = language === 'en';
 
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-start py-24 md:py-32 overflow-hidden bg-[#050505]">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-start py-24 md:py-32 overflow-hidden bg-[#0a0a0a]">
       
       {/* 居中标题区域 / Centered Headers */}
       <motion.div
@@ -17,36 +17,41 @@ export const Web3PortalUI = () => {
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         className="flex flex-col items-center z-10 relative mb-12 md:mb-20 px-6 w-full text-center"
       >
-        {/* 顶部标签 / Top Tag */}
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <div className="w-16 h-[1px] bg-white/30" />
-          <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
-            {isEn ? '03 / DIGITAL PORTAL' : '03 / 数字门户'}
-          </h4>
-          <div className="w-16 h-[1px] bg-white/30" />
-        </div>
-
         {/* 主标题 / Main Title */}
-        {/* == 🚨 标题文字替换处 / REPLACE TITLE HERE 🚨 == */}
         <h2
-          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,4vw,52px)] font-bold font-sans tracking-tighter leading-[1.2]'}`}
         >
           {isEn ? (
             <>
-              Global <br />
-              Digital Portal
+               global reach <br />
+               Dual-Version Strategy
             </>
           ) : (
-            <>全局数字门户</>
+            <>全场景触达<br />用“双版本策略”兼容流量轰炸与商业转化</>
           )}
         </h2>
 
+        {/* 小标题 */}
+        <h3 className={`mt-6 text-white/90 ${isEn ? 'text-lg font-medium tracking-tight' : 'text-xl font-medium tracking-wide'}`}>
+          {isEn ? "Solving the conversion bottleneck of 'Traffic in, but not retained' in the Web3 industry" : "解决 Web3 行业“流量进来留不住”的转化瓶颈"}
+        </h3>
+
         {/* 副标题叙事 / Narrative Description */}
-        <p className={`mt-8 md:mt-12 mx-auto w-full max-w-[650px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-center'}`}>
-          {isEn 
-            ? "Breaking through information barriers with minimalist Web3 interactions. Ensuring efficient hierarchical flow to build unshakable trust in asset management for crypto users."
-            : "以极简 Web3 交互打透信息壁垒。确保层级高效流转，为加密用户构筑不可动摇的资产管理信任感。"}
-        </p>
+        <div className={`mt-8 md:mt-12 mx-auto w-full max-w-[820px] px-[20px] md:px-0 text-white/70 text-center ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.8] text-[16px]'}`}>
+          {isEn ? (
+             <div className="flex flex-col gap-4">
+                <p>Targeting the contradictory nature of Web3 users who "pursue emotional consensus while caring about fund security," I adopted a dual-track parallel strategy of "Meme Marketing Version" and "Calm Product Version" for the PC end:</p>
+                <p>Because a single financial page is too cold and hard to attract fans; a single Meme page is too scattered and lacks trust. We needed to solve how to let users feel the brand heat and see product strength the moment they enter the web page after high-frequency social media bombardment.</p>
+                <p>Ultimately, we adopted the emotion of the marketing version, using highly explosive visual symbols (like golden Doge) to complete unique positioning and achieve brand ice-breaking; the business module strips away emotional interference, providing the ultimate "trust endorsement" for user deposit through calm typography and clear business dashboards. Achieving two different conversion goals within a single design system ensures Crydit's commercial soft landing in the global ecosystem.</p>
+             </div>
+          ) : (
+             <div className="flex flex-col gap-4">
+                <p>针对 Web3 用户群体“既追求情绪共识、又在乎资金安全”的矛盾属性，我采用了PC端 “Meme 营销版” 与 “冷静产品版” 的双轨并行策略：</p>
+                <p>因为单一的金融页面太冷，难吸粉；单一的 Meme 页面太散，没信任。要解决的是如何在社交媒体的高频轰炸后，让用户在进入网页的一瞬间，既能感受到品牌热度，又能看到产品实力。</p>
+                <p>最终采用了沿用营销版内的情绪，用极具张力的视觉符号（如金色的 Doge）完成独特定位，达成品牌破冰；业务模块则剥离情绪干扰，通过冷静的排版和清晰的业务看板，为用户入金提供最终的“信任背书”。实现在一套design system中两套不同的转化目标，确保了 Crydit 在全球生态中的商业软着陆。</p>
+             </div>
+          )}
+        </div>
       </motion.div>
 
       {/* 16:9 展示图区域 / 16:9 Image Area */}

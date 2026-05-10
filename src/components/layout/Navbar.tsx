@@ -87,8 +87,8 @@ export const Navbar = () => {
         zh: ['01 · 空间统筹', '02 · 实境执行', '03 · 人文叙事']
       }
     : {
-        en: ['01 · VISUAL IDENTITY', '02 · BRAND STRATEGY', '03 · DIGITAL PORTAL', '04 · UI/UX DESIGN', '05 · COMMUNITY & IP', '06 · PR & GLOBALIZATION'],
-        zh: ['01 · 视觉识别', '02 · 品牌策略', '03 · 数字门户', '04 · UI/UX 设计', '05 · 社区生态与 IP', '06 · 公关与全球化']
+        en: ['01 · STRATEGY', '02 · LOGIC', '03 · VISUAL', '04 · GROWTH', '05 · CONTROL', '06 · ECOSYSTEM', '07 · EXPERIENCE', '08 · IMPACT'],
+        zh: ['01 · 战略入局', '02 · 业务解构', '03 · 视觉破局', '04 · 营销爆发', '05 · 战略控盘', '06 · 全端触达', '07 · 交互降噪', '08 · 商业回响']
       };
 
   // Active section tracking for sub-pages. Default to -1 so nothing is active if above section 0

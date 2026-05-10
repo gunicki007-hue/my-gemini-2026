@@ -1,70 +1,85 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useDictionary } from '../../hooks/useDictionary';
+import { Web3InteractiveMeme } from './Web3InteractiveMeme';
 
 export const Web3BrandStrategy = () => {
   const { language } = useDictionary();
   const isEn = language === 'en';
 
   return (
-    <section className="relative w-full min-h-[90vh] flex flex-col xl:flex-row items-center justify-start px-6 md:px-[60px] lg:px-[80px] py-16 xl:py-24 gap-[60px] xl:gap-[100px] overflow-hidden bg-[#0a0a0a]">
+    <section className="relative w-full flex flex-col items-center justify-start px-6 md:px-[60px] lg:px-[80px] py-16 xl:py-24 bg-[#0a0a0a]">
       
-      {/* Left Text Content Area */}
+      {/* Centered Text Content Area */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="flex flex-col z-10 relative w-full xl:w-[460px] shrink-0"
+        className="flex flex-col items-center text-center z-10 relative w-full max-w-4xl"
       >
-         {/* Tag matching Screen 1 styles */}
-         <div className="flex items-center gap-4 mb-8">
-            <div className="w-16 h-[1px] bg-white/30" />
-            <h4 className="text-white/70 tracking-tighter text-[16px] md:text-[16px] uppercase font-sans font-bold">
-              {isEn ? '02 / BRAND STRATEGY' : '02 / 品牌策略'}
-            </h4>
-         </div>
-         
          {/* Title built using exact Screen 1 Typography principles */}
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,66px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,72px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,50px)] font-bold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,50px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
          >
            {isEn ? (
              <>
-               Strategic Positioning<br />
-               & Narrative 
-            
+               Meme Consensus & AI Asset Flow:<br />
+               Breaking the Coldness of Finance
              </>
            ) : (
-             <>战略定位<br />与叙事推演</>
+             <>Meme 共识与 AI 资产流<br />打破金融高冷感</>
            )}
          </h2>
          
          {/* Secondary paragraph */}
-         <p className={`mt-8 md:mt-12 w-full max-w-[500px] text-white/70 ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.5] text-[16px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.6] text-[16px] xl:text-[16px] text-justify'}`}>
+         <p className={`mt-6 w-full max-w-[720px] px-[20px] md:px-0 text-white/70 text-center ${isEn ? 'font-sans font-light tracking-[0.015em] leading-[1.6] text-[15px] xl:text-[16px]' : 'font-sans font-light tracking-[0.03em] leading-[1.7] text-[15px] xl:text-[16px]'}`}>
            {isEn 
-             ? "Translating competitor benchmarking and core business logic into a cohesive commercial narrative, cementing a global fintech brand's distinct identity and trust."
-             : "从竞品对标到底层业务推演，搭建了完整的商业叙事逻辑，确立国际化金融科技品牌的独特辨识度与信任感。"}
+             ? "Utilize the contrasting meme-style IP to build community consensus. Deeply embed the AI toolchain into the production line to achieve high-explosive, low-cost marketing asset output. From Twitter campaigns to community marketing conversions, ensure brand DNA penetrates all touchpoints."
+             : "利用自带反差感的 meme 风IP 构建社区共识。通过 AI 工具链深度嵌入生产线，实现高爆发、低成本的营销资产输出。从 Twitter 宣发到社区营销转化，确保品牌 DNA 在全触点实现穿透。"}
          </p>
       </motion.div>
 
-      {/* Right Content Area: Large Image/Grid (Flush Right) */}
+      {/* Spacer 80px */}
+      <div className="h-[80px]" />
+
+      {/* Media Grid Area */}
       <motion.div 
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full flex-1 relative z-10 flex items-center justify-center"
+        className="w-full max-w-[1440px] grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 z-10 items-stretch"
       >
-         {/* Container pushing all the way to the right edge */}
-         <div className="w-full h-full relative aspect-[1.8/1] sm:aspect-[2/1] xl:aspect-[16/9] bg-transparent overflow-hidden rounded-[12px] sm:rounded-[24px]">
-             {/* == 🚨 右侧大瀑布流/排版图 替换处 / REPLACE WITH RIGHT GRID IMAGE == */}
-             {/* 把下方的 src="..." 替换变成您实际的带瀑布流排版的图片链接即可 */}
-             <img 
-               src="https://img.nickiresume.cn/Nimage/01web3/03crydit-strategy.webp" 
-               className="absolute inset-0 w-full h-full object-cover object-left z-0 scale-[1.04]" 
-               alt="Brand Strategy Grid"
+         {/* Left: Interactive Component, spans 7 columns */}
+         <div className="lg:col-span-7 relative">
+            <Web3InteractiveMeme />
+         </div>
+
+         {/* Right: Two Stacked Media Elements, spans 5 columns */}
+         <div className="lg:col-span-5 flex flex-col gap-4 lg:gap-6">
+           {/* Top Right Video */}
+           <div className="relative rounded-[16px] lg:rounded-[24px] overflow-hidden aspect-video">
+             {/* == 🚨 右上视频链接替换处 / REPLACE WITH TOP RIGHT VIDEO URL == */}
+             <video 
+               autoPlay 
+               loop 
+               muted 
+               playsInline 
+               className="absolute inset-0 w-full h-full object-cover"
+               src="https://img.nickiresume.cn/0507/dogtve.mp4" 
              />
+           </div>
+           
+           {/* Bottom Right Image */}
+           <div className="relative rounded-[16px] lg:rounded-[24px] overflow-hidden aspect-video">
+             {/* == 🚨 右下图链接替换处 / REPLACE WITH BOTTOM RIGHT IMAGE URL == */}
+             <img 
+               src="https://img.nickiresume.cn/0507/meme01.webp" 
+               className="absolute inset-0 w-full h-full object-cover" 
+               alt="Brand Asset 2"
+             />
+           </div>
          </div>
       </motion.div>
 

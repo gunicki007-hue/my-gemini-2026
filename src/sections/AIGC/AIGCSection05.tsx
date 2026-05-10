@@ -8,10 +8,10 @@ export const AIGCSection05 = () => {
 
   return (
     <section className="relative w-full py-24 md:py-32 px-6 lg:px-[80px] bg-[#0a0a0a] overflow-visible">
-      <div className="w-full flex flex-col lg:flex-row justify-between items-start mx-auto gap-12 lg:gap-0">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-10 items-start gap-12 lg:gap-20">
         
         {/* Left Column (Sticky Text) */}
-        <div className="w-full lg:w-[35%] lg:sticky lg:top-[12vh] flex flex-col z-10 lg:pr-8 xl:pr-12">
+        <div className="col-span-1 lg:col-span-4 flex flex-col lg:sticky lg:top-[12vh] z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export const AIGCSection05 = () => {
         </div>
 
         {/* Right Column (Images) */}
-        <div className="w-full lg:w-[60%] flex flex-col gap-16 md:gap-32 relative z-0 lg:pl-10">
+        <div className="col-span-1 lg:col-span-6 flex flex-col gap-16 md:gap-32 relative z-0">
           
           {/* Module 1 */}
           <motion.div

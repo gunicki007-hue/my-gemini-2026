@@ -2,7 +2,6 @@ import React, { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Hero } from '../sections/Hero';
 import { Projects } from '../sections/Projects';
-import { Awards } from '../sections/Awards';
 import { About } from '../sections/About';
 import { Contact } from '../sections/Contact';
 
@@ -49,7 +48,6 @@ export const Home = () => {
     <main className="flex-1">
       <Hero />
       <Projects />
-      <Awards />
       <About />
       <Contact />
     </main>

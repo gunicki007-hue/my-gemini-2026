@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
 import { AIGCHero } from '../sections/AIGC/AIGCHero';
 import { AIGCSection01 } from '../sections/AIGC/AIGCSection01';
-import { AIGCOrganization } from '../sections/AIGC/AIGCOrganization';
-import { AIGCWorkflow } from '../sections/AIGC/AIGCWorkflow';
-import { AIGCWorkflowLeft } from '../sections/AIGC/AIGCWorkflowLeft';
 import { AIGCSection02 } from '../sections/AIGC/AIGCSection02';
 import { AIGCSection03 } from '../sections/AIGC/AIGCSection03';
 import { AIGCSection04 } from '../sections/AIGC/AIGCSection04';
 import { AIGCSection05 } from '../sections/AIGC/AIGCSection05';
 import { AIGCSection06 } from '../sections/AIGC/AIGCSection06';
+import { AIGCSection06_5 } from '../sections/AIGC/AIGCSection06_5';
 import { AIGCSection07 } from '../sections/AIGC/AIGCSection07';
 import { AIGCOutro } from '../sections/AIGC/AIGCOutro';
 import { useDictionary } from '../hooks/useDictionary';
@@ -30,9 +28,6 @@ export const AIGC = () => {
          <AIGCSection01 />
          <AIGCSection02 />
          <AIGCSection03 />
-         <AIGCOrganization />
-         <AIGCWorkflow />
-         <AIGCWorkflowLeft />
        </div>
 
        <div id="section-1">
@@ -44,6 +39,8 @@ export const AIGC = () => {
          <AIGCSection06 />
          <AIGCSection07 />
        </div>
+
+       <AIGCSection06_5 />
 
        {/* Outro (Half screen text + back button) */}
        <div className="-mb-8">

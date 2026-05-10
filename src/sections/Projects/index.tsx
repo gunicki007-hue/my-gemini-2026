@@ -224,12 +224,6 @@ export const Projects = () => {
         >
           {language === 'en' ? 'CASE STUDIES' : '作品档案'}
         </h1>
-        <div className="flex items-center gap-4 mt-5">
-          <div className="w-16 h-[1px] bg-white/20"></div>
-          <p className="text-white/70 text-[16px] md:text-[16px] font-normal tracking-wide italic">
-            {language === 'en' ? 'Strategy-driven. AI-powered. Output is the solution.' : '商业打底，算力操刀。出街即是解法。'}
-          </p>
-        </div>
       </motion.div>
 
       {/* ========================================================= */}

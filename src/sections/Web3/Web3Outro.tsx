@@ -9,7 +9,7 @@ export const Web3Outro = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full min-h-[50vh] flex flex-col items-center justify-center p-6 bg-[#0a0a0a] overflow-hidden">
+    <section className="relative w-full min-h-[50vh] flex flex-col items-center justify-center p-6 bg-black overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,8 +17,8 @@ export const Web3Outro = () => {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="flex flex-col items-center text-center z-10 -mt-28"
       >
-        <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 ${isEn ? 'uppercase tracking-tighter text-[22px] md:text-[30px] font-sans font-extrabold' : 'tracking-tighter text-[22px] md:text-[28px] font-puhuiti font-extrabold'}`}>
-          {isEn ? "Design as Leverage for Web3 Growth" : "以设计为杠杆 · 撬动 Web3 商业增长 "}
+        <h2 className={`leading-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-[#a3a3a3] mb-12 ${isEn ? 'uppercase tracking-tighter text-[16px] md:text-[24px] font-sans font-extrabold' : 'tracking-tighter text-[22px] md:text-[28px] font-sans font-extrabold'}`}>
+          {isEn ? "Data Validates Design · Noise Reduction Drives Conversion" : "数据是设计的验证 · 降噪是转化的核心"}
         </h2>
         
         {/* Back Button */}
