@@ -23,7 +23,7 @@ export const Web3BusinessEcho = () => {
   const headers = isEn ? ["Growth Dimension", "Business Pain Point", "Design Prescription", "Core Result"] : ["增长维度", "业务痛点", "设计处方", "核心结果"];
 
   return (
-    <section className="relative w-full bg-black flex flex-col pt-16 pb-24 px-[24px] md:px-[60px] lg:px-[150px]">
+    <section className="relative w-full bg-black flex flex-col pt-12 pb-16 px-[24px] md:px-[60px] lg:px-[150px]">
       
       {/* Title Area */}
       <motion.div
@@ -62,23 +62,23 @@ export const Web3BusinessEcho = () => {
         className="w-full mx-auto rounded-[32px] bg-white/[0.02] backdrop-blur-3xl border border-white/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-4 md:p-8 relative"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none" />
-        <div className="w-full overflow-x-auto relative z-10">
-          <table className="w-full text-left border-collapse min-w-[600px] lg:min-w-0">
+        <div className="w-full relative z-10 overflow-hidden">
+          <table className="w-full text-left border-collapse table-fixed">
             <thead>
-              <tr className="border-b border-white/10 text-white/40 text-[13px] md:text-[14px] tracking-widest uppercase font-medium">
-                <th className="py-6 lg:py-8 pl-4 lg:pl-8 pr-4 lg:pr-6 font-sans font-medium w-[20%]">{headers[0]}</th>
-                <th className="py-6 lg:py-8 px-4 lg:px-6 font-sans font-medium w-[30%]">{headers[1]}</th>
-                <th className="py-6 lg:py-8 px-4 lg:px-6 font-sans font-medium w-[30%]">{headers[2]}</th>
-                <th className="py-6 lg:py-8 pr-4 lg:pr-8 pl-4 lg:pl-6 font-sans font-medium w-[20%] text-right">{headers[3]}</th>
+              <tr className="border-b border-white/10 text-white/40 text-[12px] md:text-[13px] tracking-widest uppercase font-medium">
+                <th className="py-4 lg:py-5 pl-4 lg:pl-6 pr-2 lg:pr-4 font-sans font-medium w-[15%] md:w-[15%]">{headers[0]}</th>
+                <th className="py-4 lg:py-5 px-2 lg:px-4 font-sans font-medium w-[35%] md:w-[35%]">{headers[1]}</th>
+                <th className="py-4 lg:py-5 px-2 lg:px-4 font-sans font-medium w-[30%] md:w-[30%]">{headers[2]}</th>
+                <th className="py-4 lg:py-5 pr-4 lg:pr-6 pl-2 lg:pl-4 font-sans font-medium w-[20%] md:w-[20%] text-right">{headers[3]}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5 text-white/90">
               {data.map((row, index) => (
                 <tr key={index} className="hover:bg-white/[0.03] transition-colors duration-500 group">
-                  <td className="py-6 lg:py-10 pl-4 lg:pl-8 pr-4 lg:pr-6 text-[14px] md:text-[15px] lg:text-[17px] font-bold tracking-wide group-hover:text-white transition-colors">{row.dim}</td>
-                  <td className="py-6 lg:py-10 px-4 lg:px-6 text-[13px] md:text-[14px] lg:text-[16px] font-light text-white/60 leading-relaxed lg:pr-12">{row.pain}</td>
-                  <td className="py-6 lg:py-10 px-4 lg:px-6 text-[13px] md:text-[14px] lg:text-[16px] font-normal tracking-wide lg:pl-2"><span className="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">{row.rx.split('：')[0]}{row.rx.includes('：') ? '：' : row.rx.includes(':') ? ':' : ''}</span>{row.rx.includes('：') ? <span className="text-white/50 block md:inline">{row.rx.split('：')[1]}</span> : row.rx.includes(':') ? <span className="text-white/50 block md:inline">{row.rx.split(':')[1]}</span> : null}</td>
-                  <td className="py-6 lg:py-10 pr-4 lg:pr-8 pl-4 lg:pl-6 text-[14px] md:text-[16px] lg:text-[18px] font-bold text-right !text-white">{row.res}</td>
+                  <td className="py-5 lg:py-6 pl-4 lg:pl-6 pr-2 lg:pr-4 text-[13px] md:text-[14px] lg:text-[15px] font-bold tracking-wide group-hover:text-white transition-colors align-top">{row.dim}</td>
+                  <td className="py-5 lg:py-6 px-2 lg:px-4 text-[12px] md:text-[13px] lg:text-[14px] font-light text-white/60 leading-relaxed pr-2 lg:pr-6 align-top break-words">{row.pain}</td>
+                  <td className="py-5 lg:py-6 px-2 lg:px-4 text-[12px] md:text-[13px] lg:text-[14px] font-normal tracking-wide pl-2 align-top break-words"><span className="text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">{row.rx.split('：')[0]}{row.rx.includes('：') ? '：' : row.rx.includes(':') ? ':' : ''}</span>{row.rx.includes('：') ? <span className="text-white/50 block mt-1 md:mt-0 md:inline">{row.rx.split('：')[1]}</span> : row.rx.includes(':') ? <span className="text-white/50 block mt-1 md:mt-0 md:inline">{row.rx.split(':')[1]}</span> : null}</td>
+                  <td className="py-5 lg:py-6 pr-4 lg:pr-6 pl-2 lg:pl-4 text-[13px] md:text-[14px] lg:text-[16px] font-bold text-right !text-white align-top break-words">{row.res}</td>
                 </tr>
               ))}
             </tbody>
