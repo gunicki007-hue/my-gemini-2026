@@ -22,7 +22,7 @@ export const AIGCSection04 = () => {
           </h4>
         </div>
 
-        <h2 className={`uppercase w-full ${isEn ? 'text-[clamp(24px,5vw,64px)] font-extrabold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(24px,5vw,70px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:2px_currentColor]'} mb-24 md:mb-40`}>
+        <h2 className={`uppercase w-full ${isEn ? 'text-[clamp(24px,5vw,64px)] font-semibold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(24px,5vw,70px)] font-semibold font-puhuiti tracking-tighter leading-[1.1]'} mb-24 md:mb-40`}>
           {isEn ? (
              <>AESTHETIC EXTREME &<br />ASSET RECONSTRUCTION</>
           ) : (

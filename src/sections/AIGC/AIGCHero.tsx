@@ -16,7 +16,7 @@ export const AIGCHero = () => {
         className="flex flex-col z-10 relative w-full lg:w-[35%] xl:w-[35%] shrink-0 lg:pr-0 pr-6"
       >
         <h1
-          className={`uppercase w-full ${isEn ? 'text-[clamp(24px,5vw,64px)] font-semibold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(24px,5vw,70px)] font-semibold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(24px,5vw,64px)] font-semibold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(24px,5vw,70px)] font-semibold font-puhuiti tracking-tighter leading-[1.1]'}`}
         >
           {isEn ? (
             <>
