@@ -59,7 +59,7 @@ export const Web3BusinessEcho = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full max-w-7xl mx-auto rounded-[32px] bg-white/[0.02] backdrop-blur-3xl border border-white/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-4 md:p-8 relative"
+        className="w-full lg:w-[calc(100%-400px)] mx-auto rounded-[32px] bg-white/[0.02] backdrop-blur-3xl border border-white/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-4 md:p-8 relative"
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none" />
         <div className="w-full overflow-x-auto relative z-10">

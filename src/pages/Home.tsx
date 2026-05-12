@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Hero } from '../sections/Hero';
 import { Projects } from '../sections/Projects';
 import { About } from '../sections/About';
+import { Awards } from '../sections/Awards';
 import { Contact } from '../sections/Contact';
 
 export const Home = () => {
@@ -11,11 +12,11 @@ export const Home = () => {
   useLayoutEffect(() => {
     const locationState = state as { scrollTo?: string };
     
-    if (locationState?.scrollTo === 'projects') {
+    if (locationState?.scrollTo) {
       const lenis = (window as any).lenis;
       
       const snapTo = () => {
-        const el = document.getElementById('projects');
+        const el = document.getElementById(locationState.scrollTo!);
         if (el) {
           if (lenis) {
             // Apply immediately to internal tracker
@@ -49,6 +50,7 @@ export const Home = () => {
       <Hero />
       <Projects />
       <About />
+      <Awards />
       <Contact />
     </main>
   );

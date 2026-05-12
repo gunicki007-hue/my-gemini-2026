@@ -18,7 +18,7 @@ export const Web3DesignLanguage = () => {
         className="flex flex-col z-10 relative w-full lg:w-[45%] xl:w-[45%] shrink-0"
       >
          <h2 
-           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,50px)] font-bold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,56px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
+           className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,50px)] font-semibold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,56px)] font-semibold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
          >
            {isEn ? (
              <>

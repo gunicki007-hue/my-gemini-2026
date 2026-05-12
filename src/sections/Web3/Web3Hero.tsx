@@ -16,7 +16,7 @@ export const Web3Hero = () => {
         className="flex flex-col z-10 relative w-full lg:w-[40%] xl:w-[40%] shrink-0 lg:pr-0 pr-6"
       >
         <h1
-          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,56px)] font-bold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,64px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,56px)] font-semibold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,64px)] font-semibold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
         >
           {isEn ? (
             <>

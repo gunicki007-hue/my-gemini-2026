@@ -18,7 +18,7 @@ export const Web3VisualIdentity = () => {
       >
         {/* Large Centered Title */}
         <h2
-          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,56px)] font-bold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,64px)] font-bold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
+          className={`uppercase w-full ${isEn ? 'text-[clamp(26px,5vw,56px)] font-semibold font-sans tracking-tighter leading-[1.05]' : 'text-[clamp(26px,5vw,64px)] font-semibold font-puhuiti tracking-tighter leading-[1.1] [-webkit-text-stroke:1px_currentColor]'}`}
         >
           {isEn ? (
             <>
@@ -72,7 +72,7 @@ export const Web3VisualIdentity = () => {
           <img
             src="https://img.nickiresume.cn/0507/flow.webp"
             alt="Web3 to Traditional Finance Pipeline"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain scale-[0.85]"
           />
           {/* Overlay gradient for aesthetics */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent pointer-events-none" />

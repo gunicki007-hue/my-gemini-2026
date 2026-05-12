@@ -11,6 +11,7 @@ export interface GlobalConfig {
 export interface NavDict {
   projects: string;
   about: string;
+  awards: string;
   contact: string;
 }
 
@@ -86,11 +87,13 @@ export const siteConfig: SiteConfig = {
     en: {
       projects: 'PROJECT',
       about: 'ABOUT',
+      awards: 'AWARDS',
       contact: 'CONTACT',
     },
     zh: {
       projects: '作品档案',
       about: '关于我',
+      awards: '国际荣誉',
       contact: '联系我',
     },
   },
